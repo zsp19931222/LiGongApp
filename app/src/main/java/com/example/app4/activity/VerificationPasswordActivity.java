@@ -107,7 +107,6 @@ public class VerificationPasswordActivity extends BaseRecyclerViewActivity {
         bindingNextBtn.setText("下一步");
 
         bindingNextBtn.setBackground(ContextCompat.getDrawable(this, R.drawable.border_shade_3da8f5));
-
         bindingNumEd.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
     }
 
