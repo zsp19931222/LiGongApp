@@ -1,0 +1,62 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tzgg_xqzs_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:lineSpacingExtra="9dp"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tzgg_xqzs_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:padding="2dp"
+                android:textColor="#969696"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tzgg_xqzs_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:lineSpacingExtra="9dp"
+                android:padding="5dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <include layout="@layout/zhkt_dm_sj_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/zhkt_dm_js_ydrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="应到:0" />
+
+        <TextView
+            android:id="@+id/zhkt_dm_js_sdrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:hint="实到:0" />
+
+        <TextView
+            android:id="@+id/zhkt_dm_js_qjrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:hint="请假:0" />
+        <TextView
+            android:id="@+id/zhkt_dm_js_cdrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:hint="迟到:0" />
+
+        <TextView
+            android:id="@+id/zhkt_dm_js_kkrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:hint="未到:0" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/zhkt_dm_js_xslb_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/biankuang4"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/zhkt_fqdm_button"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/zhkt_dm_js_ksdm"
+            android:clickable="true"
+            android:text="开始点名"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/zhkt_tjdm_button"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@color/gray_color"
+            android:clickable="true"
+            android:text="提交点名"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

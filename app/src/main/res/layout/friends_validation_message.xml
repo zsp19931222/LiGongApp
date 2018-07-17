@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@color/button" >
+
+        <ImageButton
+            android:id="@+id/return_main"
+            style="@style/back_button_style"
+            android:background="#F7F7F7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="验证信息"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="45dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/btn_send"
+            android:text="发送" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/validation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="8dip"
+            android:singleLine="true"
+            android:text="验证消息"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/validation_message"
+            android:layout_width="match_parent"
+            android:layout_height="99dip"
+            android:layout_below="@id/validation"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/diary_sub_normal" />
+    </RelativeLayout>
+
+</LinearLayout>

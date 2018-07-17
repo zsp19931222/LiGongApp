@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/setting_lin_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f7"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.example.app3.view.MyTitleView
+        android:id="@+id/setting_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_48"
+        app:title_bg="@color/white"
+        app:title_height="@dimen/d_48"
+        app:title_left_image="@drawable/back3"
+        app:title_text_color="@color/color_dark_333333"
+        app:title_text_size="@dimen/d_15"/>
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@color/color_f7"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/setting_rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_f1" />
+
+    <Button
+        android:id="@+id/setting_btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d_18"
+        android:layout_marginRight="@dimen/d_18"
+        android:layout_marginTop="@dimen/d_18"
+        android:background="@drawable/border_radius_blue"
+        android:paddingBottom="@dimen/d_10"
+        android:paddingTop="@dimen/d_10"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/d_15" />
+</LinearLayout>

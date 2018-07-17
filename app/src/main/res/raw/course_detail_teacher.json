@@ -1,0 +1,49 @@
+{
+  "allTagsList": [
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "ktxq_bjcy",
+      "txt": "班级成员",
+      "num": "",
+      "cls": "com.example.smartclass.activity.ClassMemberActivity",
+      "explain": "班级",
+      "type": "no_fill_view",
+      "layout": "item_archives",
+      "isSelect ": false
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "ktxq_dmjl",
+      "txt": "点名记录",
+      "num": "6",
+      "explain": "班级",
+      "cls": "com.example.smartclass.activity.TeacherCallRecordActivity",
+      "type": "no_fill_view",
+      "layout": "item_archives",
+      "isSelect ": true
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "ktxq_ktpj",
+      "txt": "课堂评学",
+      "num": "6",
+      "explain": "班级",
+      "cls": "com.example.smartclass.activity.BrowserActivity",
+      "type": "no_fill_view",
+      "layout": "item_archives",
+      "isSelect ": false
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "ktxq_fqdm",
+      "txt": "发起点名",
+      "num": "6",
+      "cls": "com.example.smartclass.activity.CallDetailActivity",
+      "explain": "班级",
+      "type": "no_fill_view",
+      "layout": "item_archives",
+      "isSelect ": false
+    }
+
+  ]
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/sshy_tx"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/q1"
+            android:paddingLeft="20dp" />
+
+        <TextView
+            android:id="@+id/sshy_nc"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/sshy_tx"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/sshy_tx"
+            android:gravity="center_vertical"
+            android:text="阿黄" />
+
+        <TextView
+            android:id="@+id/sshy_bmmc"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/sshy_tx"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/sshy_tx"
+            android:gravity="center_vertical"
+            android:text="部门" />
+
+        <TextView
+            android:id="@+id/sshy_name"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/sshy_tx"
+            android:layout_toRightOf="@id/sshy_bmmc"
+            android:gravity="center_vertical"
+            android:text="姓名" />
+    </RelativeLayout>
+
+</LinearLayout>

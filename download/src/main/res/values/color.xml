@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="light_gray">#dfdfdf</color>
+    <color name="touming_dark_gray">#bb000000</color>
+    <color name="touming_light_gray">#80000000</color>
+    <color name="touming">#01ffffff</color>
+    <color name="button">#06B025</color>
+    <color name="button_press">#17addc</color>
+    <color name="DarkActionBarColor">#333333</color>
+    <color name="color_white">#ffff</color>
+    <color name="color_back">#000000</color>
+    <color name="color_red">#FF0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="c_back_gray_normal">#F7F7F7</color>
+</resources>

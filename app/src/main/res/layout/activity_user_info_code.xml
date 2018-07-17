@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_persona_bggray"
+    tools:context="com.yunhuakeji.app.ui.activity.UserInfoCodeActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_userinfocode_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/txt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="clip_vertical"
+            android:drawableStart="@drawable/ico_left"
+            android:onClick="back"
+            android:padding="@dimen/d_10"
+            android:text="@string/str_back"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/s_20" />
+
+        <TextView
+            android:id="@+id/text_welcomstudent_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/d_10"
+            android:layout_marginTop="@dimen/d_10"
+            android:text="@string/str_datainput_title"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/s_20" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_userinfocode_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:background="@color/color_white"
+        android:layout_marginTop="@dimen/d_13"
+        android:layout_below="@id/rl_userinfocode_title"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_gravity="center_vertical"
+            android:text="@string/srt_userinfocode_phonenumber"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/s_18" />
+
+
+        <yh.tool.widget.ClearEditText
+            android:id="@+id/ct_userinfocode_phonenumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/d_10"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_gravity="center_vertical"
+            android:hint="@string/str_userinfocode_phonenumberhint"
+            android:background="@color/color_white"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/txt_userinfocode_sendcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/d_10"
+            android:layout_weight="1"
+            android:background="@drawable/shape_radius_borde_blue"
+            android:gravity="center"
+            android:padding="@dimen/d_5"
+            android:layout_gravity="center_vertical"
+            android:text="@string/str_userinfocode_sendcode"
+            android:textColor="@color/color_bleu"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:background="@color/color_white"
+        android:layout_marginTop="@dimen/d_1"
+        android:layout_below="@id/ly_userinfocode_phonenumber"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_gravity="center_vertical"
+            android:text="@string/str_userinfocode_phonenumbercode"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/s_18" />
+
+
+        <yh.tool.widget.ClearEditText
+            android:id="@+id/ct_userinfocode_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/d_10"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_white"
+            android:hint="@string/str_userinfocode_codehint"
+            android:layout_weight="3" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_datainput_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/d_15"
+        android:layout_marginEnd="@dimen/d_50"
+        android:layout_marginStart="@dimen/d_50"
+        android:background="@drawable/selector_personal_rounded_click"
+        android:text="@string/str_next"
+        android:textColor="@color/color_white" />
+</RelativeLayout>

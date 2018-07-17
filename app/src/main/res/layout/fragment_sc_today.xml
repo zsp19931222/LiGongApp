@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_sc_today_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_sc_today_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_130"
+        android:background="@drawable/tec_ind_banner">
+
+        <TextView
+            android:id="@+id/text_sc_today_class_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="当日总课时：0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s_14" />
+
+        <RelativeLayout
+            android:id="@+id/rel_sc_today_week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/text_sc_today_class_hour">
+
+            <TextView
+                android:id="@+id/text_sc_today_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="第 0 周"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_28" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/d_5"
+                android:layout_toEndOf="@id/text_sc_today_week"
+                android:src="@drawable/tec_ind_xl" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_sc_today"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rel_sc_today_time">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/refresh_sc_today_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_20"
+                android:gravity="center"
+                android:text="正在刷新"
+                android:textColor="@color/color_gray_999999"
+                android:textSize="@dimen/s_16" />
+            <ImageView
+                android:id="@+id/refresh_sc_today_text_iamge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/d_xl" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rec_sc_today"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/text_sc_no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/d_60"
+                android:drawableTop="@drawable/no_data"
+                android:gravity="center"
+                android:text="今日没有课程哦~"
+                android:textColor="@color/color_bbbbbb"
+                android:textSize="@dimen/s_14" />
+        </RelativeLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_60"
+        android:layout_below="@id/rel_sc_today_time"
+        android:layout_marginLeft="@dimen/d_15"
+        android:layout_marginRight="@dimen/d_15"
+        android:layout_marginTop="-35dp"
+        android:background="@drawable/tec_ind_">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rec_sc_today_weeks"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_52"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/d_15"
+            android:layout_marginRight="@dimen/d_15"
+            android:background="@color/transparent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_sc_today_shade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:visibility="gone"></RelativeLayout>
+</RelativeLayout>

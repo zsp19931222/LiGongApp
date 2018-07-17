@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/search_school_lin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_48"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/search_school_location_rel"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/d_11"
+            android:layout_height="@dimen/d_48">
+
+            <TextView
+                android:id="@+id/search_school_location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/d_4"
+                android:drawableStart="@drawable/location"
+                android:textColor="@color/color_gray_999999"
+                android:textSize="@dimen/s_14" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/search_school_search_text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/d_15"
+            android:layout_marginStart="@dimen/d_22"
+            android:layout_weight="1"
+            android:background="@drawable/border_radius_f1f1f1"
+            android:drawablePadding="@dimen/d_5"
+            android:drawableStart="@drawable/search_bar_icon_normal"
+            android:gravity="center_vertical"
+            android:hint="搜索学校"
+            android:paddingStart="@dimen/d_10"
+            android:textColor="@color/color_gray_999999"
+            android:textSize="@dimen/s_14" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_school_rec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_school_lin" />
+
+    <com.example.app4.view.LetterView
+        android:id="@+id/search_school_letter_view"
+        android:layout_width="@dimen/d_30"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:gravity="center" />
+</RelativeLayout>

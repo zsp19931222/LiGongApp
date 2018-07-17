@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/quanzi_group_add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/biankuang_b"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp" >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/quanzi_liaotian_tjhy" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="新的朋友"
+            android:textColor="#696969" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/quanzi_group_bm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/biankuang_b"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp" >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/quanzi_liaotian_gzh" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="部门"
+            android:textColor="#696969" />
+    </LinearLayout>
+
+</LinearLayout>

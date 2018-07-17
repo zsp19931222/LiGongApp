@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f6"
+    android:paddingEnd="@dimen/d_12"
+    android:paddingStart="@dimen/d_12"
+    android:paddingTop="@dimen/d_16">
+
+    <RelativeLayout
+        android:id="@+id/rel_item_sc_today_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_radius_white_45px"
+        android:paddingEnd="@dimen/d_12"
+        android:paddingStart="@dimen/d_12">
+
+        <TextView
+            android:id="@+id/text_item_sc_today_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_16"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="课程"
+            android:textSize="@dimen/s_18" />
+
+        <TextView
+            android:id="@+id/text_item_sc_today_course_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_item_sc_today_course"
+            android:layout_marginTop="@dimen/d_3"
+            android:includeFontPadding="false"
+            android:text="课程编号"
+            android:textSize="@dimen/s_12" />
+
+        <LinearLayout
+            android:id="@+id/lin_item_sc_today_course_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_item_sc_today_course_num"
+            android:layout_marginTop="@dimen/d_14"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_item_sc_today_course_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text_item_sc_today_course_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_3"
+                android:includeFontPadding="false"
+                android:text="上课时间"
+                android:textSize="@dimen/s_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_item_sc_today_course_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lin_item_sc_today_course_time"
+            android:layout_marginBottom="@dimen/d_18"
+            android:layout_marginTop="@dimen/d_4"
+            android:includeFontPadding="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_item_sc_today_course_site"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text_item_sc_today_course_site"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_3"
+                android:includeFontPadding="false"
+                android:text="课程地点"
+                android:textSize="@dimen/s_14" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_item_sc_today_course_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/lin_item_sc_today_course_site"
+            android:includeFontPadding="false"
+            android:text="人数" />
+    </RelativeLayout>
+</RelativeLayout>

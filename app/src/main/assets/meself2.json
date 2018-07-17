@@ -1,0 +1,46 @@
+[
+  {
+    "type": "fill_view",
+    "layout": "item_fill_h15dp_wm_bacf7f7f7"
+  },
+  {
+    "pic": "http://www.fdsfds.com/pic/dsfds.png",
+    "pic_default": "myself_dy_2x",
+    "txt": "我的订阅",
+    "num": "",
+    "cls": "com.example.app3.activity.MySubscibeActivity",
+    "type": "no_fill_view"
+  },
+  {
+    "pic": "http://www.fdsfds.com/pic/dsfds.png",
+    "pic_default": "myself_ewm_2x",
+    "txt": "我的二维码",
+    "num": "",
+    "cls": "com.example.app3.activity.QRActivity",
+    "type": "no_fill_view"
+  },
+  {
+    "type": "fill_view",
+    "layout": "item_fill_h15dp_wm_bacf7f7f7"
+  },
+  {
+    "pic": "http://www.fdsfds.com/pic/dsfds.png",
+    "pic_default": "myself_fk_2x",
+    "txt": "反馈",
+    "num": "",
+    "cls": "com.example.app3.FeedBackActivity",
+    "type": "no_fill_view"
+  },
+  {
+    "pic": "http://www.fdsfds.com/pic/dsfds.png",
+    "pic_default": "myself_sz_2x",
+    "txt": "设置",
+    "num": "",
+    "cls": "com.example.app3.activity.SettinActivity",
+    "type": "no_fill_view"
+  },
+  {
+    "type": "fill_view",
+    "layout": "item_fill_hm_wm_bacf7f7f7"
+  }
+]

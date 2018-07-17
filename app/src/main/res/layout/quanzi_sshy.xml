@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#00A2E7"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/biankuang_r"
+            android:gravity="center" >
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="添加好友"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/quanzi_serch_img" />
+
+        <EditText
+            android:id="@+id/sshy_ss_text"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_button"
+            android:hint="请输入关键字"
+            android:paddingLeft="10dp"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/sshy_ss_button"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_white_click"
+            android:text="搜索" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/sshy_list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/sshy_syy"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="上一页"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/sshy_xyy"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:text="下一页"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

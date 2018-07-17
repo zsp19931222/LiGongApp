@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/topbar" />-->
+
+    <com.example.app3.view.MyTitleView
+        android:id="@+id/quanzi_lt_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_48"
+        app:title_bg="@color/white"
+        app:title_height="@dimen/d_48"
+        app:title_left_image="@drawable/back3"
+        app:title_right_image="@drawable/hy"
+        app:title_text_color="@color/color_dark_333333"
+        app:title_text_size="@dimen/d_15"></com.example.app3.view.MyTitleView>
+    <ScrollView
+        android:id="@+id/quanzi_lt_listlayout_sc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/color_f6"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/quanzi_lt_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- <include layout="@layout/quanzi_layout_liaotian_item_other" />
+
+            <include layout="@layout/quanzi_layout_liaotian_item_my" /> -->
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/xiaoxifasong" />
+
+</LinearLayout>

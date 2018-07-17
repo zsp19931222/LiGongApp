@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/more_rel_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:id="@+id/more_lin_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_48"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/more_relative_return"
+            android:layout_width="@dimen/d_48"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/back_v3" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/d_24"
+            android:layout_weight="1"
+            android:background="@drawable/search_more_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/d_5"
+            android:paddingTop="@dimen/d_5">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_14"
+                android:src="@drawable/search_btn" />
+
+            <TextView
+                android:id="@+id/more_text_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_10"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="搜索应用"
+                android:textColorHint="@color/color_gray_999999"
+                android:textSize="@dimen/s_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/more_image_cutLine1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/more_lin_title"
+        android:background="@color/color_f1" />
+
+    <LinearLayout
+        android:id="@+id/more_lin_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_48"
+        android:layout_below="@id/more_image_cutLine1"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/d_10"
+        android:paddingTop="@dimen/d_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_11"
+            android:text="常用应用"
+            android:textColor="@color/color_dark_333333"
+            android:textSize="@dimen/s_14" />
+
+        <LinearLayout
+            android:id="@+id/more_lin_appIcon"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/d_30"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/more_text_compile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/d_11"
+            android:text="编辑"
+            android:textColor="@color/home_blue"
+            android:textSize="@dimen/s_14" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/more_image_cutLine2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/more_lin_list"
+        android:background="@color/color_f1" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/more_rec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/more_image_cutLine2"
+        android:background="@color/white"
+        />
+</RelativeLayout>

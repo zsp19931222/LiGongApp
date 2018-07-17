@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/view_home_apply_message_item_no_pic1"
+        layout="@layout/view_home_apply_message_item_no_pic" />
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/view_home_apply_message_item_small_pic1"
+        layout="@layout/view_home_apply_message_item_small_pic" />
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/view_home_apply_message_item_large_pic1"
+        layout="@layout/view_home_apply_message_item_large_pic" />
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/view_home_apply_message_item_linear"
+        layout="@layout/item_homepage_fragment" />
+</LinearLayout>

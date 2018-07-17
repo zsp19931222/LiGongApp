@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@color/button" >
+
+        <ImageButton
+            android:id="@+id/return_diary"
+            style="@style/back_button_style" />
+
+        <TextView
+            style="@style/title"
+            android:text="好记性不如烂笔头" />
+
+        <TextView
+            android:id="@+id/save_diary"
+            android:layout_width="60dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="#436EEE"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/notification_title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <!-- 标题部分 -->
+
+        <TextView
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题" />
+
+        <EditText
+            android:id="@+id/etModifyTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="#ffffff"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:fillViewport="true" >
+
+        <!-- 内容部分 -->
+
+        <EditText
+            android:id="@+id/etModifyDiary"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="top"
+            android:hint="写点什么吧"
+            android:padding="15dp"
+            android:scrollbars="vertical"
+            android:textColor="#404040"
+            android:textSize="12sp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/dttm"
+        style="@style/tvDatetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

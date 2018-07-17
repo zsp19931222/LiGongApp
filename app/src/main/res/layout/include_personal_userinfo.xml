@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:layout_marginTop="@dimen/d_1"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/img_personaldata_hand"
+        android:layout_width="@dimen/d_64"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_15"
+        android:layout_marginTop="@dimen/d_15"
+        android:visibility="gone"
+        android:src="@drawable/q1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_13"
+        android:layout_marginStart="@dimen/d_15"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_personaldata_userdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="-40dp"
+            android:drawableEnd="@drawable/ico_right_bule"
+            android:drawablePadding="@dimen/d_5"
+            android:padding="@dimen/d_10"
+            android:text="@string/str_personaldata_userdetails"
+            android:textColor="@color/color_bleu" />
+        <TextView
+            android:id="@+id/txt_personaldata_userinifname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_marginTop="@dimen/d_13"
+            android:drawableEnd="@drawable/ico_woman"
+            android:drawablePadding="@dimen/d_11"
+            android:text="刘雯雯"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/s_20"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txt_personaldata_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_13"
+            android:drawablePadding="@dimen/d_5"
+            android:layout_marginTop="@dimen/d_5"
+            android:drawableStart="@drawable/ico_school"
+            android:text="理学院" />
+
+        <TextView
+            android:id="@+id/txt_welcomestudent_major"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/d_15"
+            android:layout_marginStart="@dimen/d_13"
+            android:drawablePadding="@dimen/d_5"
+            android:layout_marginTop="@dimen/d_5"
+            android:drawableStart="@drawable/ico_welcomestdent_major"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLength="18"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="信息与计算科学(工程计算与数据处理)" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

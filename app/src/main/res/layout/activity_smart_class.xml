@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f6"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.example.app3.view.MyTitleView
+        android:id="@+id/sc_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_48"
+        app:title_bg="@color/white"
+        app:title_height="@dimen/d_48"
+        app:title_left_image="@drawable/back_v3"
+        app:title_text="@string/sc_title"
+        app:title_text_color="@color/color_dark_333333"
+        app:title_text_size="@dimen/sp_16"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/help_button_view"/>
+    <FrameLayout
+        android:id="@+id/fram_sc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@color/help_button_view"/>
+    <LinearLayout
+        android:id="@+id/lin_sc"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_48"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lin_sc_class"
+            android:layout_width="@dimen/d_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_sc_class"
+                android:layout_width="@dimen/d_24"
+                android:layout_height="@dimen/d_24"
+                android:layout_margin="@dimen/d_8"
+                />
+
+            <TextView
+                android:id="@+id/text_sc_class"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="今日课程"
+                android:gravity="center"
+                android:textSize="@dimen/s_12" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="@dimen/d_22"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_e8ebed" />
+
+        <LinearLayout
+            android:id="@+id/lin_sc_message"
+            android:layout_width="@dimen/d_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_sc_message"
+                android:layout_width="@dimen/d_24"
+                android:layout_height="@dimen/d_24"
+                android:layout_margin="@dimen/d_8"
+                />
+
+            <TextView
+                android:id="@+id/text_sc_message"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="授课信息"
+                android:textSize="@dimen/s_12" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

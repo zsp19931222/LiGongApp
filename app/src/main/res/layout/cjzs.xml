@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66696969"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/main_tv"
+        android:minWidth="200dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout style="@style/cjStyle" >
+
+            <TextView
+                android:id="@+id/course1"
+                style="@style/course_detail_textview_left"
+                android:text="课程代号" />
+
+            <TextView
+                android:id="@+id/course_id"
+                style="@style/course_detail_textview_right"
+                android:layout_toRightOf="@id/course1" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/cjStyle" >
+
+            <TextView
+                android:id="@+id/course2"
+                style="@style/course_detail_textview_left"
+                android:text="课程名称" />
+
+            <TextView
+                android:id="@+id/course_name"
+                style="@style/course_detail_textview_right"
+                android:layout_toRightOf="@id/course2" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/cjStyle" >
+
+            <TextView
+                android:id="@+id/course3"
+                style="@style/course_detail_textview_left"
+                android:text="课程性质" />
+
+            <TextView
+                android:id="@+id/course_xingzhi"
+                style="@style/course_detail_textview_right"
+                android:layout_toRightOf="@id/course3" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/cjStyle" >
+
+            <TextView
+                android:id="@+id/course4"
+                style="@style/course_detail_textview_left"
+                android:text="课程学分" />
+
+            <TextView
+                android:id="@+id/course_xuefen"
+                style="@style/course_detail_textview_right"
+                android:layout_toRightOf="@id/course4" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/cjStyle" >
+
+            <TextView
+                android:id="@+id/course5"
+                style="@style/course_detail_textview_left"
+                android:text="成绩" />
+
+            <TextView
+                android:id="@+id/course_grade"
+                style="@style/course_detail_textview_right"
+                android:layout_toRightOf="@id/course5" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/cjStyle" >
+
+            <TextView
+                android:id="@+id/course6"
+                style="@style/course_detail_textview_left"
+                android:text="绩点" />
+
+            <TextView
+                android:id="@+id/c_GPA"
+                style="@style/course_detail_textview_right"
+                android:layout_toRightOf="@id/course6" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/yincang"
+            style="@style/cjStyle" >
+
+            <TextView
+                android:id="@+id/course7"
+                style="@style/course_detail_textview_left"
+                android:text="成绩性质" />
+
+            <TextView
+                android:id="@+id/c_rebuiltScore"
+                style="@style/course_detail_textview_right"
+                android:layout_toRightOf="@id/course7" >
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

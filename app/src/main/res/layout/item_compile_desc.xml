@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/compile_item_desc_lin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d_3"
+        android:background="@color/color_f6"
+        android:paddingBottom="@dimen/d_5">
+
+        <ImageView
+            android:id="@+id/compile_item_desc_image"
+            android:layout_width="@dimen/d_30"
+            android:layout_height="@dimen/d_30"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/d_5"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <RelativeLayout
+            android:id="@+id/compile_item_desc_role_rel"
+            android:layout_width="@dimen/d_30"
+            android:layout_height="@dimen/d_30"
+            android:layout_marginTop="@dimen/d_15"
+            android:layout_toRightOf="@id/compile_item_desc_image">
+
+            <ImageView
+                android:id="@+id/compile_item_desc_role"
+                android:layout_width="@dimen/d_15"
+                android:layout_height="@dimen/d_15"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/sc" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/compile_item_desc_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/compile_item_desc_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/d_25"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="123"
+            android:textColor="@color/color_5d"
+            android:textSize="@dimen/d_12" />
+
+    </RelativeLayout>
+</LinearLayout>

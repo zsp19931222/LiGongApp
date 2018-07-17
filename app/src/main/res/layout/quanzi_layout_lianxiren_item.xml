@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@drawable/biankuang_buttom"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/q1" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="王小宇"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="50dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/biankuang4"
+        android:padding="1dp"
+        android:textColor="#27b0c4"
+        android:textSize="15sp" />
+
+</LinearLayout>

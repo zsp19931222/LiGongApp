@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/biankuang_b"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cour_ckqd" />
+
+        <TextView
+            android:id="@+id/yh_txt_daily_djz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/yh_txt_daily_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/breakbg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/yh_txt_daily_can_sign_time"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="4dp"
+            android:alpha="0.5"
+            android:padding="4dp"
+            android:textColor="@android:color/white" />
+
+        <RelativeLayout
+            android:id="@+id/yh_relativelayout_daily_sign"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_yuanquan_hui" >
+
+            <TextView
+                android:id="@+id/txt_jinribushutitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="今日步数"
+                android:textColor="@color/color_back" />
+
+            <TextView
+                 android:id="@+id/txt_jinribushu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_jinribushutitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/d_10"
+                android:text="4"
+                android:textColor="@color/touming_light_gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_jinribushu_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_10"
+            android:background="#00FFFFFF"
+            android:text="已签到"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/yh_txt_daily_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="92dp"
+            android:alpha="0.5"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/yh_txt_daily_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="14dp"
+            android:layout_marginStart="14dp"
+            android:alpha="0.5"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

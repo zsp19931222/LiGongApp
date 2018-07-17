@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/app"
+        style="@style/main_application_buttom"
+        android:layout_width="fill_parent"
+        android:minHeight="50dip"
+        android:layout_height="50dip" >
+        <ImageView
+            android:id="@+id/app_img_view"
+            style="@style/jiao_pengyou_imagebutton"
+            android:scaleType="matrix"
+            android:src="@drawable/banji" />
+        <TextView
+            android:id="@+id/app_text_view"
+            style="@style/jiao_pengyou_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/app_img_view"
+            android:text="一卡通消费"
+            android:textColor="@color/main_tv" />
+        <ImageView
+            android:id="@+id/search_friends_cycle_more"
+            style="@style/jiao_pengyou_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+</RelativeLayout>

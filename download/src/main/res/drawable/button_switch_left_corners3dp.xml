@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/button_switch_white_tl_bl_corners3dp_nopress" android:state_pressed="false"/>
+    <item android:drawable="@drawable/button_switch_white_tl_bl_corners3dp_pressed" android:state_pressed="true"/>
+
+</selector>

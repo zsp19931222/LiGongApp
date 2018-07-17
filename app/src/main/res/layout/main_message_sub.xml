@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/each_item" >
+ 
+    <ImageView
+        android:id="@+id/main_message_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:src="@drawable/message_icon" />
+
+    <TextView
+        android:id="@+id/notification_title"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="8dip"
+        android:layout_toRightOf="@id/main_message_image"
+        android:singleLine="true"
+        android:text="通知title"
+        android:textColor="@color/main_tv"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/notification_content"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notification_title"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="8dip"
+        android:layout_toRightOf="@id/main_message_image"
+        android:singleLine="true"
+        android:text="通知内容"
+        android:textColor="@color/gray_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/diarylist_sub_time"
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="8dip"
+        android:text="2015.2.2"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/message_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dip"
+        android:layout_toRightOf="@id/notification_title"
+        android:text="type"
+        android:textColor="@color/gray_color"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/main_message_kai_image"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/diarylist_sub_time"
+        android:src="@drawable/kai"
+         android:layout_marginRight="5dip" />
+
+</RelativeLayout>

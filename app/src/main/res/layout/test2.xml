@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/biankuang"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/wybs_list_sub_title"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:clickable="false"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="标题"
+        android:textColor="#393939"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/wybs_list_sub_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:padding="0dp"
+        android:text="dfsdjflkdsjkldsjflkdsjfkldsjfdklsjdskljfdsklfjsdklfjdsklfjdsklfjklsdfjsdklfjsdklfjsdlkdsjflkdsjflksdjfklsadjfak;ldsjfkalsjfklsadjkflsdaj;kflsdajk;flsjaklfja;klfjaklsdfjkladsjflkdsajfkl;sdjfklasjfklsdjfksldj;l"
+        android:textColor="#464646" />
+
+</LinearLayout>

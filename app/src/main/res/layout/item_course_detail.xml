@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/item_cd_fill_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_cd_rel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_50"
+        android:background="@drawable/ripple">
+
+        <ImageView
+            android:id="@+id/item_cd_image"
+            android:layout_width="@dimen/d_22"
+            android:layout_height="@dimen/d_16"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/d_18" />
+
+        <TextView
+            android:id="@+id/item_cd_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/d_14"
+            android:layout_toEndOf="@id/item_cd_image"
+            android:textColor="@color/color_somber"
+            android:textSize="@dimen/s_16" />
+
+        <ImageView
+            android:id="@+id/item_cd_more_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/d_16"
+            android:src="@drawable/myself_button_right_3x" />
+
+        <TextView
+            android:id="@+id/item_cd_num_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/d_10"
+            android:layout_toStartOf="@id/item_cd_more_image"
+            android:textColor="@color/color_gray_999999"
+            android:textSize="@dimen/s_14"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@id/item_cd_text"
+            android:background="@color/color_f6" />
+    </RelativeLayout>
+</RelativeLayout>

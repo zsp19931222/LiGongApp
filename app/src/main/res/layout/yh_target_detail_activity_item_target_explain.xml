@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/biankuang_b"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/biankuang_b"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/d_8" >
+
+        <TextView
+            android:id="@+id/yh_txt_target_detail_item_num"
+            android:layout_width="@dimen/d_48"
+            android:layout_height="@dimen/d_48"
+            android:background="@drawable/rili_noterm"
+            android:gravity="center"
+            android:text="@string/yh_1"
+            android:textColor="@color/button"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/yh_txt_target_detail_item_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/d_8"
+            android:text="@string/yh_breakfast_default_sign_time"
+            android:textSize="@dimen/sp_12" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/checkbox_qiandao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:button="@drawable/checkbox_selector"
+                     />
+
+                <TextView
+                    android:id="@+id/yh_txt_target_detail_activity_item_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:text="@string/yh_breakfast_default_sign_times"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/yh_progbar_target_detail_activity_item_progbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_36"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d_24"
+            android:gravity="center"
+            android:text="@string/yh_target_target_data" />
+
+        <TextView
+            android:id="@+id/yh_txt_target_detail_item_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_10"
+            android:gravity="center"
+            android:text="zhiliao"
+            android:textColor="@color/button" />
+    </LinearLayout>
+
+</LinearLayout>

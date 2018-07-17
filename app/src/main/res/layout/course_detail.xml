@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@color/button" >
+
+        <ImageButton
+            android:id="@+id/return_pre"
+            style="@style/back_button_style" />
+
+        <TextView
+            android:id="@+id/notification_title_leixing"
+            style="@style/title"
+            android:text="课程详细信息" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dip"
+        android:singleLine="true"
+        android:text="课程信息"
+        android:textColor="@color/blue2"
+        android:textSize="@dimen/course_grade_1" />
+
+    <RelativeLayout style="@style/item_top_special" >
+
+        <ImageView
+            android:id="@+id/course_name_img"
+            style="@style/jiao_pengyou_imagebutton"
+            android:scaleType="matrix"
+            android:src="@drawable/course_dian" />
+
+        <TextView
+            android:id="@+id/course_name_tv"
+            style="@style/jiao_pengyou_textview"
+            android:layout_toRightOf="@id/course_name_img"
+            android:text="课程名称" />
+
+        <TextView
+            android:id="@+id/course_name1"
+            style="@style/course_detail_tv"
+            android:layout_toRightOf="@id/course_name_tv" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/item_normal" >
+
+        <ImageView
+            android:id="@+id/course_teacher_img"
+            style="@style/jiao_pengyou_imagebutton"
+            android:scaleType="matrix"
+            android:src="@drawable/course_dian" />
+
+        <TextView
+            android:id="@+id/course_teacher_tv"
+            style="@style/jiao_pengyou_textview"
+            android:layout_toRightOf="@id/course_teacher_img"
+            android:text="老师" />
+
+        <TextView
+            android:id="@+id/course_teacher1"
+            style="@style/course_detail_tv"
+            android:layout_toRightOf="@id/course_teacher_tv" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/item_normal" >
+
+        <ImageView
+            android:id="@+id/course_palace_img"
+            style="@style/jiao_pengyou_imagebutton"
+            android:scaleType="matrix"
+            android:src="@drawable/course_dian" />
+
+        <TextView
+            android:id="@+id/course_palace_tv"
+            style="@style/jiao_pengyou_textview"
+            android:layout_toRightOf="@id/course_palace_img"
+            android:text="教室" />
+
+        <TextView
+            android:id="@+id/course_palace1"
+            style="@style/course_detail_tv"
+            android:layout_toRightOf="@id/course_palace_tv" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/item_normal" >
+
+        <ImageView
+            android:id="@+id/course_time_img"
+            style="@style/jiao_pengyou_imagebutton"
+            android:scaleType="matrix"
+            android:src="@drawable/course_dian" />
+
+        <TextView
+            android:id="@+id/course_time_tv"
+            style="@style/jiao_pengyou_textview"
+            android:layout_toRightOf="@id/course_time_img"
+            android:text="时间" />
+
+        <TextView
+            android:id="@+id/course_time1"
+            style="@style/course_detail_tv"
+            android:layout_toRightOf="@id/course_time_tv" />
+    </RelativeLayout>
+
+   <RelativeLayout style="@style/item_normal" >
+
+        <ImageView
+            android:id="@+id/course_week_img"
+            style="@style/jiao_pengyou_imagebutton"
+            android:scaleType="matrix"
+            android:src="@drawable/course_dian" />
+
+        <TextView
+            android:id="@+id/course_week_tv"
+            style="@style/jiao_pengyou_textview"
+            android:layout_toRightOf="@id/course_week_img"
+            android:text="周数" />
+
+        <TextView
+            android:id="@+id/course_week1"
+            style="@style/course_detail_tv"
+            android:layout_toRightOf="@id/course_week_tv" />
+    </RelativeLayout>
+
+</LinearLayout>

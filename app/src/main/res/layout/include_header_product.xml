@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cd_people_detail_lin"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_1"
+        android:background="@color/color_gray_ececec" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/d_14"
+        android:paddingStart="@dimen/d_10"
+        android:paddingTop="@dimen/d_22"
+        android:text="人员详情"
+        android:textColor="@color/color_somber" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_1"
+        android:background="@color/color_gray_ececec" />
+</LinearLayout>

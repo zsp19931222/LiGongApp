@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_weight="1"
+        android:padding="14dp"
+        android:text="考生号"
+        android:textColor="@color/color_dark_333333"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:padding="14dp"
+        android:text="123456789"
+        android:textColor="@color/color_dark_333333"
+        android:textSize="14sp" />
+
+</LinearLayout>

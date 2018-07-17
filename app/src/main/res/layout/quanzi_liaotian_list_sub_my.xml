@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="right"
+    android:minHeight="50dp" >
+
+    <ImageView
+        android:id="@+id/quanzi_liaotian_tx"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/q1" />
+
+    <ImageView
+        android:id="@+id/fdsklfjsdklfjskldafjs"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/quanzi_liaotian_tx"
+        android:src="@drawable/liaotian_qipao_r" />
+
+    <TextView
+        android:id="@+id/quanzi_liaotian_text_my"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/fdsklfjsdklfjskldafjs"
+        android:background="@drawable/bac_yuanjiao"
+        android:maxWidth="220dp"
+        android:minHeight="40dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="ddfdsfdsfdsfdslkjfadsklfjaskldfaklsdfajfskldjfdskls"
+        android:textColor="#636363" />
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--     适配进度条图标位置 -->
+  <integer name="pressdip">30</integer>
+</resources>

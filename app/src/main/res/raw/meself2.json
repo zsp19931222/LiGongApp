@@ -1,0 +1,56 @@
+{
+  "allTagsList": [
+    {
+      "layout": "fill_view",
+      "view": "item_fill_h15dp_wm_bacf7f7f7"
+    },
+    {
+      "layout": "no_fill_view",
+      "title": "我的二维码",
+      "sort": "0",
+      "function_key": [],
+      "img": "http:\/\/file.i.cqut.edu.cn\/fs\/filedown?id=49bos714c3464mrje3sls8ofis&fileName=ewm.png",
+      "funcid": "null",
+      "type": 1,
+      "class_name": "com.example.app3.activity.QRActivity",
+      "url": "null"
+    },
+    {
+      "layout": "no_fill_view",
+      "title": "我的订阅",
+      "sort": "0",
+      "function_key": [],
+      "img": "http:\/\/file.i.cqut.edu.cn\/fs\/filedown?id=23ue3bkt1ho36e5j28iojincjb&fileName=wddy.png",
+      "funcid": "null",
+      "type": 1,
+      "class_name": "com.example.app3.activity.MySubscibeActivity",
+      "url": "null"
+    },
+    {
+      "layout": "fill_view",
+      "view": "item_fill_h15dp_wm_bacf7f7f7"
+    },
+    {
+      "layout": "no_fill_view",
+      "title": "系统反馈",
+      "sort": "0",
+      "function_key": [],
+      "img": "http:\/\/file.i.cqut.edu.cn\/fs\/filedown?id=3ivn8516olh3shmbnkqqspmmkr&fileName=fk.png",
+      "funcid": "null",
+      "type": 1,
+      "class_name": "com.example.app3.FeedBackActivity",
+      "url": "null"
+    },
+    {
+      "layout": "no_fill_view",
+      "title": "设置",
+      "sort": "0",
+      "function_key": [],
+      "img": "http:\/\/file.i.cqut.edu.cn\/fs\/filedown?id=2var0hnqagq376202dm6rjcs1v&fileName=sz.png",
+      "funcid": "null",
+      "type": 1,
+      "class_name": "com.example.app3.activity.SettinActivity",
+      "url": "null"
+    }
+  ]
+}

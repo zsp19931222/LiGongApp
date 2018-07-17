@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_darlbleu"
+    android:orientation="vertical"
+    tools:context="com.yunhuakeji.app.ui.activity.ErWeimaActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_welcomstudent_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_darlbleu"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="clip_vertical"
+            android:drawableStart="@drawable/back"
+            android:onClick="back"
+            android:padding="@dimen/d_10"
+            android:text="@string/str_back"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/s_20" />
+
+        <TextView
+            android:id="@+id/text_welcomstudent_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/d_10"
+            android:layout_marginTop="@dimen/d_10"
+            android:text="@string/str_erweima_title"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/s_20" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/d_55"
+        android:layout_marginEnd="@dimen/d_20"
+        android:layout_marginStart="@dimen/d_15"
+        android:layout_marginTop="@dimen/d_55"
+        android:background="@drawable/shape_radius_border_white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/d_15"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_erweima_tiaoxinma"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="@dimen/d_30"
+                android:layout_marginStart="@dimen/d_30"
+               />
+
+            <ImageView
+                android:id="@+id/img_erweima_erweima"
+                android:layout_width="@dimen/d_200"
+                android:layout_height="@dimen/d_200"
+                android:layout_below="@id/img_erweima_tiaoxinma"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="@dimen/d_30"
+                android:layout_marginStart="@dimen/d_30"
+                android:layout_marginTop="@dimen/d_20" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/d_20"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_1"
+                android:layout_marginEnd="@dimen/d_10"
+                android:layout_marginStart="@dimen/d_10"
+                android:layout_marginTop="@dimen/d_30"
+                android:background="@drawable/shape_dotted" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/d_15"
+                android:text="@string/str_erweima_guidename" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

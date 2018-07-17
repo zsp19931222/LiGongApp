@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yh_target_target_position" />
+
+    <EditText
+        android:id="@+id/yh_create_target_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/yh_biankuang_yuanjiao_5dp_4"
+        android:gravity="center_vertical"
+        android:hint="@string/yh_txt_do_not_more_than_60"
+        android:padding="4dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/yh_target_target_need_sign_count" />
+
+    <EditText
+        android:id="@+id/yh_create_target_item_sign_count"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/yh_biankuang_yuanjiao_5dp_4"
+        android:gravity="center_vertical"
+        android:hint="@string/yh_target_target_need_sign_count_hint"
+        android:padding="4dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/yh_target_target_data" />
+
+    <EditText
+        android:id="@+id/yh_create_target_item_data"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/yh_biankuang_yuanjiao_5dp_4"
+        android:gravity="center_vertical"
+        android:hint="@string/yh_txt_do_not_more_than_40"
+        android:padding="4dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/yh_target_target_data_url" />
+
+    <EditText
+        android:id="@+id/yh_create_target_item_data_url"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/yh_biankuang_yuanjiao_5dp_4"
+        android:gravity="center_vertical"
+        android:hint="@string/yh_target_target_data_url_hint"
+        android:padding="4dp"
+        android:textSize="14sp" />
+
+</LinearLayout>

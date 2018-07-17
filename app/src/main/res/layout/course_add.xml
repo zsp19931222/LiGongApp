@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dfdfdf"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="课程名称*" />
+
+            <EditText
+                android:id="@+id/kcmc"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="3"
+                android:background="@drawable/biankuang4"
+                android:padding="3dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="教师名称" />
+
+            <EditText
+                android:id="@+id/jsmc"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="3"
+                android:background="@drawable/biankuang4"
+                android:padding="3dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="上课地点" />
+
+            <EditText
+                android:id="@+id/skdd"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="3"
+                android:background="@drawable/biankuang4"
+                android:padding="3dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="星期*" />
+
+            <EditText
+                android:id="@+id/xqj"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="3"
+                android:background="@drawable/biankuang4"
+                android:digits="1234567"
+                android:padding="3dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="周次*" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="3"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/zhouci1"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/biankuang4"
+                    android:inputType="number"
+                    android:padding="3dp" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="0.3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#000000" />
+
+                <EditText
+                    android:id="@+id/zhouci2"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/biankuang4"
+                    android:inputType="number"
+                    android:padding="3dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="节次*" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="3"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/jieci1"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/biankuang4"
+                    android:inputType="number"
+                    android:padding="3dp" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="0.3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#000000" />
+
+                <EditText
+                    android:id="@+id/jieci2"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/biankuang4"
+                    android:inputType="number"
+                    android:padding="3dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="60dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/default_button_corners5"
+                android:text="取消"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="60dp"
+                android:layout_height="36dp"
+                android:background="@drawable/default_button_corners5"
+                android:text="确定"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

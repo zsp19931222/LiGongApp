@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f6">
+
+    <com.example.app3.view.MyTitleView
+        android:id="@+id/myreport_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_48"
+        app:title_bg="@color/white"
+        app:title_height="@dimen/d_48"
+        app:title_left_image="@drawable/back3"
+        app:title_text="@string/str_report_title"
+        app:title_text_color="@color/color_dark_333333"
+        app:title_text_size="@dimen/d_15" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/myreport_title">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/myreport_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            layout="@layout/no_data"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

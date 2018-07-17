@@ -1,0 +1,44 @@
+{
+  "allTagsList": [
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_bg_2x",
+      "txt": "修改手机号",
+      "num": "",
+      "cls": "com.example.app4.activity.VerificationPasswordActivity",
+      "type": "no_fill_view",
+      "layout": "item_archives"
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_bg_2x",
+      "txt": "修改密码",
+      "num": "",
+      "cls": "com.example.app4.activity.ChangePasswordActivity",
+      "type": "no_fill_view",
+      "layout": "item_archives"
+    },
+    {
+      "type": "fill_view",
+      "layout": "item_fill_h15dp_wm_bacf7f7f7"
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_bg_2x",
+      "txt": "消息通知",
+      "num": "",
+      "cls": "com.example.app3.activity.MessageActivity",
+      "type": "no_fill_view",
+      "layout": "item_archives"
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_dy_2x",
+      "txt": "空间清理",
+      "num": "6",
+      "cls": "test",
+      "type": "no_fill_view",
+      "layout": "item_archives"
+    }
+  ]
+}

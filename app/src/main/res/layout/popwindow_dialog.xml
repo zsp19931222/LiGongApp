@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/ly_dialog_out"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:orientation="horizontal"
+        android:background="@color/color_black"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/d_20"
+        android:layout_marginStart="@dimen/d_20"
+        android:background="@drawable/shape_radius_border_white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_dialog_warn"
+            android:layout_width="@dimen/d_45"
+            android:layout_height="@dimen/d_45"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/d_15"
+            android:background="@drawable/ico_warn" />
+
+
+        <TextView
+            android:id="@+id/txt_dialog_conternt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_dialog_warn"
+            android:layout_marginEnd="@dimen/d_15"
+            android:layout_marginStart="@dimen/d_15"
+            android:layout_marginTop="@dimen/d_20"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/str_dialog_content"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/s_15" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_dialog_conternt"
+            android:layout_marginTop="@dimen/d_30"
+            >
+
+            <TextView
+                android:id="@+id/txt_dialog_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/d_15"
+                android:background="@drawable/selector_radius_left_bottom_gray_click"
+                android:text="@string/pickerview_cancel"
+                android:textColor="@color/color_black" />
+
+            <TextView
+                android:id="@+id/txt_dialog_submit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_radius_right_bottom_blue_click"
+                android:gravity="center"
+                android:padding="@dimen/d_15"
+                android:text="@string/pickerview_submit"
+                android:textColor="@color/color_white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

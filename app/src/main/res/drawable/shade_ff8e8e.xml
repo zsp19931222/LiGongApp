@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 阴影部分 最下面一层 -->
+    <item>
+        <shape android:shape="rectangle">
+            <size
+                android:width="@dimen/d_8"
+                android:height="@dimen/d_8" />
+            <gradient
+                android:angle="90"
+                android:endColor="#777777"
+                android:startColor="#C5C5C5" />
+            <corners android:radius="1px" />
+        </shape>
+    </item>
+    <!-- 背景部分 -->
+    <!-- 形象的表达：bottom left ... 类似于设置 margin -->
+    <item
+        android:bottom="1px"
+        android:right="1px">
+        <selector>
+            <item
+                android:state_focused="false"
+                android:state_pressed="true">
+                <shape android:shape="rectangle">
+                    <size
+                        android:width="@dimen/d_8"
+                        android:height="@dimen/d_8" />
+
+                    <solid android:color="@color/color_ff8e8e" />
+                    <corners android:radius="1px" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <size
+                        android:width="@dimen/d_8"
+                        android:height="@dimen/d_8" />
+
+                    <solid android:color="@color/color_ff8e8e" />
+                    <corners android:radius="1px" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</layer-list>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="KaleTheme" parent="AppBaseTheme">
+
+        <!-- 设置无标题 -->
+               
+        <item name="android:windowNoTitle">true</item>
+        <!--&lt;!&ndash; 解决activity切换时的黑屏问题 &ndash;&gt;-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <!-- 设置activity切换动画 -->
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+    </style>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cjcx"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/button_press"
+        android:gravity="center" >
+
+        <Spinner
+            android:id="@+id/term"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/seleceted" 
+            android:layout_gravity="center" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/background_02"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="#F0F0F0" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:singleLine="true"
+                android:text="课程名称"
+                android:textColor="@color/blue2"
+                android:textSize="@dimen/course_grade_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="95dp"
+                android:singleLine="true"
+                android:text="成绩"
+                android:textColor="@color/blue2"
+                android:textSize="@dimen/course_grade_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:singleLine="true"
+                android:text="学分"
+                android:textColor="@color/blue2"
+                android:textSize="@dimen/course_grade_2" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/student_grade_query_eL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

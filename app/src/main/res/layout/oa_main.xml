@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_app_views"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+   <!--  <RelativeLayout
+        android:id="@+id/friend_chat_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_gravity="top"
+        android:background="@drawable/title_bg" >
+
+        <TextView
+            style="@style/title"
+            android:text="公文中心" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/app_news"
+        style="@style/main_application_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dip" >
+
+        <ImageView
+            android:id="@+id/app_news_img"
+            style="@style/jiao_pengyou_imagebutton"
+            android:scaleType="matrix"
+            android:src="@drawable/rili" />
+
+        <TextView
+            style="@style/jiao_pengyou_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/app_news_img"
+            android:text="通知公告"
+            android:textColor="@color/main_tv" />
+
+        <ImageView
+            android:id="@+id/jiao_pengyou_more"
+            style="@style/jiao_pengyou_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/app_contant"
+        style="@style/main_application_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:onClick="messageonclick" >
+
+        <ImageView
+            android:id="@+id/add_stu_friends_ibtt"
+            style="@style/jiao_pengyou_imagebutton"
+            android:scaleType="matrix"
+            android:src="@drawable/rili" />
+
+        <TextView
+            style="@style/jiao_pengyou_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/add_stu_friends_ibtt"
+            android:text="收到消息"
+            android:textColor="@color/main_tv" />
+
+        <ImageView
+            android:id="@+id/jiao_pengyou_more"
+            style="@style/jiao_pengyou_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/app_contant"
+        style="@style/main_application_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:onClick="meettingonclick" >
+
+        <ImageView
+            android:id="@+id/add_stu_friends_ibtt"
+            style="@style/jiao_pengyou_imagebutton"
+            android:scaleType="matrix"
+            android:src="@drawable/rili" />
+
+        <TextView
+            style="@style/jiao_pengyou_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/add_stu_friends_ibtt"
+            android:text="会议日程"
+            android:textColor="@color/main_tv" />
+
+        <ImageView
+            android:id="@+id/jiao_pengyou_more"
+            style="@style/jiao_pengyou_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/app_contant"
+        style="@style/main_application_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:onClick="todoonclick" >
+
+        <ImageView
+            android:id="@+id/add_stu_friends_ibtt"
+            style="@style/jiao_pengyou_imagebutton"
+            android:scaleType="matrix"
+            android:src="@drawable/rili" />
+
+        <TextView
+            style="@style/jiao_pengyou_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/add_stu_friends_ibtt"
+            android:text="代办事宜"
+            android:textColor="@color/main_tv" />
+
+        <ImageView
+            android:id="@+id/jiao_pengyou_more"
+            style="@style/jiao_pengyou_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/app_contant"
+        style="@style/main_application_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:onClick="contantonclick" >
+
+        <ImageView
+            android:id="@+id/add_stu_friends_ibtt"
+            style="@style/jiao_pengyou_imagebutton"
+            android:scaleType="matrix"
+            android:src="@drawable/rili" />
+
+        <TextView
+            style="@style/jiao_pengyou_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/add_stu_friends_ibtt"
+            android:text="通讯录"
+            android:textColor="@color/main_tv" />
+
+        <ImageView
+            android:id="@+id/jiao_pengyou_more"
+            style="@style/jiao_pengyou_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listapp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/white"
+        android:dividerHeight="1px" />-->
+
+</LinearLayout> 

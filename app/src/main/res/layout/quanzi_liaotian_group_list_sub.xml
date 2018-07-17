@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/biankuang_b"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/quanzi_lxr_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="false" />
+
+    <TextView
+        android:id="@+id/quanzi_lxr_name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="联系人"
+        android:textColor="#363636" />
+
+</LinearLayout>

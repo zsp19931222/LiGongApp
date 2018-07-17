@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@color/button" >
+
+        <ImageButton
+            android:id="@+id/return_pre"
+            style="@style/back_button_style" />
+
+        <TextView
+            style="@style/title"
+            android:text="通讯录" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/border_contact_sub"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/dapartment" />
+
+        <TextView
+            style="@style/title"
+            android:text="部门电话详情"
+            android:textColor="#0b0b0b" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dapartment_name"
+            style="@style/contact_sub_tv"
+            android:text="计算机部门"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/department_zj"
+            style="@style/contact_sub_tv"
+            android:text="固定电话 :" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginBottom="12dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="2dip"
+            android:background="@drawable/edit_text_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/call_phone" />
+
+            <TextView
+                android:id="@+id/contact_zj"
+                style="@style/contact_sub_tv"
+                android:layout_weight="5"
+                android:text="13372665114" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="#80000000" >
+            </View>
+
+            <TextView
+                android:id="@+id/call_phone_zj"
+                style="@style/contact_sub_tv"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:text="呼叫" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/department_sj"
+            style="@style/contact_sub_tv"
+            android:text="移动电话 :" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginBottom="24dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="2dip"
+            android:background="@drawable/edit_text_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/call_phone" />
+
+            <TextView
+                android:id="@+id/contact_sj"
+                style="@style/contact_sub_tv"
+                android:layout_weight="5"
+                android:text="13372665114" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="#80000000" >
+            </View>
+
+            <TextView
+                android:id="@+id/call_phone_sj"
+                style="@style/contact_sub_tv"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:text="呼叫" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+{
+  "allTagsList": [
+    {
+      "type": "fill_view",
+      "layout": "item_fill_layout"
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "ry_fdy",
+      "txt": "辅导员",
+      "num": "",
+      "cls": "",
+      "type": "no_fill_view",
+      "explain": "辅导员名字",
+      "layout": "item_archives",
+      "isSelect ": true
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "ry_kczt",
+      "txt": "课程状态",
+      "num": "",
+      "cls": "",
+      "explain": "状态",
+      "type": "no_fill_view",
+      "layout": "item_archives",
+      "isSelect ": false
+    }
+  ]
+}

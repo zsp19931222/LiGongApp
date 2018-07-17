@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/button" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="身份验证"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/quanzi_qrtjhy_sfyz_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/quanzi_qrtjhy_sfyz_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="发送"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FFFFFF" >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/q1" />
+
+        <TextView
+            android:id="@+id/quanzi_qrtjhy_sfyz_xm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="15dp"
+            android:text="姓名" />
+
+        <TextView
+            android:id="@+id/quanzi_qrtjhy_sfyz_xh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="40dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="请输入验证信息:" />
+
+    <EditText
+        android:id="@+id/quanzi_qrtjhy_sfyz_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="top"
+        android:maxLength="100"
+        android:minHeight="100dp"
+        android:padding="8dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/quanzi_qrtjhy_sfyz_zs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:hint="最大输入100字(0/100)"
+        android:paddingRight="8dp" />
+
+</LinearLayout>

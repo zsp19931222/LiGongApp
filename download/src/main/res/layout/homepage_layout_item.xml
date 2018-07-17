@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout_home_title_hover_visability"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:alpha="0.8"
+    android:background="@color/button"
+    android:orientation="horizontal" >
+
+    <Button
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/button"
+        android:text="我的目标"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <Button
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/button"
+        android:text="目标广场"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <Button
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/button"
+        android:text="职业测评"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+</LinearLayout>

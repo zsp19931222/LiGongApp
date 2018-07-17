@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/biankuang_buttom"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_radius_borde_gray"
+        android:drawableLeft="@drawable/search_bar_icon_normal"
+        android:hint="搜索好友账号/名称"
+        android:paddingLeft="@dimen/d_10"
+        android:textSize="15sp" />
+
+<!--     <Button -->
+<!--         android:id="@+id/button" -->
+<!--         android:layout_width="30dp" -->
+<!--         android:layout_height="30dp" -->
+<!--         android:layout_marginLeft="8dp" -->
+<!--         android:layout_marginRight="18dp" -->
+<!--         android:background="@drawable/liaotian_zhaoren_pressed" /> -->
+
+</LinearLayout>

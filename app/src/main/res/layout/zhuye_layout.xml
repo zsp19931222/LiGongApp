@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <yh.tool.widget.MonitorScrollView
+        android:id="@+id/msv_zhuye"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- 广告 -->
+
+            <yh.tool.widget.SlideShowView
+                android:id="@+id/da_view"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                android:background="@drawable/xxhome1" >
+            </yh.tool.widget.SlideShowView>
+
+            <include layout="@layout/include_home_advertisement" />
+
+            <FrameLayout
+                android:id="@+id/fl_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </FrameLayout>
+        </LinearLayout>
+    </yh.tool.widget.MonitorScrollView>
+
+    <include layout="@layout/include_home_advertisementtwo" />
+
+</FrameLayout>

@@ -1,0 +1,12 @@
+{
+  "allTagsList": [
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "gfxx",
+      "txt": "官方消息",
+      "num": "6",
+      "cls": "com.example.app3.activity.QAMessageActivity",
+      "type": "no_fill_view"
+    }
+  ]
+}

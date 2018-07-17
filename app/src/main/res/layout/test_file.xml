@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下载" />
+
+    <com.example.app3.view.NumberProgressBar
+        android:id="@+id/number_bar"
+        style="@style/NumberProgressBar_Default"
+        android:padding="20dp"
+        app:progress="0" />
+</LinearLayout>

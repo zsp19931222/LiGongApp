@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/include_home_student_tool" />
+
+    <include layout="@layout/include_home_myaim" />
+
+</LinearLayout>

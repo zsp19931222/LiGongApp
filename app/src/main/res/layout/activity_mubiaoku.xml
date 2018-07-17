@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/button" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="back"
+            android:src="@drawable/back3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/d_10"
+            android:textSize="@dimen/s_18"
+            android:text="目标库"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <yh.tool.widget.HorizontialListView
+        android:id="@+id/list_mubiaoku"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </yh.tool.widget.HorizontialListView>
+    
+    
+    <ListView 
+        android:id="@+id/list_mubiaokucontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"></ListView>
+
+</LinearLayout>

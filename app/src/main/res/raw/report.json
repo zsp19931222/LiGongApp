@@ -1,0 +1,31 @@
+{
+  "allTagsList": [
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_bg_2x",
+      "txt": "成绩报告",
+      "num": "",
+      "cls": "com.example.app3.activity.MessageActivity",
+      "type": "no_fill_view",
+      "layout": "item_archives"
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_sj_2x",
+      "txt": "消息报告",
+      "num": "",
+      "cls": "com.example.app3.activity.AboutUsActivity",
+      "type": "no_fill_view",
+      "layout": "item_archives"
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_dy_2x",
+      "txt": "图书借阅",
+      "num": "6",
+      "cls": "test",
+      "type": "no_fill_view",
+      "layout": "item_archives"
+    }
+  ]
+}

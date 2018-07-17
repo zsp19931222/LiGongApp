@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appstart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/hyjm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+       
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/xxtb"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="25dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="请点击按钮进行下载更新"
+        android:visibility="invisible" />
+
+</RelativeLayout>

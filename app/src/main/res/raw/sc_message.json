@@ -1,0 +1,59 @@
+{
+  "allTagsList": [
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_bg_2x",
+      "txt": "课程",
+      "num": "",
+      "cls": "",
+      "type": "no_fill_view",
+      "explain": "班级",
+      "layout": "item_archives",
+      "isSelect ": true
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_sj_2x",
+      "txt": "课程",
+      "num": "",
+      "cls": "",
+      "explain": "班级",
+      "type": "no_fill_view",
+      "layout": "item_archives",
+      "isSelect ": false
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_dy_2x",
+      "txt": "课程",
+      "num": "6",
+      "explain": "班级",
+      "cls": "test",
+      "type": "no_fill_view",
+      "layout": "item_archives",
+      "isSelect ": true
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_dy_2x",
+      "txt": "课程",
+      "num": "6",
+      "explain": "班级",
+      "cls": "test",
+      "type": "no_fill_view",
+      "layout": "item_archives",
+      "isSelect ": false
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_dy_2x",
+      "txt": "课程",
+      "num": "6",
+      "cls": "test",
+      "explain": "班级",
+      "type": "no_fill_view",
+      "layout": "item_archives",
+      "isSelect ": false
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_persona_bggray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/button" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="back"
+            android:src="@drawable/back3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="分享目标"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_mubiao_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_200"
+        android:layout_margin="@dimen/d_10"
+        android:background="@drawable/shape_radius_border_white"
+        android:gravity="top"
+        android:hint="@string/str_fengxiang_mubiaohint"
+        android:paddingLeft="@dimen/d_5"
+        android:paddingTop="@dimen/d_5" />
+
+    <Button
+        android:id="@+id/btn_fengxiang_mubiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/d_10"
+        android:background="@drawable/selector_personal_rounded_click"
+        android:maxLength="100"
+        android:padding="@dimen/d_5"
+        android:text="@string/str_fengxiang_mubiao_btn"
+        android:textColor="@color/color_white" />
+
+</LinearLayout>

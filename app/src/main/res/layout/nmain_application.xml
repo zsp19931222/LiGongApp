@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_app_views"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/friend_chat_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_gravity="top"
+        android:background="@color/button" >
+
+        <TextView
+            style="@style/title"
+            android:text="应用中心" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/border_bg_buttom_normal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/app1"
+            style="@style/main_application_top_linear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:onClick="kbonclick" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:src="@drawable/kebiao" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:text="个人课表"
+                android:textColor="@color/main_tv" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/app2"
+            style="@style/main_application_top_linear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:onClick="newclick" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:src="@drawable/gonggao" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:text="新闻平台"
+                android:textColor="@color/main_tv" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/app3"
+            style="@style/main_application_top_linear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:onClick="rzclick" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:src="@drawable/diary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:text="个人日志"
+                android:textColor="@color/main_tv" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/app4"
+        style="@style/main_application_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="15dip"
+        android:onClick="rlonclick" >
+
+        <ImageView
+            android:id="@+id/add_stu_friends_ibtt"
+            style="@style/jiao_pengyou_imagebutton"
+            android:scaleType="matrix"
+            android:src="@drawable/rili" />
+
+        <TextView
+            style="@style/jiao_pengyou_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/add_stu_friends_ibtt"
+            android:text="校历"
+            android:textColor="@color/main_tv" />
+
+        <ImageView
+            android:id="@+id/jiao_pengyou_more"
+            style="@style/jiao_pengyou_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/app5"
+        style="@style/main_application_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:onClick="cjclick" >
+
+        <ImageView
+            android:id="@+id/add_teacher_friends_imgview"
+            style="@style/jiao_pengyou_imagebutton"
+            android:scaleType="matrix"
+            android:src="@drawable/chengji" />
+
+        <TextView
+            style="@style/jiao_pengyou_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/add_teacher_friends_imgview"
+            android:text="成绩查询"
+            android:textColor="@color/main_tv" />
+
+        <ImageView
+            android:id="@+id/jiao_jiaoshi_pengyou_more"
+            style="@style/jiao_pengyou_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/app6"
+        style="@style/main_application_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:onClick="lostFoundClick" >
+
+        <ImageView
+            android:id="@+id/search_friends_cycle_view"
+            style="@style/jiao_pengyou_imagebutton"
+            android:scaleType="matrix"
+            android:src="@drawable/banji" />
+
+        <TextView
+            style="@style/jiao_pengyou_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/search_friends_cycle_view"
+            android:text="失物招领"
+            android:textColor="@color/main_tv" />
+
+        <ImageView
+            android:id="@+id/search_friends_cycle_more"
+            style="@style/jiao_pengyou_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/app7"
+        style="@style/main_application_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:onClick="contactclick" >
+
+        <ImageView
+            android:id="@+id/contact_image"
+            style="@style/jiao_pengyou_imagebutton"
+            android:scaleType="matrix"
+            android:src="@drawable/contact" />
+
+        <TextView
+            style="@style/jiao_pengyou_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/contact_image"
+            android:text="通讯录"
+            android:textColor="@color/main_tv" />
+
+        <ImageView
+            android:id="@+id/contact_more"
+            style="@style/jiao_pengyou_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/app8"
+        style="@style/main_application_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:onClick="libraryclick" >
+
+        <ImageView
+            android:id="@+id/library_image"
+            style="@style/jiao_pengyou_imagebutton"
+            android:scaleType="matrix"
+            android:src="@drawable/library" />
+
+        <TextView
+            style="@style/jiao_pengyou_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/library_image"
+            android:text="图书馆"
+            android:textColor="@color/main_tv" />
+
+        
+<!--  
+        <ImageView
+            android:id="@+id/contact_more"
+            style="@style/jiao_pengyou_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            -->
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listapp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/white"
+        android:dividerHeight="1px" />
+
+</LinearLayout>

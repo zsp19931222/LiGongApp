@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_set"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_persona_bggray"
+    android:orientation="vertical"
+    tools:context="com.yunhuakeji.app.ui.activity.SetActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/button"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_vertical"
+            android:onClick="back"
+            android:src="@drawable/back3"
+            android:padding="@dimen/d_10"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/d_10"
+            android:layout_marginTop="@dimen/d_10"
+            android:text="设置"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/s_20" />
+    </RelativeLayout>
+   <!--修改密码-->
+    <RelativeLayout
+        android:id="@+id/rl_set_updatepwd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/d_10"
+        android:background="@drawable/selector_personal_click" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/d_10"
+            android:paddingBottom="@dimen/d_10"
+            android:paddingTop="@dimen/d_10"
+            android:text="修改密码" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/d_10"
+            android:src="@drawable/ico_right" />
+    </RelativeLayout>
+     <!--已经隐藏-->
+    <RelativeLayout
+        android:id="@+id/rl_set_hide"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/d_10"
+        android:visibility="gone"
+        android:background="@drawable/selector_personal_click" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/d_10"
+            android:paddingBottom="@dimen/d_10"
+            android:paddingTop="@dimen/d_10"
+            android:text="隐私" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/d_10"
+            android:src="@drawable/ico_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_set_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/d_10"
+        android:background="@drawable/selector_personal_click" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/d_10"
+            android:paddingBottom="@dimen/d_10"
+            android:paddingTop="@dimen/d_10"
+            android:text="意见反馈" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/d_10"
+            android:src="@drawable/ico_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_set_about"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/d_05"
+        android:background="@drawable/selector_personal_click" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/d_10"
+            android:paddingBottom="@dimen/d_10"
+            android:paddingTop="@dimen/d_10"
+            android:text="@string/str_set_about" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/d_10"
+            android:src="@drawable/ico_right" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    android:layout_marginBottom="0dip"
+    android:layout_marginTop="0dip"
+    android:background="@drawable/each_item" >
+
+    <TextView
+        android:id="@+id/diarylist_iddd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dip"
+        android:text="id"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/diarylist_sub_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="8dip"
+        android:layout_toRightOf="@id/diarylist_iddd"
+        android:text="title"
+        android:textColor="@color/main_tv"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/diarylist_sub_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="8dip"
+        android:text="time"
+        android:textColor="#999999" />
+
+    <TextView
+        android:id="@+id/diarylist_sub_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diarylist_sub_title"
+        android:layout_marginLeft="5dip"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="内容"
+        android:textSize="12sp"
+        android:textColor="#999999" />
+
+</RelativeLayout>

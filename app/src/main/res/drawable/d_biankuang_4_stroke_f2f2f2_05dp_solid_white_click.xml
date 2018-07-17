@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/d_biankuang_4_stroke_white_05dp_solid_white" android:state_selected="true"></item>
+    <item android:drawable="@drawable/d_biankuang_4_touming_kuan_1px_f2f2f2" android:state_selected="false"></item>
+
+</selector>

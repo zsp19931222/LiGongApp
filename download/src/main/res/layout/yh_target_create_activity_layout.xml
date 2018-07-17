@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/button" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="back"
+            android:src="@drawable/back3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/d_10"
+             android:textSize="18sp"
+            android:text="创建目标"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/yh_sc_target_create"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+            <include android:id="@+id/yh_target_create_activity_layout_head" layout="@layout/yh_target_create_activity_layout_head" />
+
+            <LinearLayout
+                android:id="@+id/yh_target_create_explain_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <include layout="@layout/yh_target_create_activity_layout_foot" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

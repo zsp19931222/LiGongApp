@@ -1,0 +1,20 @@
+{
+  "allTagsList": [
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_dy_2x",
+      "txt": "原手机号正常使用",
+      "num": "",
+      "cls": "com.example.app4.activity.MessageVerifyActivity",
+      "type": "no_fill_view"
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_ewm_2x",
+      "txt": "原手机号无法使用",
+      "num": "",
+      "cls": "com.example.app4.activity.MessageVerifyActivity",
+      "type": "no_fill_view"
+    }
+  ]
+}

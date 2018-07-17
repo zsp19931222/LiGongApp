@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ly_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_60"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_white"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/btn_state"
+            android:layout_width="@dimen/d_150"
+            android:layout_height="@dimen/d_35"
+            android:background="@drawable/selector_personal_rounded_click"
+            android:gravity="center"
+            android:padding="@dimen/d_5"
+            android:text="扬帆启航!"
+            android:textColor="@color/color_white" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/jy_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ly_bottom" />
+
+</RelativeLayout>

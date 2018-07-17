@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ly_popwind_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_persona_bggray"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_popwindhandim_photograph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/d_10"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_marginTop="@dimen/d_5"
+            android:background="@drawable/shape_radius_border_white"
+            android:text="@string/str_popwindhandim_photograph" />
+
+        <Button
+            android:id="@+id/btn_popwindhandim_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/d_10"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_marginTop="@dimen/d_1"
+            android:background="@drawable/shape_radius_border_white"
+            android:text="@string/str_popwindhandim_album" />
+
+        <Button
+            android:id="@+id/btn_popwindhandim_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/d_10"
+            android:layout_marginEnd="@dimen/d_10"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_marginTop="@dimen/d_5"
+            android:background="@drawable/shape_radius_border_white"
+            android:text="@string/str_popwindhandim_cancel" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_popwindhandim_out"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ly_popwind_button"
+        android:alpha="0.3"
+        android:background="@color/color_black"></RelativeLayout>
+</RelativeLayout>

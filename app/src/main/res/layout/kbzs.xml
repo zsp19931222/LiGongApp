@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66696969"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:minWidth="200dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout style="@style/cjStyle" >
+
+            <TextView
+                android:id="@+id/course_name_tv"
+                style="@style/jiao_pengyou_textview"
+                android:layout_toRightOf="@id/course_name_img"
+                android:text="课程名称" />
+
+            <TextView
+                android:id="@+id/course_name1"
+                style="@style/course_detail_textview_right"
+                android:layout_toRightOf="@id/course_name_tv" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/cjStyle" >
+
+            <TextView
+                android:id="@+id/course_teacher_tv"
+                style="@style/jiao_pengyou_textview"
+                android:layout_toRightOf="@id/course_teacher_img"
+                android:text="老师" />
+
+            <TextView
+                android:id="@+id/course_teacher1"
+                style="@style/course_detail_textview_right"
+                android:layout_toRightOf="@id/course_teacher_tv" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/cjStyle" >
+
+            <TextView
+                android:id="@+id/course_palace_tv"
+                style="@style/jiao_pengyou_textview"
+                android:layout_toRightOf="@id/course_palace_img"
+                android:text="教室" />
+
+            <TextView
+                android:id="@+id/course_palace1"
+                style="@style/course_detail_textview_right"
+                android:layout_toRightOf="@id/course_palace_tv" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/cjStyle" >
+
+            <TextView
+                android:id="@+id/course_time_tv"
+                style="@style/jiao_pengyou_textview"
+                android:layout_toRightOf="@id/course_time_img"
+                android:text="时间" />
+
+            <TextView
+                android:id="@+id/course_time1"
+                style="@style/course_detail_textview_right"
+                android:layout_toRightOf="@id/course_time_tv" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/cjStyle" >
+
+            <TextView
+                android:id="@+id/course_week_tv"
+                style="@style/jiao_pengyou_textview"
+                android:layout_toRightOf="@id/course_week_img"
+                android:text="周数" />
+
+            <TextView
+                android:id="@+id/course_week1"
+                style="@style/course_detail_textview_right"
+                android:layout_toRightOf="@id/course_week_tv" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

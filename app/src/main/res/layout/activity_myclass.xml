@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.app3.view.MyTitleView
+        android:id="@+id/myclass_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_48"
+        app:title_bg="@color/white"
+        app:title_height="@dimen/d_48"
+        app:title_left_image="@drawable/back3"
+        app:title_text="@string/myclass_title"
+        app:title_text_color="@color/color_dark_333333"
+        app:title_text_size="@dimen/d_15"></com.example.app3.view.MyTitleView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/myclass_rec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

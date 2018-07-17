@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#eee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@color/button" >
+
+        <ImageButton
+            android:id="@+id/return_pre"
+            style="@style/back_button_style"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="添加好友"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/search_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="8"
+            android:background="@drawable/search_bar_edit_bg"
+            android:drawableLeft="@drawable/search_bar_icon_normal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="搜索"
+            android:singleLine="true"
+            android:textColor="#000" >
+        </EditText>
+
+        <Button
+            android:id="@+id/search_friends_button"
+            android:layout_width="30dip"
+            android:layout_height="35dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_click_list"
+            android:text="搜索" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true" >
+
+            <ListView
+                android:id="@+id/listDiary"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:choiceMode="singleChoice"
+                android:divider="@color/white"
+               />
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

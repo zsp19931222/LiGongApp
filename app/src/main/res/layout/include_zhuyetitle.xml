@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/button"
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/d_10"
+            android:text="主页"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/s_20" />
+    </RelativeLayout>
+
+    <include layout="@layout/include_home_advertisement" />
+
+</LinearLayout>

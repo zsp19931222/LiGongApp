@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/biankuang_b"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="4dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请选择校区:" />
+
+        <Spinner
+            android:id="@+id/Spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/seleceted" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/biankuang_b"
+        android:hint="附近车站"
+        android:paddingBottom="0dp"
+        android:paddingStart="8dp"
+        android:paddingTop="16dp" />
+
+    <LinearLayout
+        android:id="@+id/result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

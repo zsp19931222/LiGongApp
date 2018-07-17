@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_persona_bggray"
+    android:orientation="vertical"
+    tools:context="com.yunhuakeji.app.ui.fragment.PersonalDataFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/d_10"
+            android:layout_marginTop="@dimen/d_10"
+            android:text="@string/str_personaldata"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/s_20" />
+    </RelativeLayout>
+
+    <include layout="@layout/include_personal_userinfo"  />
+
+
+    <!--寝室查询-->
+    <RelativeLayout
+        android:id="@+id/ly_personaldata_jiaoshichaxun"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:layout_marginTop="@dimen/d_13"
+        android:background="@drawable/selector_personal_click">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/d_15"
+            android:drawablePadding="@dimen/d_10"
+            android:drawableStart="@drawable/ico_jiaoshichaxun"
+            android:text="@string/str_personaldata_jiaoshichaxun"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/s_18" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/d_15"
+            android:src="@drawable/ico_right" />
+
+    </RelativeLayout>
+
+
+
+
+    <!--学费查询-->
+    <RelativeLayout
+        android:id="@+id/ly_personaldata_xuefeichaxun"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:layout_marginTop="@dimen/d_1"
+        android:background="@drawable/selector_personal_click">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/d_15"
+            android:drawablePadding="@dimen/d_10"
+            android:drawableStart="@drawable/ico_xuefeichaxun"
+            android:text="@string/str_personaldata_xuefeichaxun"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/s_18" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/d_15"
+            android:src="@drawable/ico_right" />
+
+    </RelativeLayout>
+
+    <!--EMS查询-->
+    <RelativeLayout
+        android:id="@+id/ly_personaldata_emschaxun"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:layout_marginTop="@dimen/d_1"
+        android:background="@drawable/selector_personal_click">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/d_15"
+            android:drawablePadding="@dimen/d_10"
+            android:drawableStart="@drawable/ico_emschaxun"
+            android:text="@string/str_personaldata_emschaxun"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/s_18" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/d_15"
+            android:src="@drawable/ico_right" />
+
+    </RelativeLayout>
+
+
+    <!--EMS查询-->
+    <RelativeLayout
+        android:id="@+id/ly_personaldata_dianzitongzishu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:layout_marginTop="@dimen/d_1"
+        android:background="@drawable/selector_personal_click">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/d_15"
+            android:drawablePadding="@dimen/d_10"
+            android:drawableStart="@drawable/ico_tongzishuchaxun"
+            android:text="@string/str_personaldata_tongzishu"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/s_18" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/d_15"
+            android:src="@drawable/ico_right" />
+
+    </RelativeLayout>
+
+</LinearLayout>

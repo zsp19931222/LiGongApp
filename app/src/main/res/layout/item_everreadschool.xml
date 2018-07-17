@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/color_persona_bggray"
+    android:layout_height="match_parent">
+  <!--开始时间-->
+    <RelativeLayout
+        android:id="@+id/rl_everreadschool_starttime"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:background="@color/color_white"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/s_18"
+            android:textColor="@color/color_somber"
+            android:layout_marginStart="@dimen/d_15"
+            android:text="@string/str_everreadschool_starttime"/>
+        <TextView
+            android:id="@+id/text_everreadschool_starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/d_10"
+            android:text="@string/str_kinfolk_pleasechoose"/>
+    </RelativeLayout>
+
+    <!--结束时间-->
+    <RelativeLayout
+        android:id="@+id/rl_everreadschool_endtime"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:layout_marginTop="@dimen/d_1"
+        android:background="@color/color_white"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/s_18"
+            android:textColor="@color/color_somber"
+            android:layout_marginStart="@dimen/d_15"
+            android:text="@string/str_everreadschool_endtime"/>
+        <TextView
+            android:id="@+id/text_everreadschool_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/d_10"
+            android:text="@string/str_kinfolk_pleasechoose"/>
+    </RelativeLayout>
+
+    <!--学校名称-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/d_1"
+        android:background="@color/color_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_15"
+            android:textColor="@color/color_somber"
+            android:textSize="@dimen/s_18"
+            android:text="@string/str_everreadschool_schoolname" />
+
+        <yh.tool.widget.ClearEditText
+            android:id="@+id/ct_everreadschool_schoolname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_marginEnd="@dimen/d_15"
+            android:hint="@string/str_kinfolk_pleaseenter"
+            android:background="@color/color_white" />
+    </LinearLayout>
+
+
+    <!--担任职务-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/d_1"
+        android:background="@color/color_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_15"
+            android:textColor="@color/color_somber"
+            android:textSize="@dimen/s_18"
+            android:text="@string/str_everreadschool_duties" />
+
+        <yh.tool.widget.ClearEditText
+            android:id="@+id/ct_everreadschool_duties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_marginEnd="@dimen/d_15"
+            android:hint="@string/str_kinfolk_pleaseenter"
+            android:background="@color/color_white" />
+    </LinearLayout>
+
+
+    <!--证明人-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/d_1"
+        android:layout_marginBottom="@dimen/d_10"
+        android:background="@color/color_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_15"
+            android:textColor="@color/color_somber"
+            android:textSize="@dimen/s_18"
+            android:text="@string/str_everreadschool_witness" />
+
+        <yh.tool.widget.ClearEditText
+            android:id="@+id/ct_everreadschool_witness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_marginEnd="@dimen/d_15"
+            android:hint="@string/str_kinfolk_pleaseenter"
+            android:background="@color/color_white" />
+    </LinearLayout>
+
+</LinearLayout>

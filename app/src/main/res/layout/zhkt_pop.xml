@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/zhkt_pop_title"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="请选择签到状态"
+            android:textColor="#27BDFC"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:id="@+id/zhkt_dq"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/buttom_biankuang"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="4dp"
+                
+                android:src="@drawable/dianming_yes" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                
+                android:text="到勤"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/zhkt_kk"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/buttom_biankuang"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="4dp"
+                
+                android:src="@drawable/dianming_no" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                
+                android:text="旷课"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/zhkt_cd"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/buttom_biankuang"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="4dp"
+                
+                android:src="@drawable/dianming_cd" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                
+                android:text="迟到"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/zhkt_zt"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/buttom_biankuang"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="4dp"
+                
+                android:src="@drawable/dianming_zt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                
+                android:text="早退"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/zhkt_bj"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/buttom_biankuang"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/dianming_bj" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                
+                android:text="病假"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/zhkt_sj"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/buttom_biankuang"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="4dp"
+                
+                android:src="@drawable/dianming_sj" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                
+                android:text="事假"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

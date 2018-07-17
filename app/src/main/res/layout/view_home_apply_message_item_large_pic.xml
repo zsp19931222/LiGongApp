@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_persona_bggray" />
+
+    <!--<include layout="@layout/view_home_apply_message_item_title" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:background="@drawable/biankuang_b"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/d_8"
+            android:background="@drawable/blue_rect_12_35" />
+
+        <TextView
+            android:id="@+id/large_txt_home_item_titleview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_dark_333333"
+            android:textSize="@dimen/s_13" />
+
+        <ImageView
+            android:id="@+id/large_gridview_home_item_img_xyd"
+            android:layout_width="@dimen/d_3"
+            android:layout_height="@dimen/d_3"
+            android:layout_gravity="top"
+            android:background="@drawable/circle_red"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/large_txt_home_item_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/d_corners_1_5dp_stroke_999999_0_5dp_solid_white"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingEnd="4dp"
+            android:visibility="invisible"
+            android:paddingStart="4dp"
+            android:paddingTop="2dp"
+            android:text="教务处"
+            android:textColor="@color/color_gray_999999"
+            android:textSize="@dimen/s_10" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="@dimen/d_15"
+            android:layout_marginRight="@dimen/d_5"
+            android:layout_height="@dimen/d_15"
+            android:src="@drawable/home_time"/>
+        <TextView
+            android:id="@+id/large_txt_home_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/color_gray_999999"
+            android:textSize="@dimen/s_10" />
+
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_persona_bggray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="11dp"
+        android:id="@+id/large_pic_lin"
+        android:paddingTop="14dp" >
+
+        <ImageView
+            android:id="@+id/large_pic_image"
+            android:layout_width="108dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="12dp"
+            android:scaleType="fitXY"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/large_pic_txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:ellipsize="end"
+                android:paddingEnd="11dp"
+                android:paddingStart="11dp"
+                android:singleLine="true"
+                android:text="目标管理"
+                android:textColor="#5d5d5d"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/large_pic_txt_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:paddingEnd="11dp"
+                android:paddingStart="11dp"
+                android:text="都是废话当升科技复合大师空间发的灰色空间佛挡杀佛会计电算化三德科技复合大师空间发货速度空间发货速度加快都是废话当升科技复合大师空间发的灰色空间佛挡杀佛会计电算化三德科技复合大师空间发货速度空间发货速度加快都是废话当升科技复合大师空间发的灰色空间佛挡杀佛会计电算化三德科技复合大师空间发货速度空间发货速度加快"
+                android:textColor="#5d5d5d"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<include layout="@layout/view_home_apply_message_item_more" />-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/color_persona_bggray"
+        android:gravity="center"
+        android:text="@string/str_home_more"
+        android:id="@+id/large_pic_text_more"
+        android:textColor="@color/color_gray_999999"
+        android:textSize="12sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E1E6E8" />
+
+</LinearLayout>

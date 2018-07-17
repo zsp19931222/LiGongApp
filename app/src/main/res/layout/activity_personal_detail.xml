@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pd_parent_rel"
+    android:background="@color/white">
+
+    <com.example.app3.view.MyTitleView
+        android:id="@+id/pd_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_48"
+        app:title_bg="@color/white"
+        app:title_height="@dimen/d_48"
+        app:title_left_image="@drawable/back_v3"
+        app:title_text="人员详情"
+        app:title_text_color="@color/color_dark_333333"
+        app:title_text_size="@dimen/d_15" />
+
+    <RelativeLayout
+        android:id="@+id/pd_name_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pd_title"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/pd_name_lin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_20"
+            android:layout_marginTop="@dimen/d_8"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pd_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_dark_333333"
+                android:textSize="@dimen/s_18" />
+
+            <ImageView
+                android:id="@+id/pd_sex_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_5"
+                />
+
+            <TextView
+                android:id="@+id/pd_bh_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_12"
+                android:textColor="@color/color_somber"
+                android:textSize="@dimen/s_12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pd_college_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/pd_name_lin"
+            android:layout_below="@id/pd_name_lin"
+            android:layout_marginTop="@dimen/d_8"
+            android:drawablePadding="@dimen/d_4"
+            android:drawableStart="@drawable/ico_school"
+            android:textColor="@color/color_gray_a09f9d"
+            android:textSize="@dimen/s_14" />
+
+        <TextView
+            android:id="@+id/pd_class_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/pd_name_lin"
+            android:layout_below="@id/pd_college_text"
+            android:layout_marginTop="@dimen/d_5"
+            android:drawablePadding="@dimen/d_4"
+            android:drawableStart="@drawable/ico_welcomestdent_major"
+            android:textColor="@color/color_gray_a09f9d"
+            android:textSize="@dimen/s_12" />
+
+        <ImageView
+            android:id="@+id/pd_head_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/d_20"
+            android:layout_alignTop="@id/pd_name_lin"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/pd_xx_cut_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_1"
+        android:layout_below="@id/pd_name_rel"
+        android:layout_marginTop="@dimen/d_18"
+        android:background="@color/color_f6" />
+
+    <LinearLayout
+        android:id="@+id/pd_xx_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pd_xx_cut_line"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/d_8"
+        android:layout_marginBottom="@dimen/d_8"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/pd_message_rel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/d_7"
+                android:drawableStart="@drawable/ry_xx"
+                android:gravity="center_vertical"
+                android:text="发送消息"
+                android:textSize="@dimen/s_14" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:background="@color/color_dark_333333"
+            android:layout_height="@dimen/d_10" />
+
+        <RelativeLayout
+            android:id="@+id/pd_phone_rel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/s_14"
+                android:drawablePadding="@dimen/d_7"
+                android:drawableStart="@drawable/ry_dh"
+                android:gravity="center_vertical"
+                android:text="拨打电话" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pd_rec"
+        android:background="@color/color_f6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pd_xx_rel" />
+</RelativeLayout>

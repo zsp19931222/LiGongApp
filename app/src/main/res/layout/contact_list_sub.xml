@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/each_item"
+    android:gravity="center_vertical"
+    android:minHeight="60dp"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:src="@drawable/dapartment" />
+
+    <TextView
+        android:id="@+id/department_name"
+        style="@style/title"
+        android:layout_marginLeft="10dp"
+        android:text="部门"
+        android:textColor="#494949" />
+
+    <TextView
+        android:id="@+id/department_id"
+        style="@style/title"
+        android:text="id"
+        android:textColor="#0b0b0b"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#ff00ff00" >
+
+    <TextView
+        android:id="@+id/yh_button_float_view_small_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/d_8"
+        android:background="@drawable/rili_noterm"
+        android:maxLines="1"
+        android:text="@string/yh_target_add_target"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/yh_button_float_view_small_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/d_8"
+        android:background="@drawable/rili_noterm"
+        android:maxLines="1"
+        android:text="@string/yh_target_create_target"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/yh_button_float_view_small_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/d_8"
+        android:background="@drawable/rili_noterm"
+        android:maxLines="1"
+        android:text="@string/yh_target_target_base"
+        android:textSize="@dimen/sp_12" />
+
+</LinearLayout>

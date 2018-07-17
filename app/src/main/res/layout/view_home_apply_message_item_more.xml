@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+    android:background="@color/color_persona_bggray"
+    android:gravity="center"
+    android:text="@string/str_home_more"
+    android:id="@+id/item_more_text_more"
+    android:textColor="@color/color_gray_999999"
+    android:textSize="12sp" />

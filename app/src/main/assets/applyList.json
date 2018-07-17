@@ -1,0 +1,174 @@
+{
+    "NAME": "应用中心",
+    "LIST": [
+        {
+            "TYPE_NAME": "应用中心",
+            "FUNCTION_TYPE": "1",
+            "FUNCTION_ID": "20150105",
+            "UNCHANGE": "0",
+            "CLASS_NAME": "yh.app.coursetable.TableDemoActivity",
+            "FUNCTION_NAME": "课表查询",
+            "TYPE_ID": "1",
+            "IOS_NOTICE": "segueForCourse",
+            "FUNCTION_FACE": "http://app.cqut.edu.cn/content/image/kbcx.png",
+            "PX": "10",
+            "INTEGRATE_KEY": [
+                "ikrEb2w/Sb7Aoxs89zZzRWxwby3gk9UqkDQqDJWKud47MYIP1MCTfuxKeApx7phjor4I4/Q3+nebnMgfMAqmaoNr127ppcsGfnVoV2yH5G5699xdAqHcDpgndBjnMoiem85jGLWj24X7OLX1tzYayWr5Fnx3mVZIJ/8mwTPIHorJA=n"
+            ],
+            "PACKAGE_NAME": "yh.app.appstart.lg",
+            "FUNCTION_TYBJ": "0"
+        },
+        {
+            "TYPE_NAME": "应用中心",
+            "FUNCTION_TYPE": "2",
+            "FUNCTION_ID": "20150106",
+            "UNCHANGE": "0",
+            "CLASS_NAME": "yh.app.web.Web",
+            "FUNCTION_NAME": "成绩查询",
+            "TYPE_ID": "1",
+            "IOS_NOTICE": "segueForWebView",
+            "FUNCTION_FACE": "http://app.cqut.edu.cn/content/image/cjcx.png",
+            "PX": "18",
+            "INTEGRATE_KEY": [
+                "UzAJqhdAAcVREJoo7wUltJ5DXTV4zHxmsCJkhfc+Gf9bSJMe8IdCCQm+rWPGIDovNMcda20WYGZInwJFH3nnyZFRb7zZ7oOquQ9pwdJhQTvfPoyIiSf1BLkm4CvsGFL4YSug+vfQeoJtzMlxYMANLzqOWnW0C+yhGrEPlw4OVODuM=n"
+            ],
+            "PACKAGE_NAME": "yh.app.appstart.lg",
+            "FUNCTION_TYBJ": "0"
+        },
+        {
+            "TYPE_NAME": "应用中心",
+            "FUNCTION_TYPE": "2",
+            "FUNCTION_ID": "30000003",
+            "UNCHANGE": "0",
+            "CLASS_NAME": "yh.app.web.Web",
+            "FUNCTION_NAME": "毕业审核",
+            "TYPE_ID": "1",
+            "IOS_NOTICE": "segueForWebView",
+            "FUNCTION_FACE": "http://app.cqut.edu.cn/content/image/bysh.png",
+            "PX": "40",
+            "INTEGRATE_KEY": [
+                "RxZMtLhdd5EVz0N2pwK6sB/zweSxha9+pJtGLixOyyQnmkXkCdcNhcUXYb38F7TmLNoVPV7ayU1snDosIIuZ2r2ZC63m6+WS01HYu+b5Myb20rIM/WMgBmL5qca/c0ODB6cCIj81co/tFqRPTRDXMmM0jn9o9EgFZH1tbAB/pECX4=n"
+            ],
+            "PACKAGE_NAME": "yh.app.appstart.lg",
+            "FUNCTION_TYBJ": "0"
+        },
+        {
+            "TYPE_NAME": "应用中心",
+            "FUNCTION_TYPE": "2",
+            "FUNCTION_ID": "30000005",
+            "UNCHANGE": "0",
+            "CLASS_NAME": "yh.app.web.Web",
+            "FUNCTION_NAME": "考试查询",
+            "TYPE_ID": "1",
+            "IOS_NOTICE": "segueForWebView",
+            "FUNCTION_FACE": "http://app.cqut.edu.cn/content/image/kscx.png",
+            "PX": "40",
+            "INTEGRATE_KEY": [
+                "nyndUaYs+kbs94yhVw2aUgsGWbVSTOh1/BM2W+f+Gw3sJLGpsCP5rceTHvkXxiM26QlyBeAl+HANnzltKT9IOxeSnsU+KUX7TjiaMlRuvkWgY/5ENgKx2fBBYcOOam9WbXtU5HuGoqr0XKxvs4BZEEat6nR+BaI6B3z85TQr1ilKg=n"
+            ],
+            "PACKAGE_NAME": "yh.app.appstart.lg",
+            "FUNCTION_TYBJ": "0"
+        },
+        {
+            "TYPE_NAME": "应用中心",
+            "FUNCTION_TYPE": "3",
+            "FUNCTION_ID": "30000005",
+            "UNCHANGE": "0",
+            "CLASS_NAME": "yh.app.web.Web",
+            "FUNCTION_NAME": "更多",
+            "TYPE_ID": "1",
+            "IOS_NOTICE": "segueForWebView",
+            "FUNCTION_FACE": "http://app.cqut.edu.cn/content/image/kscx.png",
+            "PX": "40",
+            "INTEGRATE_KEY": [
+                "nyndUaYs+kbs94yhVw2aUgsGWbVSTOh1/BM2W+f+Gw3sJLGpsCP5rceTHvkXxiM26QlyBeAl+HANnzltKT9IOxeSnsU+KUX7TjiaMlRuvkWgY/5ENgKx2fBBYcOOam9WbXtU5HuGoqr0XKxvs4BZEEat6nR+BaI6B3z85TQr1ilKg=n"
+            ],
+            "PACKAGE_NAME": "yh.app.appstart.lg",
+            "FUNCTION_TYBJ": "0"
+        },{
+            "TYPE_NAME": "应用中心",
+            "FUNCTION_TYPE": "1",
+            "FUNCTION_ID": "20170601",
+            "UNCHANGE": "0",
+            "CLASS_NAME": "yh.app.acticity.JiYuActivity",
+            "FUNCTION_NAME": "掌上迎新",
+            "TYPE_ID": "1",
+            "IOS_NOTICE": "PalmNewYear",
+            "FUNCTION_FACE": "http://app.cqut.edu.cn/content/image/zhkt.png",
+            "PX": "0",
+            "INTEGRATE_KEY": [
+                "tKsZLohQGftbjZwAhtc2TRWeSfL/P0BFPTMDYbwiz07QsIqANm4SCus0V5QuSXtfS7PVp5Y9ScrNnKuuSALIzPBbmo2pB3SSgs6KLiy/c+5AnHzlclSjLcy9QJnWDiHAGRkIH+JiSh1IyPvNqTsnmD+ERnRjjnGtHFZT83tnjZr5k=n"
+            ],
+            "PACKAGE_NAME": "yh.app.appstart.lg",
+            "FUNCTION_TYBJ": "0"
+        },
+        {
+            "TYPE_NAME": "应用中心",
+            "FUNCTION_TYPE": "2",
+            "FUNCTION_ID": "20150112",
+            "UNCHANGE": "0",
+            "CLASS_NAME": "yh.app.web.Web",
+            "FUNCTION_NAME": "校园实景",
+            "TYPE_ID": "1",
+            "IOS_NOTICE": "segueForWebView",
+            "FUNCTION_FACE": "http://app.cqut.edu.cn/content/image/xysj.png",
+            "PX": "7",
+            "INTEGRATE_KEY": [
+                "nhjsbgeiR15DTidb/19oYxNwiegwmqWzF2h83T8ZSqJqNZmqcMDLJmFXfxEdgyy2gWtllicMG0l5nvEkPubh1idl1VIMqlrYhHZ3IRYjvBoSHT60W24PL2zuXlF0gSB0deGMmmvFzd9fn++yEa0+Oqdy2nxt9kMy7kXNmagm64/DA=n"
+            ],
+            "PACKAGE_NAME": "yh.app.appstart.lg",
+            "FUNCTION_TYBJ": "0"
+        },
+        {
+            "TYPE_NAME": "应用中心",
+            "FUNCTION_TYPE": "1",
+            "FUNCTION_ID": "20150105",
+            "UNCHANGE": "0",
+            "CLASS_NAME": "yh.app.coursetable.TableDemoActivity",
+            "FUNCTION_NAME": "课表查询",
+            "TYPE_ID": "1",
+            "IOS_NOTICE": "segueForCourse",
+            "FUNCTION_FACE": "http://app.cqut.edu.cn/content/image/kbcx.png",
+            "PX": "10",
+            "INTEGRATE_KEY": [
+                "ikrEb2w/Sb7Aoxs89zZzRWxwby3gk9UqkDQqDJWKud47MYIP1MCTfuxKeApx7phjor4I4/Q3+nebnMgfMAqmaoNr127ppcsGfnVoV2yH5G5699xdAqHcDpgndBjnMoiem85jGLWj24X7OLX1tzYayWr5Fnx3mVZIJ/8mwTPIHorJA=n"
+            ],
+            "PACKAGE_NAME": "yh.app.appstart.lg",
+            "FUNCTION_TYBJ": "0"
+        },
+        {
+            "TYPE_NAME": "应用中心",
+            "FUNCTION_TYPE": "2",
+            "FUNCTION_ID": "20150106",
+            "UNCHANGE": "0",
+            "CLASS_NAME": "yh.app.web.Web",
+            "FUNCTION_NAME": "成绩查询",
+            "TYPE_ID": "1",
+            "IOS_NOTICE": "segueForWebView",
+            "FUNCTION_FACE": "http://app.cqut.edu.cn/content/image/cjcx.png",
+            "PX": "18",
+            "INTEGRATE_KEY": [
+                "UzAJqhdAAcVREJoo7wUltJ5DXTV4zHxmsCJkhfc+Gf9bSJMe8IdCCQm+rWPGIDovNMcda20WYGZInwJFH3nnyZFRb7zZ7oOquQ9pwdJhQTvfPoyIiSf1BLkm4CvsGFL4YSug+vfQeoJtzMlxYMANLzqOWnW0C+yhGrEPlw4OVODuM=n"
+            ],
+            "PACKAGE_NAME": "yh.app.appstart.lg",
+            "FUNCTION_TYBJ": "0"
+        },
+        {
+            "TYPE_NAME": "应用中心",
+            "FUNCTION_TYPE": "2",
+            "FUNCTION_ID": "30000003",
+            "UNCHANGE": "0",
+            "CLASS_NAME": "yh.app.web.Web",
+            "FUNCTION_NAME": "毕业审核",
+            "TYPE_ID": "1",
+            "IOS_NOTICE": "segueForWebView",
+            "FUNCTION_FACE": "http://app.cqut.edu.cn/content/image/bysh.png",
+            "PX": "40",
+            "INTEGRATE_KEY": [
+                "RxZMtLhdd5EVz0N2pwK6sB/zweSxha9+pJtGLixOyyQnmkXkCdcNhcUXYb38F7TmLNoVPV7ayU1snDosIIuZ2r2ZC63m6+WS01HYu+b5Myb20rIM/WMgBmL5qca/c0ODB6cCIj81co/tFqRPTRDXMmM0jn9o9EgFZH1tbAB/pECX4=n"
+            ],
+            "PACKAGE_NAME": "yh.app.appstart.lg",
+            "FUNCTION_TYBJ": "0"
+        }
+    ]
+}

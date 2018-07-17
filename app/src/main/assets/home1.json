@@ -1,0 +1,45 @@
+[
+    {
+        "name": "我要毕业",
+        "list": [
+            {
+                "function_face": "wddx_xxjh",
+                "function_name": "学习计划"
+            },
+            {
+                "function_face": "wddx_wdcj",
+                "function_name": "我的成绩"
+            },
+            {
+                "function_face": "wddx_gkyj",
+                "function_name": "挂科预警"
+            }
+        ]
+    },
+    {
+        "name": "每日目标",
+        "list": [
+            {
+                "function_face": "wddx_wdcj",
+                "function_name": "课程签到",
+                 "function_action": "com.yunhuakeji.app.CourseSignActivity"
+            },
+            {
+                "function_face": "wddx_gkyj",
+                "function_name": "健康早餐",
+                "function_action": "com.yunhuakeji.app.BreakfastActivity"
+            },
+            {
+                "function_face": "wddx_xxjh",
+                "function_name": "坚持运动",
+                "function_action": "com.yunhuakeji.app.HealthActivity2"
+            },
+            {
+                "function_face": "wddx_gkyj",
+                "function_name": "按时归寝",
+                "function_action": "yh.app.web.Web",
+                "function_action1": "com.yunhuakeji.app.TargetDetailActivity"
+            }
+        ]
+    }
+]

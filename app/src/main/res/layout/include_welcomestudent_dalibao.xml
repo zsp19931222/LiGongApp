@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ly_welcometstudent_dalibao"
+    android:layout_marginBottom="@dimen/d_10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/d_15"
+                android:drawablePadding="@dimen/d_3"
+                android:textSize="@dimen/s_18"
+                android:drawableStart="@drawable/ico_welcomestudent_bar"
+                android:text="@string/str_dalibao"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_1"
+            android:background="@drawable/shape_line" />
+
+        <yh.tool.widget.LineGridView
+            android:id="@+id/lv_welcomestudent_dalibao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            android:layout_marginBottom="@dimen/d_15"
+            android:numColumns="4">
+
+        </yh.tool.widget.LineGridView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

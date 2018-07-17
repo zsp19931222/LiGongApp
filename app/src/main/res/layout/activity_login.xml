@@ -1,0 +1,128 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp" >
+
+        <ImageView
+            android:id="@+id/login_img_logo"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="76dp"
+            android:contentDescription="@string/app_name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="73dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/login_txt_userid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:background="#00000000"
+                android:drawablePadding="9dp"
+                android:drawableStart="@drawable/login_userid"
+                android:ellipsize="end"
+                android:hint="@string/username"
+                android:maxLength="20"
+                android:maxWidth="302dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/login_img_userid_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ico_edt_clear" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="14dp"
+            android:background="#cccccc"
+            android:maxWidth="302dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/login_txt_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:drawablePadding="9dp"
+                android:drawableStart="@drawable/login_password"
+                android:ellipsize="end"
+                android:hint="@string/userpd"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:maxWidth="302dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/login_img_pwd_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ico_edt_clear" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="15dp"
+            android:background="#cccccc"
+            android:maxWidth="302dp" />
+
+        <TextView
+            android:id="@+id/login_txt_guest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="15dp"
+            android:padding="0dp"
+            android:visibility="gone"
+            android:text="@string/ykdl"
+            android:textColor="#3da8f5"
+            android:textSize="14sp"
+            />
+
+        <Button
+            android:id="@+id/login_btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="28.5dp"
+            android:background="@drawable/d_yuanjiao_r21dp"
+            android:maxWidth="302dp"
+            android:text="@string/login_btn_string"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/login_txt_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textColor="#FF4500"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</ScrollView>

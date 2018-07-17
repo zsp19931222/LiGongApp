@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension" />
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference" />
+        <attr name="shadow_right" format="reference" />
+        <attr name="shadow_bottom" format="reference" />
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference" />
+    <attr name="borderColor" format="color" />
+    <attr name="borderWidth" format="dimension" />
+
+    <declare-styleable name="ImageViewPlus">
+        <attr name="borderColor" />
+        <attr name="borderWidth" />
+    </declare-styleable>
+
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress" format="integer" />
+        <attr name="max" format="integer" />
+
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+
+        <attr name="progress_text_offset" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference" />
+    </declare-styleable>
+</resources>

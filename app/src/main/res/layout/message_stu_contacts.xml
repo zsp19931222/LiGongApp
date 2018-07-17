@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <yh.tool.widget.MyScrollView
+        android:id="@+id/friend_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/seach"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/biankuang4"
+                    android:gravity="center"
+                    android:hint="搜索"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/sorts_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <include
+                        android:id="@+id/sorts1"
+                        layout="@layout/message_contacts_type_item" />
+
+                    <include
+                        android:id="@+id/sorts2"
+                        layout="@layout/message_contacts_type_item" />
+
+                    <include
+                        android:id="@+id/sorts3"
+                        layout="@layout/message_contacts_type_item" />
+
+                    <LinearLayout
+                        android:id="@+id/ly_message_morenlibiao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                         android:background="@drawable/biankuang_b"
+                        android:paddingEnd="30dp" >
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="@dimen/d_10"
+                            android:src="@drawable/ico_message_wodesequ" />
+
+                        <TextView
+                            android:id="@+id/item_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="我的社区"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </yh.tool.widget.MyScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/center_szm"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/yuanjiao_bantouming_black"
+            android:clickable="false"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="36sp"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false" />
+
+        <LinearLayout
+            android:id="@+id/sidebar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

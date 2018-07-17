@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#Dfdfdf"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <云华.智慧校园.自定义控件.SQ_AdaptImageView
+            android:id="@+id/login_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_30"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center" >
+
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/d_40"
+                    android:background="@drawable/zhanghaomima_img"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="39dp"
+                        android:layout_height="39dp"
+                        android:background="@drawable/login_zhanghao" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/login_account_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="@dimen/d_40"
+                    android:background="@drawable/login_input_bac"
+                    android:gravity="center_vertical"
+                    android:hint="请输入学号/教师号"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center" >
+
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/d_40"
+                    android:background="@drawable/zhanghaomima_img"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="39dp"
+                        android:layout_height="39dp"
+                        android:background="@drawable/login_mima" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/login_code_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="@dimen/d_40"
+                    android:background="@drawable/login_input_bac"
+                    android:gravity="center_vertical"
+                    android:hint="请输入密码"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="没有账号可以尝试" />
+
+                <TextView
+                    android:id="@+id/ykdl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/d_40"
+                    android:text="@string/ykdl"
+                    android:textColor="@color/button_press"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="哟"
+                    android:paddingRight="20dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#aaaaaa" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/login_tishi"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="#FD5003"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:background="@drawable/default_button"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

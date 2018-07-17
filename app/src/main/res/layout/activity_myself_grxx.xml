@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="119dp"
+    android:id="@+id/myself_lin_head"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="33dp">
+
+            <TextView
+                android:id="@+id/myself_text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/d_12"
+                android:textColor="@color/DarkActionBarColor"
+                android:textSize="@dimen/s_20" />
+
+            <ImageView
+                android:id="@+id/myself_iamge_sex"
+                android:layout_width="@dimen/d_10"
+                android:layout_height="@dimen/d_10"
+                android:layout_marginLeft="@dimen/d_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/d_7"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/myself_bm_2x" />
+            <TextView
+                android:id="@+id/myself_text_collage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d_8"
+                android:textColor="@color/color_gray_999999"
+                android:textSize="@dimen/s_13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/d_3">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/myself_zy_2x" />
+
+            <TextView
+                android:id="@+id/myself_text_major"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d_8"
+                android:textColor="@color/color_gray_999999"
+                android:textSize="@dimen/s_11" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/myself_image_userHead"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/d_12" />
+
+    <ImageView
+        android:layout_width="7dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/d_19"
+        android:src="@drawable/myself_button_right_3x"
+        android:visibility="invisible" />
+
+</LinearLayout>

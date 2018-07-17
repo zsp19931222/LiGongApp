@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ry_float_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <yh.tool.widget.FloatingDraftButton
+        android:id="@+id/btn_menls"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ico_addmubiao" />
+
+    <Button
+        android:id="@+id/btn_chuanjianmubiao"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ico_cjmb"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_mubiaoku"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ico_mubiaoku"
+        android:visibility="invisible" />
+    
+
+</RelativeLayout>

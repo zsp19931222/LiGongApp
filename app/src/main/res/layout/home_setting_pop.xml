@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5EEDE"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/setting_pop_text1"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="#F5EEDE"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/setting_pop_edit1"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:numeric="integer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/setting_pop_text2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="#F5EEDE"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/setting_pop_edit2"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:numeric="integer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/setting_pop_qd"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_click"
+            android:gravity="center"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/setting_pop_qx"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/button_click"
+            android:text="取消" />
+    </LinearLayout>
+
+</LinearLayout>

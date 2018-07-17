@@ -1,0 +1,85 @@
+{
+  "allTagsList": [
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_bg_2x",
+      "txt": "思政消息",
+      "num": "",
+      "cls": "com.example.app3.activity.MessageActivity",
+      "type": "no_fill_view",
+      "layout": "item_archives"
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_sj_2x",
+      "txt": "勤工助学",
+      "num": "",
+      "cls": "com.example.app3.activity.AboutUsActivity",
+      "type": "no_fill_view",
+      "layout": "item_archives"
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_dy_2x",
+      "txt": "党团消息",
+      "num": "6",
+      "cls": "test",
+      "type": "no_fill_view",
+      "layout": "item_archives"
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_dy_2x",
+      "txt": "学籍异动信息",
+      "num": "6",
+      "cls": "test",
+      "type": "no_fill_view",
+      "layout": "item_archives"
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_dy_2x",
+      "txt": "评优评奖",
+      "num": "6",
+      "cls": "test",
+      "type": "no_fill_view",
+      "layout": "item_archives"
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_dy_2x",
+      "txt": "违纪处分",
+      "num": "6",
+      "cls": "test",
+      "type": "no_fill_view",
+      "layout": "item_archives"
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_dy_2x",
+      "txt": "我的资助",
+      "num": "6",
+      "cls": "test",
+      "type": "no_fill_view",
+      "layout": "item_archives"
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_dy_2x",
+      "txt": "我的宿舍",
+      "num": "6",
+      "cls": "test",
+      "type": "no_fill_view",
+      "layout": "item_archives"
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_dy_2x",
+      "txt": "日常事务",
+      "num": "6",
+      "cls": "test",
+      "type": "no_fill_view",
+      "layout": "item_archives"
+    }
+  ]
+}

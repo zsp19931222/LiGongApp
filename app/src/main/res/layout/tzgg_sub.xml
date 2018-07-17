@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="#F6F6F6"
+    android:baselineAligned="false" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ssbm"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="财务部"
+                android:textColor="#393939"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/wybs_list_sub_date"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:text="2015-06-10"
+                android:textColor="#969696" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/wybs_list_sub_text"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="5"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="#464646" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:clickable="false" >
+
+                <TextView
+                    android:id="@+id/wybs_list_sub_isread"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/no_read"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="未读"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

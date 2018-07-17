@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_sc_message_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple">
+
+    <TextView
+        android:id="@+id/course_sc_message_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_14"
+        android:layout_marginTop="@dimen/d_14"
+        android:ellipsize="end"
+        android:maxEms="15"
+        android:maxLines="1"
+        android:textColor="@color/color_somber"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/class_sc_message_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/course_sc_message_item"
+        android:layout_marginBottom="@dimen/d_12"
+        android:layout_marginStart="@dimen/d_14"
+        android:layout_marginTop="@dimen/d_8"
+        android:ellipsize="end"
+        android:maxEms="15"
+        android:maxLines="1"
+        android:textColor="@color/color_7"
+        android:textSize="@dimen/sp_14" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/d_20"
+        android:src="@drawable/gray_arrows" />
+</RelativeLayout>

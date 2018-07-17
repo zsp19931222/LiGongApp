@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_persona_bggray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/home_linear_noMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/d_48"
+        android:layout_marginTop="@dimen/d_48"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wk" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_20"
+            android:text="在这里，你将看到与你有关的服务"
+            android:textColor="@color/color_gray_a09f9d"
+            android:textSize="@dimen/d_11" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.3dp"
+            android:layout_marginStart="17dp"
+            android:layout_weight="1"
+            android:background="#d8dcda" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="14dp"
+            android:text="我也是有底线的"
+            android:textColor="#a6a6a6"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.3dp"
+            android:layout_marginEnd="17dp"
+            android:layout_weight="1"
+            android:background="#d8dcda" />
+    </LinearLayout>
+</LinearLayout>

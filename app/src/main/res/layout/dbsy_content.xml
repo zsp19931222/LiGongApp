@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#00A3E8" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="待办事宜"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/biankuang_r" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_back" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/dbsy_content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="2015年大学生创业方案"
+            android:textColor="#363636"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/dbsy_content_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:text="2015-02-02   20:08"
+            android:textColor="#696969" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/dbsy_content_xiangxixx"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="17dp"
+        android:padding="10dp"
+        android:text="大学生创业方案计划制定与实施"
+        android:textColor="#363636"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginLeft="20dp"
+        android:text="事宜详情:"
+        android:textColor="#363636"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dbsy_content_banshilc"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="14dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:text="部门一:通过\n部门二:通过\n部门三:正在审核"
+        android:textColor="#363636" />
+
+    <EditText
+        android:id="@+id/dbsy_content_input"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_below="@+id/dbsy_content_banshilc"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/biankuang"
+        android:paddingLeft="10dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/dbsy_content_queding"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dbsy_content_input"
+        android:layout_alignTop="@+id/dbsy_content_input"
+        android:layout_toRightOf="@+id/dbsy_content_input"
+        android:background="#27BDFC"
+        android:text="确定"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/dbsy_content_disagree"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/dbsy_content_queding"
+        android:layout_below="@+id/dbsy_content_input"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="19dp"
+        android:background="#FF5001"
+        android:text="不同意"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/dbsy_content_agree"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/dbsy_content_disagree"
+        android:layout_alignBottom="@+id/dbsy_content_disagree"
+        android:layout_alignLeft="@+id/dbsy_content_input"
+        android:layout_marginLeft="37dp"
+        android:background="#27BDFC"
+        android:text="同意"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/dbsy_content_xiangxixx"
+        android:layout_marginTop="25dp"
+        android:text="办事流程"
+        android:textColor="#363636"
+        android:textStyle="bold" />
+
+</RelativeLayout>

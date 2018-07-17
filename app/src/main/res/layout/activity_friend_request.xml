@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fr_rel_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.example.app3.view.MyTitleView
+        android:id="@+id/fr_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_48"
+        app:title_bg="@color/white"
+        app:title_height="@dimen/d_48"
+        app:title_left_image="@drawable/back3"
+        app:title_text="@string/fr_title"
+        app:title_text_color="@color/color_dark_333333"
+        app:title_text_size="@dimen/d_15"/>
+
+    <ImageView
+        android:id="@+id/fr_image_userHead"
+        android:layout_width="@dimen/d_65"
+        android:layout_height="@dimen/d_65"
+        android:layout_below="@id/fr_title"
+        android:layout_marginLeft="@dimen/d_12"
+        android:layout_marginBottom="@dimen/d_10"
+        android:layout_marginTop="@dimen/d_10" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/d_65"
+        android:layout_alignTop="@id/fr_image_userHead"
+        android:layout_marginLeft="@dimen/d_12"
+        android:layout_toRightOf="@id/fr_image_userHead"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d_0"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fr_text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:textColor="@color/color_dark_333333"
+                android:textSize="@dimen/d_17" />
+
+            <ImageView
+                android:id="@+id/fr_iamge_sex"
+                android:layout_width="@dimen/d_17"
+                android:layout_height="@dimen/d_17"
+                android:layout_marginLeft="@dimen/d_5" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fr_text_code"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d_0"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="学号"
+            android:textColor="@color/color_gray_999999" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fr_text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fr_image_userHead"
+        android:background="@color/color_f6"
+        android:paddingBottom="@dimen/d_12"
+        android:paddingLeft="@dimen/d_12"
+        android:paddingTop="@dimen/d_20"
+        android:text="验证消息"
+        android:textColor="@color/color_dark_333333"
+        android:textSize="@dimen/d_17" />
+
+    <TextView
+        android:id="@+id/fr_text_messageHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fr_text_message"
+        android:padding="@dimen/d_12"
+        android:text="消息"
+        android:textColor="@color/color_gray_999999"
+        android:textSize="@dimen/d_16" />
+
+    <View
+        android:id="@+id/fr_view_cutline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_20"
+        android:layout_below="@id/fr_text_messageHint"
+        android:background="@color/color_f6" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fr_rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fr_view_cutline"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fr_rec"
+        android:orientation="vertical"
+        android:background="@color/color_f6">
+
+        <TextView
+            android:id="@+id/fr_text_agree"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_48"
+            android:layout_marginLeft="@dimen/d_24"
+            android:layout_marginRight="@dimen/d_24"
+            android:layout_marginTop="@dimen/d_20"
+            android:background="@drawable/border_radius_blue"
+            android:gravity="center"
+            android:text="通过验证"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d_18" />
+        <TextView
+            android:id="@+id/fr_text_del"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="@dimen/d_48"
+            android:layout_marginLeft="@dimen/d_24"
+            android:layout_marginRight="@dimen/d_24"
+            android:layout_marginTop="@dimen/d_20"
+            android:background="@drawable/border_radius_white"
+            android:gravity="center"
+            android:text="删除好友"
+            android:textColor="@color/color_dark_333333"
+            android:textSize="@dimen/d_18" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ly_welcomestudent_notice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_63"
+        android:background="@color/color_white"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/s_15"
+            android:src="@drawable/ico_welcomesetent_notificationbar" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_welcomestudent_hotreview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_7"
+                android:drawablePadding="@dimen/d_5"
+                android:drawableStart="@drawable/ico_welcomestudent_hotreview"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:layout_marginEnd="@dimen/d_18"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="--" />
+
+            <TextView
+                android:id="@+id/txt_welcomestudent_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_7"
+                android:drawablePadding="@dimen/d_5"
+                android:drawableStart="@drawable/ico_welcomestudent_notice"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:focusableInTouchMode="true"
+                android:scrollHorizontally="true"
+                 android:layout_marginEnd="@dimen/d_15"
+                android:text="--" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/d_13"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/d_15"
+                android:drawablePadding="@dimen/d_3"
+                android:drawableStart="@drawable/ico_welcomestudent_bar"
+                android:text="@string/str_ready"
+                android:textSize="@dimen/s_18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_welcomestudent_readyprocess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/d_15"
+                android:drawableEnd="@drawable/ico_welcomestudent_lanetriangle"
+                android:drawablePadding="@dimen/d_3"
+                android:textSize="@dimen/s_18"
+                android:text="--%"
+                android:textStyle="bold"
+                android:textColor="@color/color_bleu" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_1"
+            android:background="@drawable/shape_line" />
+
+        <yh.tool.widget.LineGridView
+            android:id="@+id/lv_welcomestudent_ready"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            android:layout_marginBottom="@dimen/d_15"
+            android:numColumns="4">
+
+        </yh.tool.widget.LineGridView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

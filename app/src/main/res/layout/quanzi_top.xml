@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="#00A2E7"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/quanzi_home_back"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:gravity="center" >
+
+        <ImageButton
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:background="@drawable/icon_back"
+            android:contentDescription="@string/app_name"
+            android:onClick="close" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="圈子"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="invisible"
+            android:background="@drawable/quanzi_tjhy" />
+    </RelativeLayout>
+
+</LinearLayout>

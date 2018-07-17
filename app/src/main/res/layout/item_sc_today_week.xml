@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_sc_today_week"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_sc_today_week_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="周几"
+        android:textSize="@dimen/s_16" />
+
+    <TextView
+        android:id="@+id/text_sc_today_week_eng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sun"
+        android:textSize="@dimen/s_12" />
+</LinearLayout>

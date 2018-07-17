@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/optionspicker"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <yh.app.controller.controller.province.WheeProvincelView
+            android:id="@+id/province"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <yh.app.controller.controller.province.WheeProvincelView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <yh.app.controller.controller.province.WheeProvincelView
+            android:id="@+id/district"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/optionspicker"
+        android:background="@color/color_white">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/pickerview_cancel"
+            android:textSize="@dimen/s_20"
+            android:textColor="@drawable/selector_pickerview_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/s_20"
+            android:text="选择城市"
+            android:textColor="@drawable/selector_pickerview_btn" />
+
+        <Button
+            android:id="@id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/s_20"
+            android:background="@android:color/transparent"
+            android:text="@string/pickerview_submit"
+            android:textColor="@drawable/selector_pickerview_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_province_out"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_title"
+        android:alpha="0.5"
+        android:background="@color/color_black">
+
+    </RelativeLayout>
+
+</RelativeLayout>

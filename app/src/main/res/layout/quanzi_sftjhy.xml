@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/titleColor" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="添加好友"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/q1" />
+
+        <TextView
+            android:id="@+id/quanzi_sftjhy_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#636363" >
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:hint="附加消息:"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/quanzi_sftjhy_fjxx"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="#FFFFFF"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/quanzi_sftjhy_jj"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonblue"
+            android:gravity="center"
+            android:text="拒绝"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/quanzi_sftjhy_ty"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/buttonblue"
+            android:gravity="center"
+            android:text="同意"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

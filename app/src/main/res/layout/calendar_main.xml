@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/canlendar_main_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <LinearLayout
+        android:id="@+id/calendar_title2_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#27BDFC"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/calendar_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/grrz_grrz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/grrz_xjgrrz_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_button"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp" >
+
+                <ImageView
+                    android:id="@+id/grrz_xjgrrz_img"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/grrz_add_img" />
+
+                <Button
+                    android:id="@+id/grrz_xjgrrz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="#00FFFFFF"
+                    android:text="新建个人日志"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

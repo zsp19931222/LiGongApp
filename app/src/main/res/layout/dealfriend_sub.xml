@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+         >
+
+        <ImageView
+            android:id="@+id/main_cycle_class_child_image"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/q1"  />
+
+        <TextView
+            android:id="@+id/textChild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/main_cycle_class_child_image"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="No Data"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/refuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="拒绝" />
+
+        <Button
+            android:id="@+id/accpt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/refuse"
+            android:text="同意" />
+       
+    </RelativeLayout>
+
+</LinearLayout>

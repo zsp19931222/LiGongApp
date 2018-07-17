@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/d_90"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_radius_77000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pop_change_arrive_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_10"
+        android:gravity="center"
+        android:text="到勤"
+        android:textColor="@color/white"
+        android:textSize="@dimen/s_16" />
+
+    <TextView
+        android:id="@+id/pop_change_leave_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_8"
+        android:gravity="center"
+        android:text="请假"
+        android:textColor="@color/white"
+        android:textSize="@dimen/s_16" />
+
+    <TextView
+        android:id="@+id/pop_change_late_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_8"
+        android:gravity="center"
+        android:text="迟到"
+        android:textColor="@color/white"
+        android:textSize="@dimen/s_16" />
+
+    <TextView
+        android:id="@+id/pop_change_early_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_8"
+        android:gravity="center"
+        android:text="早退"
+        android:textColor="@color/white"
+        android:textSize="@dimen/s_16" />
+
+    <TextView
+        android:id="@+id/pop_change_truant_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d_10"
+        android:layout_marginTop="@dimen/d_8"
+        android:gravity="center"
+        android:text="旷课"
+        android:textColor="@color/white"
+        android:textSize="@dimen/s_16" />
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_48"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/verify_title"
+            android:textColor="@color/color_dark_333333"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/quanzi_qrtjhy_sfyz_back"
+            android:layout_width="@dimen/d_48"
+            android:layout_height="@dimen/d_48">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_l_blue" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/quanzi_qrtjhy_sfyz_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="发送"
+            android:textColor="@color/blue2"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_gray_999999" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/np" />
+
+        <TextView
+            android:id="@+id/quanzi_qrtjhy_sfyz_xm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="15dp"
+            android:text="姓名" />
+
+        <TextView
+            android:id="@+id/quanzi_qrtjhy_sfyz_xh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="40dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/d_10"
+        android:paddingLeft="@dimen/d_15"
+        android:paddingTop="@dimen/d_20"
+        android:text="你需要发送验证申请，等待对方通过"
+        android:textColor="@color/color_gray_999999"
+        android:textSize="@dimen/s_14" />
+
+    <EditText
+        android:id="@+id/quanzi_qrtjhy_sfyz_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:hint="请输入验证申请内容"
+        android:padding="@dimen/d_15"
+        android:textSize="15sp" />
+</LinearLayout>

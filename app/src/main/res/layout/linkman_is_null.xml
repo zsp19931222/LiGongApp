@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/linkman_null_image"
+        android:layout_width="120dip"
+        android:layout_height="120dip"
+        android:layout_marginTop="50dip"
+        android:src="@drawable/null_cry" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:text="还没有好友，快去添加好友吧    !"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/null_add_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp" />
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">>
+
+    <string name="yh_txt_test_long_text">在计算机中，所有的数据在存储和运算时都要使用二进制数表示（因为计算机用高电平和低电平分别表示1和0），例如，像a、b、c、d这样的52个字母（包括大写）、以及0、1等数字还有一些常用的符号（例如*、#、@等）在计算机中存储时也要使用二进制数来表示，而具体用哪些二进制数字表示哪个符号，当然每个人都可以约定自己的一套（这就叫编码），而大家如果要想互相通信而不造成混乱，那么大家就必须使用相同的编码规则，于是美国有关的标准化组织就出台了ASCII编码，统一规定了上述常用符号用哪些二进制数来表示。</string>
+    
+    <string name="yh_1">1</string>
+
+    <string name="app_name">DownLoad</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="yh_target_add_target">添加目标</string>
+    <string name="yh_target_create_target">创建目标</string>
+    <string name="yh_target_target_base">目标库</string>
+    
+    <string name="yh_breakfast_default_sign_times">1次签到</string>
+    
+    <string name="yh_breakfast_default_sign_time">签到时间6:30–9:30</string>
+    <string name="yh_breakfast_sign_time">签到时间%1$s-%1$s</string>
+    
+    <string name="yh_breakfast_eat_no">还没吃早餐</string>
+    <string name="yh_breakfast_eat_yes">已按时吃早餐，赞！！！</string>
+    
+    <string name="yh_target_target_submit">确定并发布目标</string> 
+
+    <string name="yh_target_target_name">*目标名称:</string> 
+    
+    <string name="yh_target_target_describe">*目标描述:</string>
+    <string name="yh_target_target_describe_hint">请简述目标</string>
+    
+    <string name="yh_target_target_explain">目标分解:</string>
+    
+    <string name="yh_target_target_need_sign_count">需签到次数:</string>
+    <string name="yh_target_target_need_sign_count_hint">请填写数字，若不填写则默认为无限次</string>
+    
+    <string name="yh_target_target_data">相关资料:</string>
+    
+    <string name="yh_target_target_data_url">相关资料链接:</string>
+    <string name="yh_target_target_data_url_hint">请输入有效的链接地址</string>
+    
+    <string name="yh_target_target_position">*第%1$s项:</string>
+    
+    <string name="yh_target_target_new_target_explain">新增目标分解</string>
+    
+    <string name="yh_txt_target_today_sign">今日打卡</string>
+    
+    <string name="yh_txt_do_not_more_than_60">请输入不超过60个字符</string>
+    <string name="yh_txt_do_not_more_than_40">请输入不超过40个字符</string>
+    
+    <string name="yh_txt_look_complete_describe">查看完整描述</string>
+    <string name="yh_txt_look_fold_describe">收起完整描述</string>
+    
+    <string name="yh_txt_join">加入</string>
+    
+    <string name="yh_txt_total_join_num_default">共99人</string>
+    
+ 	<string name="yh_txt_total_join_num">共%1$s人</string>
+ 	
+    <string name="title_demo_list">Items</string>
+    <string name="title_demo_detail">Demo Detail</string>
+    <string name="title_activity_demo">CircularFloatingActionMenu</string>
+    <string name="title_activity_menu_with_fab">Floating Action Button</string>
+    <string name="title_activity_menu_with_custom_action_button">Custom Action Button</string>
+    <string name="title_activity_menu_with_custom_animation">Custom Animation</string>
+    <string name="title_activity_menu_in_scroll_view">Menu in ScrollView Sample</string>
+    <string name="title_activity_system_overlay">System Overlay Menu Sample</string>
+
+    <string-array name="yh_strings_floatview_array">
+        <item>添加目标</item>
+        <item>创建目标</item>
+    </string-array>
+    
+    
+     <!-- 签到通用 -->
+    <string name="str_jiankanzaochan_qiandao_succes">签到成功</string>
+    <string name="str_jiankanzaochan_qiandao_error">签到失败</string>
+</resources>

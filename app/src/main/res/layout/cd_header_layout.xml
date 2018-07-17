@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/cd_course_name_rel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_150"
+        android:background="@drawable/tec_ind_banner">
+
+        <TextView
+            android:id="@+id/cd_course_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_marginTop="@dimen/d_22"
+            android:drawablePadding="@dimen/d_4"
+            android:drawableStart="@drawable/dmxq_kb"
+            android:ellipsize="end"
+            android:maxEms="12"
+            android:maxLines="1"
+            android:text="课程名称"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s_16" />
+
+        <TextView
+            android:id="@+id/cd_course_people_num_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/cd_course_name_text"
+            android:layout_marginStart="@dimen/d_4"
+            android:layout_toEndOf="@id/cd_course_name_text"
+            android:text="班级人数"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s_12" />
+
+        <TextView
+            android:id="@+id/cd_arrive_num_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cd_course_name_text"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_marginTop="@dimen/d_12"
+            android:drawablePadding="@dimen/d_4"
+            android:drawableStart="@drawable/shade_55b2f5"
+            android:gravity="center_vertical"
+            android:text="到勤：0 人"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s_14" />
+
+        <TextView
+            android:id="@+id/cd_leave_num_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cd_arrive_num_text"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_marginTop="@dimen/d_7"
+            android:drawablePadding="@dimen/d_4"
+            android:drawableStart="@drawable/shade_4ee5c3"
+            android:gravity="center_vertical"
+            android:text="请假：0 人"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s_14" />
+
+        <TextView
+            android:id="@+id/cd_late_num_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cd_leave_num_text"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_marginTop="@dimen/d_7"
+            android:drawablePadding="@dimen/d_4"
+            android:drawableStart="@drawable/shade_ffd763"
+            android:gravity="center_vertical"
+            android:text="迟到：0 人"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s_14" />
+
+        <TextView
+            android:id="@+id/cd_leave_earlier_num_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cd_course_name_text"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_marginTop="@dimen/d_12"
+            android:layout_toEndOf="@id/cd_arrive_num_text"
+            android:drawablePadding="@dimen/d_4"
+            android:drawableStart="@drawable/shade_fe9860"
+            android:gravity="center_vertical"
+            android:text="早退：0 人"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s_14" />
+
+        <TextView
+            android:id="@+id/cd_truant_num_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/cd_leave_earlier_num_text"
+            android:layout_below="@id/cd_leave_earlier_num_text"
+            android:layout_marginTop="@dimen/d_7"
+            android:layout_toEndOf="@id/cd_leave_num_text"
+            android:drawablePadding="@dimen/d_4"
+            android:drawableStart="@drawable/shade_ff8e8e"
+            android:gravity="center_vertical"
+            android:text="旷课：0 人"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s_14" />
+
+        <LinearLayout
+            android:id="@+id/cd_percent_lin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/cd_course_name_text"
+            android:layout_marginEnd="@dimen/d_24"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cd_percent_text"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/cd_percent_lin"
+            android:layout_below="@id/cd_percent_lin"
+            android:text="到勤率"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s_12" />
+    </RelativeLayout>
+
+    <include layout="@layout/include_header_product" />
+</LinearLayout>

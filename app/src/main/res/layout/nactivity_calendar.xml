@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_calendar"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00A3E8" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="校历日程"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#27BDFC" >
+
+        <ImageButton
+            android:id="@+id/calendarLeft"
+            style="@style/main_bar_text_style"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/arrow_l" />
+
+        <ImageButton
+            android:id="@+id/calendarRight"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="43dp"
+            android:background="@drawable/arrow_r" />
+
+        <TextView
+            android:id="@+id/calendarCenter"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <yh.app.calendar.CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp" />
+
+    <ListView
+        android:id="@+id/listDiary1"
+        android:layout_width="fill_parent"
+        android:layout_height="177dp"
+        android:background="@drawable/biankuang"
+        android:choiceMode="singleChoice"
+        android:divider="#dddddd"
+        android:dividerHeight="1px"
+        android:paddingRight="1dp" >
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/addDiary"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="增加日志" />
+
+    </RelativeLayout>
+
+</LinearLayout>

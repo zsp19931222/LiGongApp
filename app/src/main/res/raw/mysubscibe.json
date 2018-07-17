@@ -1,0 +1,59 @@
+{
+  "allTagsList": [
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_bg_2x",
+      "txt": "党委部",
+      "num": "",
+      "cls": "",
+      "type": "no_fill_view",
+      "explain": "说明",
+      "layout": "item_archives",
+      "isSelect ": true
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_sj_2x",
+      "txt": "秘书处",
+      "num": "",
+      "cls": "",
+      "explain": "说明",
+      "type": "no_fill_view",
+      "layout": "item_archives",
+      "isSelect ": false
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_dy_2x",
+      "txt": "学习部",
+      "num": "6",
+      "explain": "说明",
+      "cls": "test",
+      "type": "no_fill_view",
+      "layout": "item_archives",
+      "isSelect ": true
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_dy_2x",
+      "txt": "宣传部",
+      "num": "6",
+      "explain": "说明",
+      "cls": "test",
+      "type": "no_fill_view",
+      "layout": "item_archives",
+      "isSelect ": false
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_dy_2x",
+      "txt": "信息资源部",
+      "num": "6",
+      "cls": "test",
+      "explain": "说明",
+      "type": "no_fill_view",
+      "layout": "item_archives",
+      "isSelect ": false
+    }
+  ]
+}

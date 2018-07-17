@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d_10"
+        android:background="@drawable/border_radius_666_45px"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/d_10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_20"
+            android:gravity="center"
+            android:text="正在下载，请稍后..."
+            android:textColor="@color/color_darkgrey"
+            android:textSize="@dimen/d_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/d_20"
+
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:text="1.修复了部分已知bug"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_text_gray"
+                android:textSize="@dimen/d_12" />
+
+            <TextView
+                android:id="@+id/update_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_text_gray"
+                android:textSize="@dimen/d_12" />
+        </LinearLayout>
+
+        <com.example.app3.view.NumberProgressBar
+            android:id="@+id/number_bar"
+            style="@style/NumberProgressBar_Default"
+            android:layout_centerInParent="true"
+            android:padding="20dp"
+            app:progress="0" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/app_text_gray"
+            android:textSize="@dimen/s_12" />
+    </LinearLayout>
+
+</LinearLayout>

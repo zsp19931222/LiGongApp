@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/color_persona_bggray"
+    android:layout_marginBottom="@dimen/d_10"
+    android:layout_height="match_parent">
+    <!--姓名-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:background="@color/color_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_15"
+            android:text="@string/str_kinfolk_name"
+            android:textColor="@color/color_somber"
+            android:textSize="@dimen/s_18" />
+
+        <yh.tool.widget.ClearEditText
+            android:id="@+id/ct_kinsfolk_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/d_15"
+            android:layout_marginStart="@dimen/d_10"
+            android:background="@color/color_white"
+            android:hint="@string/str_kinfolk_pleaseenter" />
+    </LinearLayout>
+    <!--关系-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:layout_marginTop="@dimen/d_1"
+        android:background="@color/color_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_15"
+            android:text="@string/str_kinfolk_nexus"
+            android:textColor="@color/color_somber"
+            android:textSize="@dimen/s_18" />
+
+        <yh.tool.widget.ClearEditText
+            android:id="@+id/ct_kinsfolk_nexus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/d_15"
+            android:layout_marginStart="@dimen/d_10"
+            android:background="@color/color_white"
+            android:hint="@string/str_kinfolk_pleaseenter" />
+    </LinearLayout>
+
+    <!--联系电话-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/d_1"
+        android:background="@color/color_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_15"
+            android:textColor="@color/color_somber"
+            android:textSize="@dimen/s_18"
+            android:text="@string/str_kinfolk_phonenumber" />
+
+        <yh.tool.widget.ClearEditText
+            android:id="@+id/ct_kinsfolk_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_marginEnd="@dimen/d_15"
+            android:inputType="phone"
+            android:hint="@string/str_kinfolk_pleaseenter"
+            android:background="@color/color_white" />
+    </LinearLayout>
+
+
+    <!--年龄-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/d_1"
+        android:background="@color/color_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_15"
+            android:textColor="@color/color_somber"
+            android:textSize="@dimen/s_18"
+            android:text="@string/str_kinfolk_age" />
+
+      <yh.tool.widget.ClearEditText
+            android:id="@+id/ct_kinsfolk_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_marginEnd="@dimen/d_15"
+            android:inputType="number"
+            android:hint="@string/str_kinfolk_pleaseenter"
+            android:background="@color/color_white" />
+    </LinearLayout>
+
+    <!--工作单位-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/d_1"
+        android:background="@color/color_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_15"
+            android:textColor="@color/color_somber"
+            android:textSize="@dimen/s_18"
+            android:text="@string/str_kinfolk_workunit" />
+
+        <yh.tool.widget.ClearEditText
+            android:id="@+id/ct_kinsfolk_workunit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_marginEnd="@dimen/d_15"
+            android:maxLines="1"
+             android:hint="(例)xx公司xx省xx市"
+            android:background="@color/color_white" />
+    </LinearLayout>
+
+  
+
+    <!--职务-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/d_1"
+        android:background="@color/color_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_15"
+            android:textColor="@color/color_somber"
+            android:textSize="@dimen/s_18"
+            android:text="@string/str_kinfolk_job" />
+
+      <yh.tool.widget.ClearEditText
+            android:id="@+id/ct_kinsfolk_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_10"
+            android:layout_marginEnd="@dimen/d_15"
+            android:hint="@string/str_kinfolk_pleaseenter"
+            android:background="@color/color_white" />
+    </LinearLayout>
+
+
+
+    <!--所在地区-->
+    <RelativeLayout
+        android:id="@+id/rl_kinsfolk_politicalstatus"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/d_1"
+        android:background="@drawable/selector_personal_click"
+        android:layout_marginBottom="@dimen/d_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_15"
+            android:textColor="@color/color_somber"
+            android:textSize="@dimen/s_18"
+            android:text="@string/str_kinfolk_politicalstatus" />
+
+        <TextView
+            android:id="@+id/txt_kinsfolk_politicalstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/d_10"
+            android:layout_alignParentEnd="true"
+            android:drawablePadding="@dimen/d_5"
+            android:drawableEnd="@drawable/ico_right"
+            android:text="党员"/>
+    </RelativeLayout>
+
+</LinearLayout>

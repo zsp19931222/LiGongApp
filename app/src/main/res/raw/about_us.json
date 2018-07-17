@@ -1,0 +1,12 @@
+{
+  "allTagsList": [
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "myself_dy_2x",
+      "txt": "功能介绍",
+      "num": "6",
+      "cls": "yh.app.web.Web",
+      "type": "no_fill_view"
+    }
+  ]
+}

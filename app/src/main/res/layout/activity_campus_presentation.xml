@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_persona_bggray"
+    android:orientation="vertical"
+    tools:context="com.yunhuakeji.app.ui.activity.CampusPresentationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white">
+
+        <TextView
+            android:id="@+id/txt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="clip_vertical"
+            android:drawableStart="@drawable/ico_left"
+            android:padding="@dimen/d_10"
+            android:onClick="back"
+            android:text="@string/str_back"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/s_20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/d_10"
+            android:layout_marginTop="@dimen/d_10"
+            android:text="@string/str_campuspresentation_title"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/s_20" />
+    </RelativeLayout>
+    <!--校园概况-->
+    <RelativeLayout
+        android:id="@+id/rl_campuspresentation_schollsurvey"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:layout_marginTop="@dimen/d_13"
+        android:background="@drawable/selector_personal_click">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/d_15"
+            android:text="@string/str_campuspresentation_schollsurvey"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/s_18" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/d_15"
+            android:src="@drawable/ico_right" />
+
+    </RelativeLayout>
+
+
+
+    <!--花溪校园一览-->
+    <RelativeLayout
+        android:id="@+id/rl_campuspresentation_schollhuaxi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:layout_marginTop="@dimen/d_13"
+        android:background="@drawable/selector_personal_click">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/d_15"
+            android:text="@string/str_campuspresentation_schollhuaxi"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/s_18" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/d_15"
+            android:src="@drawable/ico_right" />
+
+    </RelativeLayout>
+
+    <!--两江校园一览-->
+    <RelativeLayout
+        android:id="@+id/rl_campuspresentation_schollliangjiang"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:layout_marginTop="@dimen/d_1"
+        android:background="@drawable/selector_personal_click">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/d_15"
+            android:text="@string/str_campuspresentation_schollliangjiang"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/s_18" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/d_15"
+            android:src="@drawable/ico_right" />
+
+    </RelativeLayout>
+
+
+    <!--常用电话-->
+    <RelativeLayout
+        android:id="@+id/rl_campuspresentation_schollphone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_55"
+        android:layout_marginTop="@dimen/d_15"
+        android:background="@drawable/selector_personal_click">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/d_15"
+            android:text="@string/str_campuspresentation_schollphone"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/s_18" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/d_15"
+            android:src="@drawable/ico_right" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

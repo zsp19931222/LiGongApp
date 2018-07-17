@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_botton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/home_buttom_layout"
+        android:orientation="horizontal" >
+
+        <!-- 数据报告 -->
+
+        <LinearLayout
+            android:id="@+id/home_shujubaogao_layout"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/home_shujubaogao_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ico_report_normal" />
+
+            <TextView
+                android:id="@+id/home_shujubaogao_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="4dp"
+                android:text="数据报告"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <!-- 应用 -->
+
+        <LinearLayout
+            android:id="@+id/home_yingyong_layout"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/home_yingyong_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ico_apply_normal" />
+
+            <TextView
+                android:id="@+id/home_yingyong_text"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="4dp"
+                android:text="应用"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <!-- 首页 -->
+
+        <LinearLayout
+            android:id="@+id/home_shouye_layout"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/home_shouye_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/nav1" />
+
+            <TextView
+                android:id="@+id/home_shouye_text"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="4dp"
+                android:text="首页"
+                android:textColor="@color/button"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <!-- 消息 -->
+
+         <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/home_tongzhi_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/home_tongzhi_img"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="-10dp"
+                    android:background="@drawable/nav2" />
+
+                <TextView
+                    android:id="@+id/home_tongzhi_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="4dp"
+                    android:text="消息"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <yh.tool.widget.DragPointView
+                android:id="@+id/xxjsq"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:textColor="#FFFFFF" />
+        </FrameLayout>
+
+        <!-- 个人中心 -->
+
+        <LinearLayout
+            android:id="@+id/home_shezhi_layout"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/home_shezhi_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ico_personal_normal" />
+
+            <TextView
+                android:id="@+id/home_shezhi_text"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="4dp"
+                android:text="个人中心"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_botton" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

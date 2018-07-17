@@ -1,0 +1,1696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="yh.app.appstart.lg">
+    <!-- 计歩需要权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-feature android:name="android.hardware.sensor.accelerometer" />
+
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.stepcounter"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.stepdetector"
+        android:required="true" />
+
+    <!-- 极光 -->
+    <permission
+        android:name="yh.app.appstart.lg.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <!-- 使用照相机权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 自动聚焦权限 -->
+    <uses-permission android:name="yh.app.appstart.lg.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+
+    <!-- 用于调用 JNI -->
+
+
+    <application
+        android:name="com.example.jpushdemo.ExampleApplication"
+        android:allowBackup="true"
+        android:configChanges="screenSize|orientation"
+        android:icon="@drawable/xxtb"
+        android:label="@string/xxmc"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:screenOrientation="portrait"
+        android:theme="@style/KaleTheme"
+        tools:replace="android:icon,android:label,android:theme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="@string/baidumapkey" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="@string/jpushkey" />
+        <!--android:name="com.example.app4.activity.StartActivity"-->
+        <activity
+            android:name="com.example.app4.activity.StartActivity"
+            android:theme="@style/StartAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 协议部分，随便设置 -->
+                <data
+                    android:host="yh.app.appstart.lg"
+                    android:scheme="url" />
+
+                <action android:name="android.intent.action.VIEW" />
+                <!-- 若删除，使用startActivity启动android.content.ActivityNotFoundException，使用HTMLViewer启动找不到网页 -->
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 若删除，使用startActivity启动ok，使用HTMLViewer启动找不到网页 -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 若删除，使用startActivity启动android.content.ActivityNotFoundException，使用HTMLViewer启动找不到网页 -->
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.smartclass.activity.SCMainActivity"
+            android:label="新智慧课堂首页">
+            <intent-filter>
+                <action android:name="com.example.smartclass.activity.SCMainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 开发测试 -->
+        <activity
+            android:name="com.example.app3.Login"
+            android:label="我的班级详情">
+            <intent-filter>
+                <action android:name="com.example.app3.Login" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app3.Home"
+            android:label="我的班级详情">
+            <intent-filter>
+                <action android:name="com.example.app3.Home" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app3.HomePageActivity"
+            android:label="我的班级详情"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.example.app3.HomePageActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- <activity -->
+        <!-- android:name="com.example.app3.childview.HomeMyselfView" -->
+        <!-- android:label="我的班级详情"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.example.app3.MyselfActivity" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name="com.example.app3.FeedBackActivity"
+            android:label="我的班级详情">
+            <intent-filter>
+                <action android:name="com.example.app3.FeedBackActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 开发测试 -->
+        <!--<activity-->
+        <!--android:name="com.example.app3.activity.XWalkActivity"-->
+        <!--android:label="我的班级详情">-->
+        <!--<intent-filter>-->
+
+        <!--&lt;!&ndash; 隐式跳转需要配置以下两项 &ndash;&gt;-->
+        <!--<action android:name="com.example.app3.activity.XWalkActivity" />-->
+
+        <!--<category android:name="android.intent.category.DEFAULT" />-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+        <activity
+            android:name="com.example.app3.ActivityTeacherWelcomeStudent"
+            android:label="我的班级详情">
+            <intent-filter>
+
+                <!-- 隐式跳转需要配置以下两项 -->
+                <action android:name="com.example.app3.ActivityTeacherWelcomeStudent" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.contacts.WDBJXQJM"
+            android:label="我的班级详情">
+            <intent-filter>
+
+                <!-- 隐式跳转需要配置以下两项 -->
+                <action android:name="yh.app.contacts.WDBJXQJM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="yh.app.contacts.CantactClassMemberAll">
+            <intent-filter>
+                <action android:name="yh.app.contacts.CantactClassMemberAll" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.quanzi.MyClass"
+            android:label="通讯录我的班级">
+            <intent-filter>
+                <action android:name="yh.app.quanzi.MyClass" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.quanzi.NewFriend"
+            android:label="通讯录新朋友">
+            <intent-filter>
+                <action android:name="yh.app.quanzi.NewFriend" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="yh.app.mymessage.SchoolMessageHome">
+            <intent-filter>
+                <action android:name="yh.app.mymessage.SchoolMessageHome" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="yh.sina.weibo.sdk.demo.WBAuthActivity">
+            <intent-filter>
+                <action android:name="yh.sina.weibo.sdk.demo.WBAuthActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.baiduMap.NearBus"
+            android:label="校园地图公交查询">
+            <intent-filter>
+                <action android:name="yh.app.baiduMap.NearBus" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.function.WisdomClass"
+            android:label="智慧课堂">
+            <intent-filter>
+                <action android:name="yh.app.function.WisdomClass" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.baidu.navi.sdkdemo.BNDemoGuideActivity" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <!--<activity android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" />-->
+
+        <!--<category android:name="android.intent.category.DEFAULT" />-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+        <activity android:name="yh.app.uiengine.QRCode">
+            <intent-filter>
+                <action android:name="yh.app.uiengine.QRCode" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="yh.app.wisdomclass.zhkt_jsxztxqzs">
+            <intent-filter>
+                <action android:name="yh.app.wisdomclass.zhkt_jsxztxqzs" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- <activity android:name="com.baidu.navi.sdkdemo.BNDemoMainActivity"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.baidu.navi.sdkdemo.BNDemoMainActivity" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name="yh.app.appstart.YDY"
+            android:label="引导页">
+            <intent-filter>
+                <action android:name="yh.app.appstart.lg.YDY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="yh.app.uiengine.ChangeSetting">
+            <intent-filter>
+                <action android:name="yh.app.uiengine.ChangeSetting" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.baiduMap.UI_xianlu"
+            android:label="校园地图线路">
+            <intent-filter>
+                <action android:name="yh.app.baiduMap.UI_xianlu" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zxing.activity.CaptureActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zxing.activity.CaptureActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.uiengine.Login1"
+            android:label="登录">
+            <intent-filter>
+                <action android:name="yh.app.uiengine.Login1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.uiengine.ChoiceAndCutPictrue"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="yh.app.uiengine.ChoiceAndCutPictrue" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.baiduMap.UI_daohang"
+            android:label="校园地图导航">
+            <intent-filter>
+                <action android:name="yh.app.baiduMap.UI_daohang" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.quanzi.ssjm"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="yh.app.quanzi.ssjm" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.quanzi.mrfz"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="yh.app.quanzi.mrfz" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.uiengine.Blog"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="yh.app.uiengine.Blog" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.uiengine.Password"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="yh.app.uiengine.Password" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.function.FriendCycle"
+            android:label="社团">
+            <intent-filter>
+                <action android:name="yh.app.function.FriendCycle" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.quanzi.xqzs"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="yh.app.quanzi.xqzs" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.wisdomclass.zhkt"
+            android:label="课堂点名">
+            <intent-filter>
+                <action android:name="yh.app.wisdomclass.zhkt" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.quanzi.sftjhy"
+            android:label="好友申请同意界面">
+            <intent-filter>
+                <action android:name="yh.app.quanzi.sftjhy" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.mymessage.tzggxq"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="yh.app.mymessage.tzggxq" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.wanttodo.dbsy_content"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="yh.app.wanttodo.dbsy_content" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.quanzi.tjhy.Quanzi_UI_tjhy"
+            android:label="搜索好友界面">
+            <intent-filter>
+                <action android:name="yh.app.quanzi.tjhy.Quanzi_UI_tjhy" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.quanzi.tjhyxxfk"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="yh.app.quanzi.tjhyxxfk" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.function.liaotianjiemian"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="yh.app.function.liaotianjiemian" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.wisdomclass.classContent"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="yh.app.wisdomclass.classContent" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="yh.app.quanzi.sfyz">
+            <intent-filter>
+                <action android:name="yh.app.quanzi.sfyz" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.function.WantToDo"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="yh.app.function.WantToDo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.function.CampusMap"
+            android:label="校园地图">
+            <intent-filter>
+                <action android:name="yh.app.function.CampusMap" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="yh.app.contacts.Contact_Call_Activity">
+            <intent-filter>
+                <action android:name="yh.app.contacts.Contact_Call_Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="yh.app.quanzi.tjhyxx">
+            <intent-filter>
+                <action android:name="yh.app.quanzi.tjhyxx" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.calendar.Canlendar"
+            android:label="校历日程">
+            <intent-filter>
+                <action android:name="yh.app.calendar.Canlendar" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.mydiary.ShowDiary"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="yh.app.mydiary.ShowDiary" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="yh.app.web.Web1">
+            <intent-filter>
+                <action android:name="yh.app.web.Web1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--<activity-->
+        <!--android:name="yh.app.web.Web"-->
+        <!--android:hardwareAccelerated="true">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="yh.app.web.Web" />-->
+
+        <!--<category android:name="android.intent.category.DEFAULT" />-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+        <activity
+            android:name="com.example.app3.activity.BrowserActivity"
+            android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="com.example.app3.activity.BrowserActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app3.activity.PushBrowserActivity"
+            android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="com.example.app3.activity.PushBrowserActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- <activity android:name="yh.app.web.X5Web"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="yh.app.web.X5Web" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity android:name="yh.app.web.WeiBoWebActicity">
+            <intent-filter>
+                <action android:name="yh.app.web.WeiBoWebActicity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.mydiary.edit_diary"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="yh.app.mydiary.edit_diary" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="yh.app.mymessage.Message">
+            <intent-filter>
+                <action android:name="yh.app.mymessage.Message" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="yh.app.toweb.HQ_FleamarketActivity">
+            <intent-filter>
+                <action android:name="yh.app.toweb.HQ_FleamarketActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.diary.DiaryListActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="yh.app.diary.DiaryListActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.diary.DiaryDetailActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="yh.app.diary.DiaryDetailChakan"
+            android:label="@string/app_name" />
+        <!--详情页面-->
+        <activity android:name="com.example.app3.activity.DetailActivity" />
+        <!--分组列表页面-->
+        <activity android:name="com.example.app3.activity.ListActivity" />
+        <!--消息列表页面-->
+
+        <activity android:name="com.example.app3.activity.AllMessageList" />
+        <!--班级详情页面-->
+        <activity android:name="com.example.app3.activity.ClassAllPeopleActivity" />
+        <!--关于我们页面-->
+        <activity
+            android:name="com.example.app3.activity.AboutUsActivity"
+            android:label="@string/app_name"
+
+            >
+            <intent-filter>
+                <action android:name="com.example.app3.activity.AboutUsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--消息通知页面-->
+        <activity
+            android:name="com.example.app3.activity.MessageActivity"
+            android:label="@string/app_name"
+
+            >
+            <intent-filter>
+                <action android:name="com.example.app3.activity.MessageActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--我的报告页面-->
+        <activity
+            android:name="com.example.app3.activity.ReportActivity"
+            android:label="@string/app_name"
+
+            >
+            <intent-filter>
+                <action android:name="com.example.app3.activity.ReportActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--我的数据页面-->
+        <activity
+            android:name="com.example.app3.activity.MyDataActivity"
+            android:label="@string/app_name"
+
+            >
+            <intent-filter>
+                <action android:name="com.example.app3.activity.MyDataActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--我的数据页面-->
+        <activity
+            android:name="com.example.app3.activity.MySubscibeActivity"
+            android:label="@string/app_name"
+
+            >
+            <intent-filter>
+                <action android:name="com.example.app3.activity.MySubscibeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--我的二维码-->
+        <activity
+            android:name="com.example.app3.activity.QRActivity"
+            android:label="@string/app_name"
+
+            >
+            <intent-filter>
+                <action android:name="com.example.app3.activity.QRActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--设置页面-->
+        <activity
+            android:name="com.example.app3.activity.SettinActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.example.app3.activity.SettinActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--新的朋友页面-->
+        <activity
+            android:name="com.example.app3.activity.NewFRActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.example.app3.activity.NewFRActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--我的班级页面-->
+        <activity
+            android:name="com.example.app3.activity.MyClassActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.example.app3.activity.MyClassActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--我的班级页面-->
+        <activity
+            android:name="com.example.app3.activity.QAMessageActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.example.app3.activity.QAMessageActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--我的社团页面-->
+        <activity
+            android:name="com.example.app3.activity.MyCommunityActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.example.app3.activity.MyCommunityActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--办公电话页面-->
+        <activity
+            android:name="com.example.app3.activity.WebActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.example.app3.activity.WebActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--订阅消息页面-->
+        <activity
+            android:name="com.example.app3.activity.SubscibeActivity"
+            android:label="@string/app_name" />
+
+        <!--好友申请页面-->
+        <activity
+            android:name="com.example.app3.activity.VerifyActivity"
+            android:label="@string/app_name" />
+
+        <!--好友详情页面-->
+        <activity
+            android:name="com.example.app3.activity.FriendDetailActivity"
+            android:label="@string/app_name" />
+
+        <!--搜索页面-->
+        <activity
+            android:name="com.example.app3.activity.SearchActivity"
+            android:label="@string/app_name" />
+
+        <!--搜索应用页面-->
+        <activity
+            android:name="com.example.app3.activity.SearchAppActivity"
+            android:label="@string/app_name" />
+
+        <!--搜索好友页面-->
+        <activity
+            android:name="com.example.app3.activity.SearchFriendActivity"
+            android:label="@string/app_name" />
+
+        <!--搜索班级好友页面-->
+        <activity
+            android:name="com.example.app3.activity.SearchFriendNetActivity"
+            android:label="@string/app_name" />
+
+        <!--应用编辑页面-->
+        <activity
+            android:name="com.example.app3.activity.CompileActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="yh.app.uiengine.home"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="yh.app.uiengine.home" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.coursetable.TableDemoActivity"
+            android:label="课表查询">
+            <intent-filter>
+                <action android:name="yh.app.coursetable.TableDemoActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.coursetable.coureActivity"
+            android:label="课程详细信息">
+            <intent-filter>
+                <action android:name="yh.app.coursetable.coureActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.score.Stu_Grade_Query_Activity"
+            android:label="成绩查询">
+            <intent-filter>
+                <action android:name="yh.app.score.Stu_Grade_Query_Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.score.Stu_Grade_Query_Detail_Activity"
+            android:label="成绩查询详情">
+            <intent-filter>
+                <action android:name="yh.app.score.Stu_Grade_Query_Detail_Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.shake.ShakeActivity"
+            android:label="点名签到">
+            <intent-filter>
+                <action android:name="yh.app.shake.ShakeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.yikatong.YActivity"
+            android:label="一卡通查询">
+            <intent-filter>
+                <action android:name="yh.app.yikatong.YActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.stu_info.Stu_info_setup"
+            android:label="@string/title_activity_stu_info_setup" />
+        <activity
+            android:name="yh.app.contacts.ContactMain"
+            android:label="@string/title_activity_test">
+            <intent-filter>
+                <action android:name="yh.app.contacts.ContactMain" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.web.WebActivity"
+            android:label="@string/title_activity_test">
+            <intent-filter>
+                <action android:name="yh.app.web.WebActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--智慧课堂-->
+        <activity
+            android:name="com.example.smartclass.activity.TeacherCallRecordActivity"
+            android:label="老师点名详情">
+            <intent-filter>
+                <action android:name="com.example.smartclass.activity.TeacherCallRecordActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.smartclass.activity.StudentCallRecordActivity"
+            android:label="学生签到详情">
+            <intent-filter>
+                <action android:name="com.example.smartclass.activity.StudentCallRecordActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.smartclass.activity.CourseDetailTeacherActivity"
+            android:label="教师课堂详情">
+            <intent-filter>
+                <action android:name="com.example.smartclass.activity.CourseDetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.smartclass.activity.CourseDetailStudentActivity"
+            android:label="学生课堂详情">
+            <intent-filter>
+                <action android:name="com.example.smartclass.activity.CourseDetailStudentActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.smartclass.activity.CallDetailActivity"
+            android:label="点名详情">
+            <intent-filter>
+                <action android:name="com.example.smartclass.activity.CallDetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.smartclass.activity.VerificationCodeActivity"
+            android:label="生成验证码页面"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="com.example.smartclass.activity.VerificationCodeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.smartclass.activity.PersonalDetailActivity"
+            android:label="人员详情">
+            <intent-filter>
+                <action android:name="com.example.smartclass.activity.PersonalDetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.smartclass.activity.ClassMemberActivity"
+            android:label="班级成员">
+            <intent-filter>
+                <action android:name="com.example.smartclass.activity.ClassMemberActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.smartclass.activity.SearchCMActivity"
+            android:label="搜索班级成员">
+            <intent-filter>
+                <action android:name="com.example.smartclass.activity.SearchCMActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.smartclass.activity.BrowserActivity"
+            android:label="网页页面"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            >
+            <intent-filter>
+                <action android:name="com.example.smartclass.activity.BrowserActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!--APP4.0-->
+
+        <activity
+            android:name="com.example.app4.activity.LaunchActivity"
+            android:label="启动页"
+            android:theme="@style/StartAppTheme" />
+
+        <activity
+            android:name="com.example.app4.activity.MainActivity"
+            android:label="主页"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.app4.activity.ADActivity"
+            android:label="广告页面" />
+        <activity android:name="com.example.app4.base.CompatStatusBarActivity" />
+        <activity
+            android:name="com.example.app4.activity.ShowSchoolActivity"
+            android:label="学校展示">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.SearchSchoolActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.SearchSchoolActivity"
+            android:label="搜索学校">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.SearchSchoolActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.BindingPhoneActivity"
+            android:label="绑定手机号"
+            android:theme="@style/StartAppThemeNoBackground">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.BindingPhoneActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.BindingPhoneOtherActivity"
+            android:label="账号密码登录绑定手机号">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.BindingPhoneOtherActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.BindingNewPhoneActivity"
+            android:label="绑定新手机号">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.BindingNewPhoneActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.ForGetPassWordActivity"
+            android:label="忘记密码">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.ForGetPassWordActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.ForgetPasswordNewPasswordActivity"
+            android:label="忘记密码设置新密码">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.ForGetPassWordActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.ForgetPasswordVerificationCodeActivity"
+            android:label="忘记密码验证验证码">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.ForGetPassWordActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.BindingOtherActivity"
+            android:label="账号密码登录">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.BindingOtherActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.SchoolIdentificationActivity"
+            android:label="学校身份认证登录">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.SchoolIdentificationActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.VerificationCodeActivity"
+            android:label="验证码">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.VerificationCodeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.VerificationCodeOtherActivity"
+            android:label="账号密码登录验证验证码">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.VerificationCodeOtherActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.VerificationCodeNewActivity"
+            android:label="新号验证码">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.VerificationCodeNewActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.BindingWorkNumActivity"
+            android:label="学工号">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.BindingWorkNumActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.BindingIDActivity"
+            android:label="证件号">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.BindingIDActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.ChangePhoneNumActivity"
+            android:label="修改手机号">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.ChangePhoneNumActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.ChangePhoneSuccessActivity"
+            android:label="修改手机号成功">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.ChangePhoneSuccessActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.MessageVerifyActivity"
+            android:label="个人信息验证">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.MessageVerifyActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.VerificationPasswordActivity"
+            android:label="密码验证">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.VerificationPasswordActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.AreaActivity"
+            android:label="地区选择">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.AreaActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.app4.activity.LogoutActivity"
+            android:label="重新登录"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.LogoutActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.app4.activity.UpDateActivity"
+            android:label="更新APP">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.UpDateActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.MoreActivity"
+            android:label="更多页面"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.MoreActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.ChangePasswordActivity"
+            android:label="修改密码"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.ChangePasswordActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.QRResultActivity"
+            android:label="二维码扫描结果">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.QRResultActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.NewUserLoginActivity"
+            android:label="新用户登录">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.NewUserLoginActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.NewUserVerificationCodeActivity"
+            android:label="新用户验证验证码">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.NewUserVerificationCodeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.NewSchoolIdentificationActivity"
+            android:label="新用户学校身份验证">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.NewSchoolIdentificationActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app4.activity.SettingNewPasswordActivity"
+            android:label="新用户设置密码">
+            <intent-filter>
+                <action android:name="com.example.app4.activity.SettingNewPasswordActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- Rich push 核心功能 since 2.0.6-->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle" />
+
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="yh.app.appstart.lg" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:exported="false"
+            android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <!-- since 3.0.9 Required SDK 核心功能-->
+        <provider
+            android:name="cn.jpush.android.service.DataProvider"
+            android:authorities="yh.app.appstart.lg.DataProvider"
+            android:exported="false" />
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="yh.app.appstart.lg" />
+            </intent-filter>
+
+        </service>
+        <!-- since 3.1.0 Required SDK 核心功能-->
+        <provider
+            android:name="cn.jpush.android.service.DownloadProvider"
+            android:authorities="yh.app.appstart.lg.DownloadProvider"
+            android:exported="true" />
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
+                <category android:name="yh.app.appstart.lg" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <receiver
+            android:name="com.example.jpushdemo.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="yh.app.appstart.lg" />
+            </intent-filter>
+        </receiver>
+        <!-- User defined.  For test only  用户自定义接收消息器,3.0.7开始支持,目前新tag/alias接口设置结果会在该广播接收器对应的方法中回调-->
+        <receiver android:name="com.example.jpushdemo.MyJPushMessageReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+                <category android:name="yh.app.appstart.lg"></category>
+            </intent-filter>
+        </receiver>
+        <!-- </>值来自开发者平台取得的AppKey -->
+
+
+        <!-- 监听网络状态 -->
+        <receiver android:name="yh.app.services.NetworkService">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="WEIBO_APPKEY"
+            android:value="1901987382" />
+        <meta-data
+            android:name="WEIBO_CHANNEL"
+            android:value="weibo" />
+
+        <service
+            android:name="yh.app.services.Service1"
+            android:enabled="true"
+            android:process=":service1" />
+        <service
+            android:name="yh.app.services.Service2"
+            android:enabled="true"
+            android:process=":service2" />
+
+        <!-- 主页 -->
+        <!-- <activity -->
+        <!-- android:name="yh.app.uiengine.ZhuYeActivity" -->
+        <!--></activity> -->
+        <activity
+            android:name="yh.app.acticity.CourseSignActivity"
+            android:label="课程签到" />
+        <activity
+            android:name="yh.app.acticity.HealthActivity2"
+            android:label="坚持运动" />
+        <activity
+            android:name="yh.app.acticity.BreakfastActivity"
+            android:label="健康早餐" />
+        <activity
+            android:name="yh.app.acticity.AnShiGuiQingActivity"
+            android:label="按时归寝" />
+        <activity
+            android:name="yh.app.demo.TestActivity"
+            android:label="测试" />
+        <activity
+            android:name="yh.app.acticity.MubiaokuActivity"
+            android:label="目标库" />
+        <activity
+            android:name="yh.app.acticity.GeRenZhongxinXiangqing"
+            android:label="个人中心" />
+        <activity
+            android:name="com.example.app3.activity.PhotoBrowserActivity"
+            android:label="图片浏览" />
+        <activity
+            android:name="yh.app.acticity.Set_Activity"
+            android:label="设置" />
+        <activity
+            android:name="yh.app.acticity.AboutActity"
+            android:label="关于" />
+        <activity
+            android:name="com.example.app3.activity.UpDateActivity"
+            android:label="更新"
+
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="yh.app.acticity.Feeback_Activity"
+            android:label="意见反馈" />
+        <activity
+            android:name="yh.app.acticity.UserInfoActivity"
+            android:label="用户信息" />
+        <activity
+            android:name="yh.app.acticity.UpdateNickNameActivity"
+            android:label="修改昵称" />
+        <activity
+            android:name="yh.app.acticity.UpdatePhoneActivity"
+            android:label="修改电话号码" />
+        <activity
+            android:name="yh.app.acticity.UpdateQQActivity"
+            android:label="修改qq" />
+        <activity
+            android:name="yh.app.acticity.TargetDetailActivity"
+            android:label="目标详情" />
+        <activity
+            android:name="yh.app.acticity.FengXiangMuBiaoActivity"
+            android:label="分享目标" />
+        <activity
+            android:name="yh.app.acticity.CreateTargetAvtivity"
+            android:label="创建目标" />
+        <activity
+            android:name="yh.app.acticity.AppManage"
+            android:label="应用管理" />
+        <activity
+            android:name="yh.app.acticity.ZiZhuMuBiaoMoreActivity"
+            android:label="自主目标更多" />
+        <activity
+            android:name="yh.app.acticity.UpdataPasswordActivity"
+            android:label="修改密码" />
+
+        <!--<activity-->
+        <!--android:name="yh.app.demo.DemoActivity"-->
+        <!--android:label="测试主页"-->
+        <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name="yh.app.acticity.VisitorApplyActivity"
+            android:label="游客功能列表" />
+        <activity
+            android:name="yh.app.acticity.UpdataUserInfoActivity"
+            android:label="修改资料" />
+        <activity
+            android:name="yh.app.acticity.PayActivity"
+            android:label="支付界面" />
+        <activity
+            android:name="yh.app.weixinpay.WXPayEntryActivity"
+            android:exported="true"
+            android:label="微信支付成功跳转页面"
+            android:launchMode="singleTop" />
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind">
+             
+        </activity>
+
+        <!-- 迎新系统 -->
+        <activity
+            android:name="yh.app.acticity.WelcomeStudentActivity"
+            android:label="迎新首页"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="yh.app.acticity.DormitoryInformationActivity"
+            android:label="寝室查询" />
+        <activity
+            android:name="yh.app.acticity.CampusPresentationActivity"
+            android:label="初识校园" />
+        <activity
+            android:name="yh.app.acticity.ErWeimaActivity"
+            android:label="二维码条形码" />
+        <activity
+            android:name="yh.app.acticity.DataInputActivity"
+            android:label="个人信息完善" />
+        <activity
+            android:name="yh.app.acticity.UserInfoCodeActivity"
+            android:label="个人信息完验证码验证">
+            <intent-filter>
+                <action android:name="yh.app.acticity.UserInfoCodeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.acticity.KinsfolkInfoActivity"
+            android:label="亲属信息录入" />
+        <activity
+            android:name="yh.app.acticity.EverreadSchoolActivity"
+            android:label="曾读校信息录入" />
+        <activity
+            android:name="yh.app.acticity.PersnaldataDetailsActivity"
+            android:label="个人详情" />
+        <activity
+            android:name="yh.app.acticity.JiYuActivity"
+            android:label="校长寄语">
+            <intent-filter>
+                <action android:name="yh.app.acticity.JiYuActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.web.WebViewActivity"
+            android:label="自定义webview" />
+        <!-- 新项目 -->
+        <activity
+            android:name="com.yunhuakeji.app.MainActivityDown"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.yunhuakeji.app.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- <activity -->
+        <!-- android:name="com.yunhuakeji.app.CourseSignActivity" -->
+        <!-- android:label="@string/app_name"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.yunhuakeji.app.CourseSignActivity" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.yunhuakeji.app.BreakfastActivity" -->
+        <!-- android:label="@string/app_name"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.yunhuakeji.app.BreakfastActivity" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.yunhuakeji.app.HealthActivity2" -->
+        <!-- android:label="@string/app_name"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.yunhuakeji.app.HealthActivity2" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name="com.yunhuakeji.app.CreateTargetAvtivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.yunhuakeji.app.CreateTargetAvtivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yunhuakeji.app.TargetDetailActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.yunhuakeji.app.TargetDetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.oguzdev.circularfloatingactionmenu.samples.TestFloatViewActivity">
+            <intent-filter>
+                <action android:name="com.oguzdev.circularfloatingactionmenu.samples.TestFloatViewActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yh.app.contacts.UserDetail"
+            android:label="添加好友用户详情">
+            <intent-filter>
+                <action android:name="yh.app.contacts.UserDetail" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="yh.app.contacts.SendNotificationByTeacher">
+            <intent-filter>
+                <action android:name="yh.app.contacts.SendNotificationByTeacher" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.yunhuakeji.app.utils.StepCounterService" />
+
+        <!-- 计步功服务 -->
+        <service
+            android:name="yh.app.services.JiBuSerever"
+            android:priority="1000">
+            <intent-filter>
+
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_TIME_TICK" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service android:name="com.example.app3.severs.DownLoadService" />
+        <service android:name="com.example.app3.utils.DownloadService" />
+
+        <activity android:name="com.example.app3.childview.HomeMyselfSettingActivity">
+            <intent-filter>
+                <action android:name="com.example.app3.childview.HomeMyselfSettingActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 监听网络状态 -->
+        <receiver android:name="com.example.smartclass.broadcast_receiver.NetworkChange">
+            <intent-filter>
+                <action android:name="android.NET.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.Net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+</manifest>

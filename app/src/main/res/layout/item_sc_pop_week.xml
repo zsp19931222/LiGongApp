@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f6"
+    android:paddingEnd="@dimen/d_1">
+
+    <RelativeLayout
+        android:id="@+id/rel_item_sc_pop_week"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_blue_3da8f5">
+
+        <LinearLayout
+            android:id="@+id/lin_item_sc_pop_week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/d_20"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_item_sc_pop_week_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_10"
+                android:includeFontPadding="false"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s_20" />
+
+            <TextView
+                android:id="@+id/text_item_sc_pop_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_6"
+                android:includeFontPadding="false"
+                android:text="当前周数"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s_12" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_item_sc_pop_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/d_10"
+            android:background="@drawable/circle_withe" />
+    </RelativeLayout>
+</RelativeLayout>

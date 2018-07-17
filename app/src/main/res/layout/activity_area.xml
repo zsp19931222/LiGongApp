@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.app3.view.MyTitleView
+        android:id="@+id/area_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_48"
+        app:title_bg="@color/white"
+        app:title_height="@dimen/d_48"
+        app:title_text="选择地区"
+        app:title_text_color="@color/color_dark_333333"
+        app:title_text_size="@dimen/d_15" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/area_rec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/area_title" />
+
+    <com.example.app4.view.LetterView
+        android:id="@+id/area_letter_view"
+        android:layout_width="@dimen/d_30"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/area_cancel_rel"
+        android:layout_width="@dimen/d_48"
+        android:layout_height="@dimen/d_48">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/area_cancel" />
+    </RelativeLayout>
+</RelativeLayout>

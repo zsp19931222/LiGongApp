@@ -1,0 +1,37 @@
+{
+  "allTagsList": [
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "zhkt_dmjl",
+      "txt": "点名记录",
+      "num": "6",
+      "explain": "班级",
+      "cls": "com.example.smartclass.activity.BrowserActivity",
+      "type": "no_fill_view",
+      "layout": "item_archives",
+      "isSelect ": true
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "zhkt_ktpj",
+      "txt": "课堂评教",
+      "num": "6",
+      "explain": "班级",
+      "cls": "com.example.smartclass.activity.BrowserActivity",
+      "type": "no_fill_view",
+      "layout": "item_archives",
+      "isSelect ": false
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "zhkt_qiandao",
+      "txt": "签到",
+      "num": "6",
+      "cls": "com.example.smartclass.activity.CallDetailActivity",
+      "explain": "班级",
+      "type": "no_fill_view",
+      "layout": "item_archives",
+      "isSelect ": false
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFFAFA">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/button" >
+
+        <ImageButton
+            android:id="@+id/return_pre"
+            style="@style/back_button_style"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="一卡通消费记录查询"
+            android:textColor="#121212"
+            android:textSize="@dimen/title" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:background="#97FFFF"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/mstart"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dip"
+                android:text="开始时间"
+                android:textColor="#696969"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/s_calender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/start"
+                android:layout_marginLeft="10dip"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/calendar_yikatong" />
+
+            <TextView
+                android:id="@+id/start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/start"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="7dip"
+                android:layout_toRightOf="@id/s_calender"
+                android:text="2015.03.05"
+                android:textColor="#363636"
+                android:textSize="@dimen/course_grade_2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mend"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dip"
+                android:text="结束时间"
+                android:textColor="#696969"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/e_calender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/end"
+                android:layout_marginLeft="10dip"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/calendar_yikatong" />
+
+            <TextView
+                android:id="@+id/end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/end"
+                 android:layout_marginLeft="10dip"
+                android:layout_marginTop="7dip"
+                android:layout_toRightOf="@id/e_calender"
+                android:text="2015.03.05"
+                android:textColor="#363636"
+                android:textSize="@dimen/course_grade_2" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mid2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mid"
+            android:orientation="vertical"
+           
+            >
+          <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="10dip" 
+            >
+
+            <TextView
+                android:id="@+id/tv_tab_mingxi"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="明细"
+                 android:textColor="#363636"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_tab_fenyue"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="分月汇总"
+                 android:textColor="#363636"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_tab_zongji"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+               android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="总计"
+                android:textColor="#363636"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+             android:background="#1A1A1A"
+            android:paddingBottom="3dip" >
+
+            <ImageView
+                android:id="@+id/iv_bottom_line"
+                android:layout_width="40dip"
+                android:layout_height="2dip"
+                android:layout_marginLeft="30dip"
+                android:scaleType="matrix"
+                android:src="#fff" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_below="@id/mid2"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_viewpager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/main_bg"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/yikatong_chaxun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginTop="2dip"
+            android:background="@drawable/btn_style_green"
+            android:gravity="center"
+            android:paddingLeft="130dp"
+            android:paddingRight="130dp"
+            android:text="查询"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

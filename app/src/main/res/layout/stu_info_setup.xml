@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/friend_chat_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_gravity="top"
+        android:background="@color/button" >
+
+        <ImageButton
+            android:id="@+id/return_pre"
+            style="@style/back_button_style" />
+
+        <TextView
+            style="@style/title"
+            android:text="个人中心" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dip"
+        android:singleLine="true"
+        android:text="个人信息"
+        android:textColor="@color/blue2"
+        android:textSize="@dimen/course_grade_1" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/main_bg"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_bg"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                style="@style/item_top_special"
+                android:layout_height="70dip" >
+
+                <TextView
+                    android:id="@+id/stu_change_1"
+                    style="@style/stu_grade_detail_tv_left"
+                    android:text="头像" />
+
+                <ImageView
+                    android:id="@+id/stu_id_tou"
+                    style="@style/stu_grade_detail_tv_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_toRightOf="@id/stu_change_1"
+                     />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/item_normal"
+                android:layout_height="45dip" >
+
+                <TextView
+                    android:id="@+id/stu1"
+                    style="@style/stu_grade_detail_tv_left"
+                    android:text="学号" />
+
+                <TextView
+                    android:id="@+id/stu_id"
+                    style="@style/stu_grade_detail_tv_right"
+                    android:layout_toRightOf="@id/stu1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/item_normal"
+                android:layout_height="45dip" >
+
+                <TextView
+                    android:id="@+id/stu2"
+                    style="@style/stu_grade_detail_tv_left"
+                    android:text="姓名" />
+
+                <TextView
+                    android:id="@+id/stu_name"
+                    style="@style/stu_grade_detail_tv_right"
+                    android:layout_toRightOf="@id/stu2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/item_normal"
+                android:layout_height="45dip" >
+
+                <TextView
+                    android:id="@+id/stu3"
+                    style="@style/stu_grade_detail_tv_left"
+                    android:text="学院" />
+
+                <TextView
+                    android:id="@+id/stu_xueyuan"
+                    style="@style/stu_grade_detail_tv_right"
+                    android:layout_toRightOf="@id/stu3" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/item_normal"
+                android:layout_height="45dip" >
+
+                <TextView
+                    android:id="@+id/stu4"
+                    style="@style/stu_grade_detail_tv_left"
+                    android:text="专业" />
+
+                <TextView
+                    android:id="@+id/stu_zhuanye"
+                    style="@style/stu_grade_detail_tv_right"
+                    android:layout_toRightOf="@id/stu4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/item_normal"
+                android:layout_height="45dip" >
+
+                <TextView
+                    android:id="@+id/stu5"
+                    style="@style/stu_grade_detail_tv_left"
+                    android:text="班级" />
+
+                <TextView
+                    android:id="@+id/stu_banji"
+                    style="@style/stu_grade_detail_tv_right"
+                    android:layout_toRightOf="@id/stu5" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

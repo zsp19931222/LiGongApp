@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:id="@+id/kcmc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="计算机" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="#aaaaaa" />
+
+        <TextView
+            android:id="@+id/zc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="第1-2周" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="#aaaaaa" />
+
+        <TextView
+            android:id="@+id/jc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="第1-2节" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="#aaaaaa" />
+
+        <TextView
+            android:id="@+id/xqj"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="王晓宇" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aaaaaa" />
+
+</LinearLayout>

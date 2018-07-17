@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?><!--<com.example.app3.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:id="@+id/refresh_view"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:orientation="vertical" >-->
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refresh_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!--<include layout="@layout/refresh_head" />-->
+    <!--<com.scwang.smartrefresh.layout.header.ClassicsHeader-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"></com.scwang.smartrefresh.layout.header.ClassicsHeader>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/refresh_head_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/d_4"
+            android:gravity="center"
+            android:textColor="@color/color_gray_999999"
+            android:textSize="@dimen/s_16" />
+
+        <ImageView
+            android:id="@+id/refresh_head_iamge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/d_xl" />
+    </LinearLayout>
+
+    <com.example.app3.PullableLinearLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="@color/gray"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_48">
+
+            <TextView
+                android:id="@+id/home_apply_txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="@color/color_dark_333333"
+                android:textSize="@dimen/s_15" />
+
+            <RelativeLayout
+                android:id="@+id/home_apply_img_ewm"
+                android:layout_width="@dimen/d_48"
+                android:layout_height="@dimen/d_48"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="@dimen/d_25"
+                    android:layout_height="@dimen/d_20"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/home_apply_ewm" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/home_apply_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.example.app3.PullableLinearLayout>
+    <!--<include layout="@layout/load_more" />-->
+</com.scwang.smartrefresh.layout.SmartRefreshLayout><!--</com.example.app3.PullToRefreshLayout>-->

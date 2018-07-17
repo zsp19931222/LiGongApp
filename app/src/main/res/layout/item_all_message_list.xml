@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/d_10"
+    android:background="@color/color_f7"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/allmessage_text_definiteTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/d_12"
+        android:background="@drawable/border_radius_d9"
+        android:paddingBottom="@dimen/d_5"
+        android:paddingLeft="@dimen/d_10"
+        android:paddingRight="@dimen/d_10"
+        android:paddingTop="@dimen/d_5"
+        android:text="2017-9-30 上午7:56"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/allmessage_text_definiteTime"
+        android:layout_marginLeft="@dimen/d_15"
+        android:layout_marginRight="@dimen/d_15"
+        android:layout_marginTop="@dimen/d_5"
+        android:background="@drawable/border_radius_ripple"
+        android:padding="@dimen/d_15">
+
+        <LinearLayout
+            android:id="@+id/allmessage_lin_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/allmessage_image_icon"
+                android:layout_width="@dimen/d_25"
+                android:layout_height="@dimen/d_25"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/allmessage_text_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/d_7"
+                android:textColor="@color/color_dark_333333"
+                android:textSize="@dimen/d_14" />
+
+            <ImageView
+                android:id="@+id/allmessage_image_circleRed"
+                android:layout_width="@dimen/d_5"
+                android:layout_height="@dimen/d_5"
+                android:background="@drawable/circle_red" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/allmessage_image_cutLine1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/allmessage_lin_from"
+            android:layout_marginTop="@dimen/d_15"
+            android:background="@color/color_dark_33000000" />
+
+        <TextView
+            android:id="@+id/allmessage_text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/allmessage_image_cutLine1"
+            android:layout_marginTop="@dimen/d_13"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/color_dark_333333"
+            android:textSize="@dimen/d_15" />
+
+        <TextView
+            android:id="@+id/allmessage_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/allmessage_text_title"
+            android:layout_marginTop="@dimen/d_12"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/color_somber"
+            android:textSize="@dimen/d_13" />
+
+        <ImageView
+            android:id="@+id/allmessage_image_cutLine2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/allmessage_text_message"
+            android:layout_marginTop="@dimen/d_30"
+            android:background="@color/color_dark_33000000" />
+
+        <TextView
+            android:id="@+id/allmessage_text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/allmessage_image_cutLine2"
+            android:layout_marginTop="@dimen/d_10"
+            android:textColor="@color/color_gray_999999"
+            android:textSize="@dimen/d_11" />
+
+        <TextView
+            android:id="@+id/allmessage_text_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/allmessage_image_cutLine2"
+            android:layout_marginTop="@dimen/d_10"
+            android:gravity="center"
+            android:text="查看详情 >"
+            android:textColor="@color/color_somber"
+            android:textSize="@dimen/d_11" />
+    </RelativeLayout>
+</RelativeLayout>
