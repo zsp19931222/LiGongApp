@@ -22,7 +22,7 @@ import com.example.app3.tool.HintTool;
 import com.example.app4.activity.BindingOtherActivity;
 import com.example.app4.activity.BindingPhoneActivity;
 import com.example.app4.util.DefaultUtil;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.tool.SqliteHelper;
 import yh.app.uiengine.Login1;

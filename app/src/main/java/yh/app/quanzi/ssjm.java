@@ -17,7 +17,7 @@ import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import yh.app.activitytool.ActivityPortrait;
-import android.os.AsyncTask;import yh.app.appstart.lg.R;
+import android.os.AsyncTask;import com.yhkj.cqgyxy.R;
 import android.os.Bundle;
 import android.widget.Toast;
 

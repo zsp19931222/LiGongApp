@@ -77,7 +77,7 @@ public class DownloadHelper {
 //                        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_GRANT_WRITE_URI_PERMISSION | Intent.FLAG_ACTIVITY_NEW_TASK);
 //
 //
-//                        intent.setDataAndType(FileProvider.getUriForFile(context, "yh.app.appstart.lg.fileprovider", new File(realFileName)), type);
+//                        intent.setDataAndType(FileProvider.getUriForFile(context, "com.yhkj.cqgyxy.fileprovider", new File(realFileName)), type);
 //                        context.startActivity(intent);
                         return;
                     }

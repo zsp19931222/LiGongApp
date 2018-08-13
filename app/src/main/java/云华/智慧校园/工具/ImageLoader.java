@@ -6,7 +6,7 @@ import android.content.Context;
 import android.widget.ImageView;
 
 import com.example.app3.utils.GlideLoadUtils;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.acticity.TargetDetailActivity;
 

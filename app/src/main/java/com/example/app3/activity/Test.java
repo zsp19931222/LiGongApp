@@ -10,7 +10,7 @@ import com.example.app3.eventbus.MyEventBus;
 import com.example.app3.utils.DownLoadUtil;
 import com.example.app3.view.NumberProgressBar;
 import com.lzy.okgo.model.Progress;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

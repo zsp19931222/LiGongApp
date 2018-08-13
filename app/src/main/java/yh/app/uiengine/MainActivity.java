@@ -35,7 +35,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ViewFlipper;
-import yh.app.utils.AnimationUtil;import yh.app.appstart.lg.R;
+import yh.app.utils.AnimationUtil;import com.yhkj.cqgyxy.R;
 import yh.tool.widget.FloatingDraftButton;
 
 @SuppressLint("UseSparseArrays")

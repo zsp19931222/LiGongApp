@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import yh.app.activitytool.ActivityPortrait;
-import yh.app.utils.DefaultTopBar;import yh.app.appstart.lg.R;
+import yh.app.utils.DefaultTopBar;import com.yhkj.cqgyxy.R;
 
 public class zhkt_jsxzt extends ActivityPortrait
 {

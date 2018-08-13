@@ -1,6 +1,6 @@
 package yh.app.quanzitool;
 
-import yh.app.function.liaotianjiemian;import yh.app.appstart.lg.R;
+import yh.app.function.liaotianjiemian;import com.yhkj.cqgyxy.R;
 import 云华.智慧校园.工具.DateTools;
 
 import java.util.Date;

@@ -14,7 +14,7 @@ import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.AdapterView.OnItemClickListener;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.activitytool.ActivityPortrait;
 import yh.app.tool.SqliteHelper;

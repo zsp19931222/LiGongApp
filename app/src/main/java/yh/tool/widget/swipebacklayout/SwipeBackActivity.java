@@ -5,7 +5,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 public class SwipeBackActivity extends Activity implements SwipeBackActivityBase {
     private SwipeBackActivityHelper mHelper;

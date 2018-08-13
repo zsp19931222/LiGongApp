@@ -40,7 +40,7 @@ import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ProgressBar;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 /**
  * 
  * 包 名:yh.app.tool 类 名:Updatetool.java 功 能:升级程序处理

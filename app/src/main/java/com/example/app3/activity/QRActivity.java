@@ -29,7 +29,7 @@ import com.google.zxing.EncodeHintType;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.QRCodeWriter;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.androidpn.push.Constants;
 import org.greenrobot.eventbus.EventBus;

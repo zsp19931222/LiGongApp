@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import 云华.智慧校园.工具.ViewTools;import yh.app.appstart.lg.R;
+import 云华.智慧校园.工具.ViewTools;import com.yhkj.cqgyxy.R;
 
 public class _侧边导航栏
 {

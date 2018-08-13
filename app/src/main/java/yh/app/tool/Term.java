@@ -23,6 +23,10 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.android.volley.VolleyError;
+import com.example.app4.api.OkHttpUtil;
+import com.example.app4.tool.UserMessageTool;
+import com.example.app4.util.IsNull;
+import com.example.app4.util.IsNullUtil;
 
 import android.annotation.SuppressLint;
 import android.database.SQLException;
@@ -30,6 +34,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.widget.Toast;
 
 import org.androidpn.push.Constants;
@@ -241,7 +246,7 @@ public class Term {
             parames.add(new BasicNameValuePair("userid", Constants.number));
             parames.add(new BasicNameValuePair("ticket", Ticket.getFunctionTicket(function_id)));
             parames.add(new BasicNameValuePair("function_id", function_id));
-            // url = Constants.nowterm;
+//                 url = Constants.nowterm;
             url = _链接地址导航.DC.当前时间.getUrl();
             HttpParams httpParameters = new BasicHttpParams();
             hc = new DefaultHttpClient(httpParameters);
@@ -254,6 +259,9 @@ public class Term {
             HttpResponse hr = hc.execute(hp);
             if (hr.getStatusLine().getStatusCode() == 200) {
                 result = EntityUtils.toString(hr.getEntity());
+                Log.d("nowterm", "getNowterm: " + result);
+            } else {
+                getTerm();
             }
             hc.getConnectionManager().shutdown();
         } catch (Exception e) {
@@ -267,19 +275,21 @@ public class Term {
         SQLiteDatabase db = null;
         try {
             db = new SqliteHelper().getWrite();
-            result = result.replace("\\", "");
-            result = result.substring(1, result.length() - 1);
-            JSONArray mJSArray = null;
-            try {
-                mJSArray = new JSONArray(result);
-            } catch (JSONException e) {
-            }
-            db.execSQL("delete from nowterm");
-            for (int i = 0; i < mJSArray.length(); i++) {
-                db.execSQL("replace into nowterm values(" + getintDate(mJSArray, i, "TERM") + ",?,?,?)", new String[]
-                        {
-                                getDate(mJSArray, i, "YEAR"), getDate(mJSArray, i, "STARTTIME"), getDate(mJSArray, i, "ENDTIME")
-                        });
+            if (IsNullUtil.isNotNull(result)) {
+                result = result.replace("\\", "");
+                result = result.substring(1, result.length() - 1);
+                JSONArray mJSArray = null;
+                try {
+                    mJSArray = new JSONArray(result);
+                } catch (JSONException e) {
+                }
+                db.execSQL("delete from nowterm");
+                for (int i = 0; i < mJSArray.length(); i++) {
+                    db.execSQL("replace into nowterm values(" + getintDate(mJSArray, i, "TERM") + ",?,?,?)", new String[]
+                            {
+                                    getDate(mJSArray, i, "YEAR"), getDate(mJSArray, i, "STARTTIME"), getDate(mJSArray, i, "ENDTIME")
+                            });
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();

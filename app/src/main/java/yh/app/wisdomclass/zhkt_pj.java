@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import yh.app.activitytool.ActivityPortrait;
-import 云华.智慧校园.工具.IsNull;import yh.app.appstart.lg.R;
+import 云华.智慧校园.工具.IsNull;import com.yhkj.cqgyxy.R;
 
 public class zhkt_pj extends ActivityPortrait
 {

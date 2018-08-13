@@ -34,7 +34,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import yh.app.activitytool.ActivityPortrait;
 import org.androidpn.push.Constants;
-import yh.app.contacts.UserDetail;import yh.app.appstart.lg.R;
+import yh.app.contacts.UserDetail;import com.yhkj.cqgyxy.R;
 import yh.app.notification.Notification1;
 import yh.app.tool.SqliteHelper;
 import yh.app.tool.Ticket;

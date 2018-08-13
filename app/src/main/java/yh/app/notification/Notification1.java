@@ -14,7 +14,7 @@ import android.support.v4.app.NotificationCompat;
 import android.widget.RemoteViews;
 import org.androidpn.push.Constants;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 @SuppressWarnings(
 {
 		"unused", "deprecation"

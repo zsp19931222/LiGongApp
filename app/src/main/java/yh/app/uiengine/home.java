@@ -46,7 +46,7 @@ import yh.app.acticity.MubiaokuActivity;
 import yh.app.activitytool.ActivityPortrait;
 import yh.app.adapter.OtherApplyAdapter;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import yh.app.model.ApplyModel;
 import yh.app.model.DAModel;
 import yh.app.notification.Notification1;

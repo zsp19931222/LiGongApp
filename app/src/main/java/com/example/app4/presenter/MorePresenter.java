@@ -28,7 +28,7 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import yh.app.tool.MD5;
 import yh.app.tool.SqliteHelper;
 import yh.app.utils.DensityUtil;

@@ -30,7 +30,7 @@ import com.example.smartclass.popupwindow.ChangePop;
 import com.example.smartclass.popupwindow.HintPopup;
 import com.example.smartclass.util.BeanState;
 import com.example.smartclass.util.TagUtil;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

@@ -8,7 +8,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
 import android.view.WindowManager;
-import yh.app.tool.DpPx;import yh.app.appstart.lg.R;
+import yh.app.tool.DpPx;import com.yhkj.cqgyxy.R;
 
 /**
  * 悬浮窗

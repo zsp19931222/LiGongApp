@@ -14,7 +14,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.widget.Button;
 import android.widget.ImageView;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 public class zhktXSLB
 {
 	private List<Button> button;

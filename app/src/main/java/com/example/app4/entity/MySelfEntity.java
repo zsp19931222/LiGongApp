@@ -29,7 +29,7 @@ public class MySelfEntity {
          * funcid : 2018051601
          * type : 2
          * class_name : com.example.app3.activity.QRActivity
-         * url : yh.app.appstart.lg
+         * url : com.yhkj.cqgyxy
          */
 
         private String layout;

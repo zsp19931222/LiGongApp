@@ -15,7 +15,7 @@ import com.yunhuakeji.app.utils.DefaultDailyHelper;
 import com.yunhuakeji.app.utils.JsonTools;
 import com.yunhuakeji.app.utils.LocalDateFileHelper;
 import com.yunhuakeji.app.utils.MD5Helper;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import android.app.Activity;
 import android.app.Fragment;

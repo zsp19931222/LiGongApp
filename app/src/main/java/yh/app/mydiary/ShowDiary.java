@@ -4,7 +4,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import yh.app.activitytool.ActivityPortrait;
-import yh.app.tool.SqliteHelper;import yh.app.appstart.lg.R;
+import yh.app.tool.SqliteHelper;import com.yhkj.cqgyxy.R;
 import yh.app.utils.TopBarHelper;
 import yh.app.utils.TopBarHelper.OnClickLisener;
 import android.annotation.SuppressLint;

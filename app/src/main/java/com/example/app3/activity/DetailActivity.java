@@ -8,7 +8,7 @@ import android.widget.TextView;
 import com.example.app3.base.BaseRecyclerViewActivity;
 import com.example.app3.tool.TimeTool;
 import com.example.app3.view.MyTitleView;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import java.util.List;
 import java.util.Map;

@@ -1,6 +1,6 @@
 package yh.app.model;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 /**
  * 共用模型类
  */

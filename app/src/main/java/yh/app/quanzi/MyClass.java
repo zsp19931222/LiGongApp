@@ -11,7 +11,7 @@ import android.widget.TextView;
 import yh.app.activitytool.ActivityPortrait;
 import org.androidpn.push.Constants;
 
-import yh.app.tool.SqliteHelper;import yh.app.appstart.lg.R;
+import yh.app.tool.SqliteHelper;import com.yhkj.cqgyxy.R;
 import yh.app.utils.DefaultTopBar;
 import yh.tool.widget.LoadDiaog;
 import 云华.智慧校园.工具.ViewTools;

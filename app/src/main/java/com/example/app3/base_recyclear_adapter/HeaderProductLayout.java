@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 /**
  * Created by wxy on 2017/4/27.

@@ -14,7 +14,7 @@ import com.android.volley.VolleyError;
 import com.bumptech.glide.Glide;
 import com.example.app3.utils.GlideLoadUtils;
 import com.example.jpushdemo.ExampleApplication;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import android.app.ProgressDialog;
 import android.content.Intent;

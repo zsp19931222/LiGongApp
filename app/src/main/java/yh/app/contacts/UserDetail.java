@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.activitytool.ActivityPortrait;
 import org.androidpn.push.Constants;

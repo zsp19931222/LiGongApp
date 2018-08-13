@@ -12,7 +12,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.controller.controller.listener.OnDismissListener;
 import yh.app.controller.controller.utils.PickerViewAnimateUtil;

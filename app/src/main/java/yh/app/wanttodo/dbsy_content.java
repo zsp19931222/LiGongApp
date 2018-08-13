@@ -1,7 +1,7 @@
 package yh.app.wanttodo;
 
 import yh.app.activitytool.ActivityPortrait;
-import android.os.Bundle;import yh.app.appstart.lg.R;
+import android.os.Bundle;import com.yhkj.cqgyxy.R;
 
 public class dbsy_content extends ActivityPortrait
 {

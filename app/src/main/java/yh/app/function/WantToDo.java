@@ -10,7 +10,7 @@ import com.example.jpushdemo.ExampleApplication;
 import yh.app.activitytool.ActivityPortrait;
 import org.androidpn.push.Constants;
 
-import android.content.Intent;import yh.app.appstart.lg.R;
+import android.content.Intent;import com.yhkj.cqgyxy.R;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;

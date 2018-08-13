@@ -9,7 +9,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import yh.app.activitytool.ActivityPortrait;
-import yh.app.tool.ViewClickEffect;import yh.app.appstart.lg.R;
+import yh.app.tool.ViewClickEffect;import com.yhkj.cqgyxy.R;
 import yh.app.utils.DefaultTopBar;
 
 public class tjhyxx extends ActivityPortrait

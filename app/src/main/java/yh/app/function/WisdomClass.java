@@ -11,7 +11,7 @@ import org.androidpn.push.Constants;
 
 import yh.app.tool.SqliteDBCLose;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.tool.SqliteHelper;
 import yh.app.tool.Ticket;

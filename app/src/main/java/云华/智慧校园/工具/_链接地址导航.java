@@ -210,7 +210,7 @@ public class _链接地址导航 {
         private static final String function_cyyy_v3 = "/UIA/v3/function/function_home_list.action";
         private static final String function_old = "/UIA/function/getlist.action";
         private static final String download_page = "/UIA/?";
-        private static final String download_page_old = "/UIA/?userid=";
+        private static final String download_page_old = "/?userid=";
         private static final String ydmxslb = "/DC/zhkt/yyydmxs.action";
         private static final String tjdm = "/DC/zhkt/tjdmjg.action";
         private static final String CheckUpdate = "/UIA/update/updateVersion.action?mobileType=android&VersionCode=";

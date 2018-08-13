@@ -36,7 +36,8 @@ public class StartPresenter {
         this.context = context;
         activity = (Activity) context;
         map = new HashMap<>();
-        DefaultUtil.setDefaultSchool("重庆理工大学");
+        DefaultUtil.setDefaultSchool(Constants.xxmc);
+        DefaultUtil.setIsIntegrate(true);
     }
 
     /**

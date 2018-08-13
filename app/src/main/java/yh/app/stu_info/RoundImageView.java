@@ -17,7 +17,7 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.widget.ImageView;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 
 /**

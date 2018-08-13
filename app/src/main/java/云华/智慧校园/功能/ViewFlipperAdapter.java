@@ -18,7 +18,7 @@ import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
 import com.example.app3.activity.BrowserActivity;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import 云华.智慧校园.工具.IsNull;
 import 云华.智慧校园.自定义控件.SQ_AdaptImageView;

@@ -1,5 +1,11 @@
 package com.example.app4.api;
 
+import com.example.app4.util.DefaultUtil;
+
+import org.androidpn.push.Constants;
+
+import 云华.智慧校园.工具.ConfigTools;
+
 /**
  * Created by Administrator on 2018/3/23 0023.
  * 平台api
@@ -7,11 +13,20 @@ package com.example.app4.api;
 
 public class GetAppUrl {
 
+//
+//http://xgappb.cqipc.edu.cn:11002
+
+
     private static String baseURL = "http://192.168.0.108:8089";
 
     private static final String dc = baseURL + "/dc";
-    private static final String uia = "http://login.i.cqut.edu.cn" + "/uia";
-    private static final String show = "http://data.i.cqut.edu.cn" + "/show";
+
+    private static final String uia = ConfigTools.loadProperties(Constants.xx + "newuia")+"/uia";
+    private static final String show = ConfigTools.loadProperties(Constants.xx + "show")+"/show";
+
+
+//    private static final String uia = "http://login.i.cqut.edu.cn" + "/uia";
+//    private static final String show = "http://data.i.cqut.edu.cn" + "/show";
 
 
     public enum DC {
@@ -141,5 +156,5 @@ public class GetAppUrl {
     /**
      * 其他页面
      * */
-    public static final String uploadingFaceUrl="http://file.i.cqut.edu.cn/fs/fileupload";//上传用户头像
+    public static final String uploadingFaceUrl="http://xgappb.cqipc.edu.cn:11002/fs/fileupload";//上传用户头像
 }

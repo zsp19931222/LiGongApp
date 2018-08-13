@@ -27,7 +27,7 @@ import com.baidu.mapapi.search.route.WalkingRouteLine.WalkingStep;
 import com.baidu.mapapi.search.route.WalkingRoutePlanOption;
 import com.baidu.mapapi.search.route.WalkingRouteResult;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import android.app.Activity;
 import android.content.Context;

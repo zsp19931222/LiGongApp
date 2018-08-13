@@ -11,7 +11,7 @@ import com.baidu.mapapi.model.LatLng;
 import com.baidu.navi.sdkdemo.BNDemoMainActivity;
 import com.baidu.navisdk.adapter.BNRoutePlanNode;
 import com.baidu.navisdk.adapter.BNRoutePlanNode.CoordinateType;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.activitytool.ActivityPortrait;
 import yh.app.tool.ToastShow;

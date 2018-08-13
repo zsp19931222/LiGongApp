@@ -20,7 +20,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 /**
  * Created by Administrator on 2018/4/16 0016.

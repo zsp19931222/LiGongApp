@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 public class ZHKTTeacherChoose
 {
 	private StringBuffer teacher_name;

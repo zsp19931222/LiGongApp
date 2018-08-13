@@ -15,7 +15,7 @@ import com.example.app3.base_recyclear_adapter.QuickAdapter;
 import com.example.smartclass.eventbus.MessageEvent;
 import com.example.smartclass.util.BeanState;
 import com.example.smartclass.util.TagUtil;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.greenrobot.eventbus.EventBus;
 

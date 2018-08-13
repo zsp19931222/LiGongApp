@@ -13,7 +13,7 @@ import android.widget.PopupWindow;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.RelativeLayout.LayoutParams;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 public class showShapPop extends Activity
 {
 	RelativeLayout layout;

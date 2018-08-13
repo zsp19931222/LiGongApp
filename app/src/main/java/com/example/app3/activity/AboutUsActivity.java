@@ -19,7 +19,7 @@ import com.example.app3.tool.AddView;
 import com.example.app3.tool.GlideRoundTransform;
 import com.example.app3.tool.Tool;
 import com.example.app3.view.MyTitleView;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import com.yunhuakeji.app.utils.MapTools;
 
 import org.androidpn.push.Constants;

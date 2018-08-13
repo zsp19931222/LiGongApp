@@ -2,7 +2,7 @@ package yh.app.utils;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;import yh.app.appstart.lg.R;
+import android.content.Intent;import com.yhkj.cqgyxy.R;
 import yh.app.utils.TopBarHelper.OnClickLisener;
 
 public class DefaultTopBar

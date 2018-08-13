@@ -19,7 +19,7 @@ import com.bumptech.glide.Glide;
 import com.example.app3.activity.BrowserActivity;
 import com.example.app3.utils.GlideLoadUtils;
 import com.example.jpushdemo.ExampleApplication;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.androidpn.push.Constants;
 import org.json.JSONException;

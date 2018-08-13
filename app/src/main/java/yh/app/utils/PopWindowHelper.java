@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.PopupWindow;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import org.androidpn.push.Constants;
 import yh.app.mymessage.Message;
 import yh.app.tool.DpPx;

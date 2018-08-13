@@ -15,7 +15,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import org.androidpn.push.Constants;
 import yh.app.tool.Ticket;
 import 云华.智慧校园.工具.ThreadPoolManage;

@@ -19,7 +19,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
 import android.os.Environment;
 import android.widget.ImageView;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import org.androidpn.push.Constants;
 import yh.app.tool.SqliteDBCLose;
 import yh.app.tool.SqliteHelper;

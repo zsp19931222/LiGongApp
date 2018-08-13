@@ -1,6 +1,6 @@
 package yh.app.uiengine;
 import android.app.Activity;
-import android.os.Bundle;import yh.app.appstart.lg.R;
+import android.os.Bundle;import com.yhkj.cqgyxy.R;
 public class start_hyjm extends Activity
 {
 	@Override

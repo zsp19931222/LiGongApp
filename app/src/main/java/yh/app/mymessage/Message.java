@@ -31,7 +31,7 @@ import android.widget.TextView;
 import yh.app.activitytool.ActivityPortrait;
 import org.androidpn.push.Constants;
 
-import yh.app.tool.DateString;import yh.app.appstart.lg.R;
+import yh.app.tool.DateString;import com.yhkj.cqgyxy.R;
 import yh.app.tool.SqliteHelper;
 import yh.app.tool.Tiaozhuan;
 import yh.app.tool.ToastShow;

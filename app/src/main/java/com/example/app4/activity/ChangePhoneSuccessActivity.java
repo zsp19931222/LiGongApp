@@ -11,7 +11,7 @@ import com.example.app4.presenter.LoginUtil;
 import com.example.smartclass.base.BaseRecyclerViewActivity;
 import com.example.smartclass.eventbus.MessageEvent;
 import com.example.smartclass.util.TagUtil;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

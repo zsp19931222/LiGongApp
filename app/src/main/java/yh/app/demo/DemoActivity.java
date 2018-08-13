@@ -12,7 +12,7 @@
 //import com.example.jpushdemo.ApnsStart;
 //import com.example.jpushdemo.ExampleApplication;
 //import com.example.jpushdemo.helper.Receiver;
-//import yh.app.appstart.lg.R;
+//import com.yhkj.cqgyxy.R;
 //
 //import android.annotation.SuppressLint;
 //import android.content.Context;

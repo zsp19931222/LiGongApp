@@ -25,7 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import yh.app.contacts.UserDetail;
 import yh.app.tool.InternetImage;
 import yh.app.tool.Ticket;

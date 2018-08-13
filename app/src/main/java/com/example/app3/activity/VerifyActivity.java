@@ -14,7 +14,7 @@ import com.example.app3.tool.JSONTool;
 import com.example.app3.tool.TimeTool;
 import com.example.jpushdemo.body.BodyAdd;
 import com.yunhuakeji.app.utils.MapTools;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.androidpn.push.Constants;
 

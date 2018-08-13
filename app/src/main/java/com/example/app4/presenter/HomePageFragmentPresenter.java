@@ -42,7 +42,7 @@ import com.example.smartclass.util.TagUtil;
 import com.google.gson.Gson;
 import com.tbruyelle.rxpermissions.RxPermissions;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import com.zxing.activity.CaptureActivity;
 
@@ -62,6 +62,7 @@ import rx.Observer;
 import yh.app.model.DAModel;
 import yh.app.tool.MD5;
 import yh.app.tool.SqliteHelper;
+import yh.app.tool.Term;
 import yh.app.utils.GsonImpl;
 import yh.app.utils.VolleyInterface;
 import yh.app.utils.VolleyRequest;
@@ -217,6 +218,7 @@ public class HomePageFragmentPresenter {
         }
         String s = new SqliteHelper().rawQuery("select * from applicationclassify_json").get(0).get("json");
         Log.d(TAG, "saveApplicationClassify: " + s);
+        new Term().doit();
     }
 
     /**

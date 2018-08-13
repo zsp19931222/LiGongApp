@@ -6,7 +6,7 @@
 //import android.widget.Toast;
 //
 //import com.example.app3.childview.DownloadPopupWindow;
-//import yh.app.appstart.lg.R;
+//import com.yhkj.cqgyxy.R;
 //import org.xwalk.core.XWalkDownloadListener;
 //import org.xwalk.core.XWalkSettings;
 //import org.xwalk.core.XWalkView;

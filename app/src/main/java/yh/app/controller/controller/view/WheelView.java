@@ -21,7 +21,7 @@ import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.controller.controller.adapter.WheelAdapter;
 import yh.app.controller.controller.lib.InertiaTimerTask;

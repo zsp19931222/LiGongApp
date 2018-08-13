@@ -9,7 +9,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.GridView;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 /**
  * 分割线gridView

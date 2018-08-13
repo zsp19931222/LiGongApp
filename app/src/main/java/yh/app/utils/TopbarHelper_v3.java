@@ -5,7 +5,7 @@ import android.content.Context;
 import android.view.View;
 import android.widget.TextView;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 /**
  * Created by Administrator on 2017/9/19.

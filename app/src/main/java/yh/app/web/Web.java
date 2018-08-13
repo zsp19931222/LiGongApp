@@ -17,7 +17,7 @@
 //import com.example.app3.activity.XWalkActivity;
 //import com.example.app3.childview.DownloadPopupWindow;
 //import com.example.app3.view.MyTitleView;
-//import yh.app.appstart.lg.R;
+//import com.yhkj.cqgyxy.R;
 //
 //import org.androidpn.push.Constants;
 //import org.xwalk.core.XWalkDownloadListener;

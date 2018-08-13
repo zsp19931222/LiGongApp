@@ -35,7 +35,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 /** 包 名:yh.app.diary 类 名:DiaryListActivity.java 功 能:展示个人日志列表
  * 

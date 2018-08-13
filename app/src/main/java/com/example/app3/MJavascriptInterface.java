@@ -14,6 +14,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.example.app3.activity.PhotoBrowserActivity;
+import com.example.app4.util.LocationUtil;
 import com.example.app4.util.ShareUtil;
 import com.tbruyelle.rxpermissions.RxPermissions;
 
@@ -98,6 +99,14 @@ public class MJavascriptInterface {
 //        new ShareUtil((Activity) context).shareHref(s);
     }
 
+    /**
+     * 获取定位服务
+     */
+    @JavascriptInterface
+    public void locationService() {
+        new LocationUtil(context).startLocate();
+    }
+
     @android.webkit.JavascriptInterface
     public void openImage(String img) {
         Intent intent = new Intent();
@@ -131,7 +140,7 @@ public class MJavascriptInterface {
                     Glide.with(context).load(imageUrl).asBitmap().toBytes().into(new SimpleTarget<byte[]>() {
                         @Override
                         public void onResourceReady(byte[] bytes, GlideAnimation<? super byte[]> glideAnimation) {
-                            BitmapUtil.savaBitmap(context,"yh" + System.currentTimeMillis() + ".png", bytes);
+                            BitmapUtil.savaBitmap(context, "yh" + System.currentTimeMillis() + ".png", bytes);
                         }
                     });
                 } catch (JSONException e) {

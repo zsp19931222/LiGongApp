@@ -13,7 +13,7 @@ import android.widget.FrameLayout;
 
 
 import com.example.app4.util.OsUtil;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

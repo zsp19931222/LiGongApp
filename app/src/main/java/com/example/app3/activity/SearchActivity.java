@@ -22,7 +22,7 @@ import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnLoadmoreListener;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import com.zxing.decoding.Intents;
 
 import java.util.ArrayList;

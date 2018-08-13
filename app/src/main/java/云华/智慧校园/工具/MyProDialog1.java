@@ -5,7 +5,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.WindowManager;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 /**
  * 加载提醒对话框
  */

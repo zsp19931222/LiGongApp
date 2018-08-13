@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.provider.MediaStore.MediaColumns;
 import yh.app.activitytool.ActivityPortrait;
-import 云华.智慧校园.自定义控件.CutView;import yh.app.appstart.lg.R;
+import 云华.智慧校园.自定义控件.CutView;import com.yhkj.cqgyxy.R;
 
 public class ChoiceAndCutPictrue extends ActivityPortrait
 {

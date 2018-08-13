@@ -6,7 +6,7 @@ import com.tencent.mm.opensdk.modelbase.BaseResp;
 import com.tencent.mm.opensdk.openapi.IWXAPI;
 import com.tencent.mm.opensdk.openapi.IWXAPIEventHandler;
 import com.tencent.mm.opensdk.openapi.WXAPIFactory;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;

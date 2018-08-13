@@ -11,7 +11,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import org.androidpn.push.Constants;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 @SuppressLint("InflateParams")
 public class zhkt_dhk
 {

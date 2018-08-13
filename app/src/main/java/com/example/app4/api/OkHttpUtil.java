@@ -75,9 +75,9 @@ public class OkHttpUtil {
                                 EventBus.getDefault().post(new MessageEvent(HintTool.REQUESTFAIL, HintTool.NetWorkError));
                                 Log.e(Log.DEFAULT_TAG, "标识符：" + tag + "\n返回结果：" + e.toString());
                             } else {
-                                Log.e(Log.DEFAULT_TAG, "标识符：" + tag + "---"+ call.isCanceled());
+                                Log.e(Log.DEFAULT_TAG, "标识符：" + tag + "---" + call.isCanceled());
                             }
-                                Log.e("timeout", "地址：" + url+"\n错误：" + e.toString());
+                            Log.e("timeout", "地址：" + url + "\n错误：" + e.toString());
                         }
 
                         @Override
@@ -92,8 +92,8 @@ public class OkHttpUtil {
                                 if (tag.equals(TagUtil.VerifyOldPhoneNoUsedTag)) {
                                     EventBus.getDefault().post(new MessageEvent(HintTool.REQUESTFAIL, response));
                                 } else {
-//                            EventBus.getDefault().post(new MessageEvent(HintTool.REQUESTFAIL, JSONTool.Tips(response)));
-                                    EventBus.getDefault().post(new MessageEvent(HintTool.REQUESTFAIL, HintTool.REQUESTFAIL));
+                                    EventBus.getDefault().post(new MessageEvent(HintTool.REQUESTFAIL, JSONTool.Tips(response)));
+//                                    EventBus.getDefault().post(new MessageEvent(HintTool.REQUESTFAIL, HintTool.REQUESTFAIL));
                                 }
                             }
                         }

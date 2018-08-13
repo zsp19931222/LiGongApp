@@ -63,7 +63,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 /**
  * 包 名:yh.app.coursetable 类 名:yh.app.coursetable.TableDemoActivity
@@ -135,7 +135,7 @@ public class TableDemoActivity extends ActivityPortrait {
             db1 = new SqliteHelper().getRead();
             c1 = db1.rawQuery("select * from nowterm", null);
             if (c1.getCount() == 0) {
-                Toast.makeText(this, "暂无时间信息,请重试", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "暂无时间信息,请稍后重试", Toast.LENGTH_SHORT).show();
                 finish();
                 return;
             }

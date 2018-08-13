@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 public class _空白填页
 {
 	public View addView(Context context, View hideView, ViewGroup parent, int picture, String text)

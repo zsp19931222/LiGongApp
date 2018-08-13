@@ -4,7 +4,7 @@ import org.json.JSONObject;
 
 import com.example.jpushdemo.body.BodyPush;
 import com.example.jpushdemo.helper.Receiver;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import android.os.Bundle;
 import android.os.Handler;

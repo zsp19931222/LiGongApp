@@ -21,7 +21,7 @@ import com.example.app3.search.LocalGroupSearch;
 import com.example.app3.view.MyTitleView;
 import com.example.smartclass.base.BaseRecyclerViewActivity;
 import com.example.smartclass.eventbus.MessageEvent;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.greenrobot.eventbus.Subscribe;
 

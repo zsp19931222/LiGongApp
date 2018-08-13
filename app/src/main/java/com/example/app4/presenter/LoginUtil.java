@@ -238,6 +238,8 @@ public class LoginUtil {
             String phone = new SqliteHelper().rawQuery("select * from password4 ").get(0).get("phone");
             getUserMessageMap.put("mob", StringUtil.takeOutSpacing(phone));
             getUserMessageMap.put("password", StringUtil.takeOutSpacing(UserMessageTool.getPassWord()));
+            getUserMessageMap.put("sn",DeviceUtils.getUniqueId(activity));
+            getUserMessageMap.put("sbmc","手机:"+SystemUtil.getDeviceBrand()+" 型号:"+SystemUtil.getSystemModel());
             OkHttpUtil.OkHttpPost(GetAppUrl.UIA.getUserMessage.getUrl(), getUserMessageMap, TagUtil.GetUserMessageTag, activity);
         } catch (Exception e) {
             e.printStackTrace();

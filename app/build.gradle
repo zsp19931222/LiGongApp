@@ -23,11 +23,11 @@ android {
     }
     defaultConfig {
         useLibrary 'org.apache.http.legacy'
-        applicationId "yh.app.appstart.lg"
+        applicationId "com.yhkj.cqgyxy"
         minSdkVersion 17
         targetSdkVersion 27
         versionCode 400
-        versionName "内测版 4.0.0"
+        versionName "4.0.0"
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         flavorDimensions "versionCode"
@@ -150,8 +150,8 @@ dependencies {
     implementation files('libs/BaiduLBS_Android.jar')
 }
 MobSDK {
-    appKey "26618e6ca8731"
-    appSecret "6a24b1065aaf85a90cba89c99a655742"
+    appKey "27287248ecf10"
+    appSecret "336ffb701d66f90c7e985b0f276e4bf4"
     ShareSDK {
         devInfo {
             SinaWeibo {
@@ -162,22 +162,22 @@ MobSDK {
                 sortId 1
             }
             QQ {
-                appId "1105430831"
-                appKey "4JrmDX0Fv8l1djOn"
+                appId "1107393493"
+                appKey "g9N1F3DumWTu9xLF"
                 shareByAppClient true
                 bypassApproval false
                 sortId 2
             }
             QZone {
-                appId "1105430831"
-                appKey "4JrmDX0Fv8l1djOn"
+                appId "1107393493"
+                appKey "g9N1F3DumWTu9xLF"
                 shareByAppClient true
                 bypassApproval false
                 sortId 3
             }
             Wechat {
-                appId "wx65c639dd3d26e8de"
-                appSecret "6b451f2232cf6b41779e96be64db8fea"
+                appId "wx2bd24c1dc2d9451d"
+                appSecret "e6d3de25d9bd4e56a048c81afc2a977b"
                 userName "gh_afb25ac019c9"
                 path "pages/index/index.html?id=1"
                 miniprogramType 2
@@ -185,8 +185,8 @@ MobSDK {
                 sortId 4
             }
             WechatMoments {
-                appId "wx65c639dd3d26e8de"
-                appSecret "6b451f2232cf6b41779e96be64db8fea"
+                appId "wx2bd24c1dc2d9451d"
+                appSecret "e6d3de25d9bd4e56a048c81afc2a977b"
                 bypassApproval false
                 sortId 5
             }

@@ -27,7 +27,7 @@ import com.example.app3.view.MyTitleView;
 import com.example.jpushdemo.ExampleApplication;
 import com.example.jpushdemo.body.BodyAdd;
 import com.yunhuakeji.app.utils.MapTools;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.androidpn.push.Constants;
 import org.greenrobot.eventbus.EventBus;

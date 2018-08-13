@@ -28,7 +28,7 @@ import android.widget.ImageView;
 import yh.app.activitytool.ActivityPortrait;
 import org.androidpn.push.Constants;
 
-import yh.app.tool.MD5;import yh.app.appstart.lg.R;
+import yh.app.tool.MD5;import com.yhkj.cqgyxy.R;
 import yh.app.tool.SettingTools;
 import yh.app.tool.SqliteHelper;
 import yh.app.tool.StringUtils;

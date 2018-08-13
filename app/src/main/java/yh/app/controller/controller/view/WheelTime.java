@@ -9,7 +9,7 @@ import java.util.List;
 import android.content.Context;
 import android.view.View;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.controller.controller.adapter.NumericWheelAdapter;
 import yh.app.controller.controller.listener.OnItemSelectedListener;

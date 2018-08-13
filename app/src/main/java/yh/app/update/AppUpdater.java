@@ -77,7 +77,7 @@ public class AppUpdater extends AsyncTask<String, Integer, String> {
             int mVersion = Build.VERSION.SDK_INT;
             if (mVersion >= 24) {
                 intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
-                Uri contentUri = FileProvider.getUriForFile(context, "yh.app.appstart.lg.fileprovider", new File(filePath));
+                Uri contentUri = FileProvider.getUriForFile(context, "com.yhkj.cqgyxy.fileprovider", new File(filePath));
                 intent.setDataAndType(contentUri, "application/vnd.android.package-archive");
             } else {
                 intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_GRANT_WRITE_URI_PERMISSION);

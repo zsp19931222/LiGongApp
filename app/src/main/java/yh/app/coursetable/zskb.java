@@ -14,7 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 @SuppressLint({
 		"ClickableViewAccessibility", "InflateParams"

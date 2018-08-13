@@ -2,7 +2,7 @@ package yh.tool.widget;
 
 import android.app.Activity;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.utils.StatusBarUtil;
 

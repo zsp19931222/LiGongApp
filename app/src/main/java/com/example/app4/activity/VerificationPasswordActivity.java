@@ -1,12 +1,10 @@
 package com.example.app4.activity;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
-import android.text.InputFilter;
 import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
@@ -33,7 +31,7 @@ import java.util.Map;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import yh.app.tool.MD5;
 
 /**

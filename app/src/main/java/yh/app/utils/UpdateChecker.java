@@ -12,7 +12,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import java.io.BufferedReader;
 import java.io.File;

@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 //OA主模块
 public class OA_MainActivity extends Fragment {

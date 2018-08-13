@@ -13,7 +13,7 @@ import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.View;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 
 /**

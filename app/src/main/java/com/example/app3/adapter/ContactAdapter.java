@@ -18,7 +18,7 @@ import com.example.app3.tool.GlideRoundTransform;
 import com.example.app3.tool.Tool;
 import com.example.app3.tool.Utils;
 import com.example.app3.utils.GlideLoadUtils;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import yh.app.activitytool.ActivityPortrait;
-import yh.tool.widget.GetActivity;import yh.app.appstart.lg.R;
+import yh.tool.widget.GetActivity;import com.yhkj.cqgyxy.R;
 
 import android.os.Bundle;
 import android.widget.Button;

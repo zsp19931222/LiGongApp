@@ -33,7 +33,7 @@ import java.util.Map;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import yh.app.tool.MD5;
 import yh.app.utils.ToastUtils;
 import 云华.智慧校园.功能.LoginOut;

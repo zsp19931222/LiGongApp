@@ -30,7 +30,7 @@ import org.androidpn.push.Constants;
 
 import yh.app.time.JudgeDate;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.time.ScreenInfo;
 import yh.app.time.WheelMain;

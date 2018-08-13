@@ -16,7 +16,7 @@ import android.view.WindowManager;
 import android.widget.ScrollView;
 
 import com.example.app3.utils.StatusBarCompat;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.BroadcastReceiver.RegisterReceiver;
 

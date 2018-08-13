@@ -5,7 +5,7 @@ import java.lang.reflect.Field;
 import android.content.Context;
 
 import com.yunhuakeji.app.utils.ScreenHelper;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 public class RHelper {
     public int getColor(Context context, String name) {

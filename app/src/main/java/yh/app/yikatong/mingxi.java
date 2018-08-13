@@ -2,7 +2,7 @@ package yh.app.yikatong;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

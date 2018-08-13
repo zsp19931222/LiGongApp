@@ -8,7 +8,7 @@ import android.widget.TextView;
 import yh.app.acticity.AboutActity;
 import yh.app.activitytool.QRCodeActivity;
 import org.androidpn.push.Constants;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import yh.app.stu_info.RoundImageView;
 import yh.app.tool.DpPx;
 import yh.app.tool.PackAganmanger;

@@ -1,4 +1,4 @@
-package yh.app.appstart.lg;
+package com.yhkj.cqgyxy;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

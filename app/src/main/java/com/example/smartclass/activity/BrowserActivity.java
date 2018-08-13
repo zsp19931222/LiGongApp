@@ -38,6 +38,8 @@ import com.example.app3.tool.HintTool;
 import com.example.app3.view.MyTitleView;
 import com.example.app3.web.utils.X5WebView;
 import com.example.app4.base.CompatStatusBarActivity;
+import com.example.app4.util.IsNull;
+import com.example.app4.util.IsNullUtil;
 import com.example.smartclass.eventbus.MessageEvent;
 import com.example.smartclass.util.TagUtil;
 import com.tbruyelle.rxpermissions.RxPermissions;
@@ -53,7 +55,7 @@ import com.tencent.smtt.sdk.WebView;
 import com.tencent.smtt.sdk.WebViewClient;
 import com.tencent.smtt.utils.TbsLog;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.androidpn.push.Constants;
 import org.greenrobot.eventbus.EventBus;
@@ -134,7 +136,7 @@ public class BrowserActivity extends CompatStatusBarActivity implements OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFormat(PixelFormat.TRANSLUCENT);
-        setImmersiveStatusBar(true,getResources().getColor(R.color.white));
+        setImmersiveStatusBar(true, getResources().getColor(R.color.white));
 
         EventBus.getDefault().register(this);
         Intent intent = getIntent();
@@ -388,7 +390,7 @@ public class BrowserActivity extends CompatStatusBarActivity implements OnClickL
         webSetting.setBuiltInZoomControls(true);
         webSetting.setUseWideViewPort(true);
         webSetting.setSupportMultipleWindows(false);
-         webSetting.setLoadWithOverviewMode(true);
+        webSetting.setLoadWithOverviewMode(true);
         webSetting.setAppCacheEnabled(true);
         // webSetting.setDatabaseEnabled(true);
         webSetting.setDomStorageEnabled(true);
@@ -535,13 +537,17 @@ public class BrowserActivity extends CompatStatusBarActivity implements OnClickL
         // 二维码
         if (resultCode == CodeManage.QR_RESULT_CODE && data != null) {
             String result = data.getStringExtra("result");
-            String call = "javascript:receiveMsgFromNative(\"" + result + "\")";
-            mWebView.loadUrl(call);
+            if (IsNullUtil.isNotNull(result)) {
+                String call = "javascript:receiveMsgFromNative(\"" + result + "\")";
+                mWebView.loadUrl(call);
+            }
             Log.d(result);
         } else if (resultCode == CodeManage.QR_RESULT_CODE1 && data != null) {
             String result = data.getStringExtra("result");
-            String call = "javascript:receiveMsgFromNative(\"" + result + "\")";
-            mWebView.loadUrl(call);
+            if (IsNullUtil.isNotNull(result)) {
+                String call = "javascript:receiveMsgFromNative(\"" + result + "\")";
+                mWebView.loadUrl(call);
+            }
         }
         if (resultCode == RESULT_OK) {
             Uri result = data == null || resultCode != RESULT_OK ? null : data.getData();

@@ -5,7 +5,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 @SuppressLint("InflateParams")
 public class Tools_lt_item
 {

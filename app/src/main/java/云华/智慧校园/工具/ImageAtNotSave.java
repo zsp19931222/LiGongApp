@@ -8,7 +8,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
 import android.widget.ImageView;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 public class ImageAtNotSave extends AsyncTask<String, Bitmap, Bitmap>
 {
 	private ImageView view;

@@ -14,7 +14,7 @@ import com.example.app3.base_recyclear_adapter.QuickAdapter;
 import com.example.app3.entity.SubscibeEntity;
 import com.example.app3.tool.HintTool;
 import com.example.app3.view.MyTitleView;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.androidpn.push.Constants;
 import org.json.JSONException;

@@ -37,12 +37,12 @@ import com.example.app4.util.NoDataViewUtil;
 import com.example.app4.view.FunctionAppItemDecorationHorizontal;
 import com.example.app4.view.FunctionAppItemDecorationVertical;
 import com.example.jpushdemo.ExampleApplication;
-import com.example.smartclass.activity.BrowserActivity;
 import com.example.smartclass.eventbus.MessageEvent;
 import com.example.smartclass.util.TagUtil;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
+import com.yhkj.cqgyxy.R;
 
 import org.androidpn.push.Constants;
 import org.greenrobot.eventbus.Subscribe;
@@ -55,7 +55,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
-import yh.app.appstart.lg.R;
 import yh.app.model.DAModel;
 import yh.app.tool.SqliteHelper;
 import yh.app.utils.DensityUtil;
@@ -486,6 +485,7 @@ public class HomePageFragment extends BaseFragment {
 //        new ShareUtil(getActivity()).share();
 //        Intent intent = new Intent(getActivity(), BrowserActivity.class);
 //        getActivity().startActivity(intent);
+//        new LocationUtil(getContext()).startLocate();
     }
 
     private void findHeadViewID(View view) {

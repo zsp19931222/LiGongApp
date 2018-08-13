@@ -15,7 +15,7 @@ import com.example.app3.utils.GlideLoadUtils;
 import com.scwang.smartrefresh.layout.util.DensityUtil;
 import com.yunhuakeji.app.utils.IsNull;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.model.DAModel;
 

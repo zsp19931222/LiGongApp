@@ -77,7 +77,7 @@ public class Constants {
 	public static String name;
 	public static String dqjm = "";
 	public static String dqltr = "";
-	public static final String appPackage = "yh.app.appstart.lg";
+	public static final String appPackage = "com.yhkj.cqgyxy";
 	public static Handler ChatHandler;
 	public static Context App_Context;
 	public static double screenInch;

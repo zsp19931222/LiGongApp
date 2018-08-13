@@ -10,7 +10,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.yunhuakeji.app.utils.DpPx;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

@@ -3,6 +3,7 @@ package com.example.app3.utils;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.v4.app.Fragment;
@@ -10,8 +11,13 @@ import android.util.Log;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.animation.GlideAnimation;
+import com.bumptech.glide.request.target.SimpleTarget;
 import com.example.app3.tool.GlideCircleTransform;
 import com.example.app3.tool.GlideRoundTransform;
+import com.example.app4.util.DeviceUtils;
+
+import yh.app.utils.ScreenUtil;
 
 /**
  * Glide 加载 简单判空封装 防止异步加载数据时调用Glide 抛出异常
@@ -124,10 +130,25 @@ public class GlideLoadUtils {
     }
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
-    public void glideLoad(Activity activity, String url, ImageView imageView, int default_image) {
+    public void glideLoad(final Activity activity, String url, ImageView imageView, int default_image) {
         if (!activity.isDestroyed()) {
             if (!isDestroy(activity)) {
-
+                //获取图片真正的宽高
+//                Glide.with(activity)
+//                        .load(url)
+//                        .asBitmap()//强制Glide返回一个Bitmap对象
+//                        .into(new SimpleTarget<Bitmap>() {
+//                            @Override
+//                            public void onResourceReady(Bitmap bitmap, GlideAnimation<? super Bitmap> glideAnimation) {
+//                                int width = bitmap.getWidth();
+//                                int height = bitmap.getHeight();
+//                                Log.d(TAG, "width " + width); //200px
+//                                Log.d(TAG, "height " + height); //200px
+//                                Log.d(TAG, "onResourceReady: "+ ScreenUtil.getScreenWidth(activity));
+//                                Log.d(TAG, "onResourceReady: "+ ScreenUtil.getScreenHeight(activity));
+//
+//                            }
+//                        });
                 Glide.with(activity).load(url).centerCrop().error(default_image).crossFade
                         ().into(imageView);
             }

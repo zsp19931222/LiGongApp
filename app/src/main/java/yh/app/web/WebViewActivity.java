@@ -8,7 +8,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.LinearLayout;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 public class WebViewActivity extends Activity {
 	private LinearLayout layout;
 	private WebView webView;

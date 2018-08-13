@@ -6,7 +6,7 @@ import android.widget.ListView;
 import yh.app.activitytool.ActivityPortrait;
 import org.androidpn.push.Constants;
 
-import yh.app.utils.DefaultTopBar;import yh.app.appstart.lg.R;
+import yh.app.utils.DefaultTopBar;import com.yhkj.cqgyxy.R;
 import 云华.智慧校园.自定义适配器._无限加载_ListView;
 
 public class zhkt_jsxztxqzs extends ActivityPortrait

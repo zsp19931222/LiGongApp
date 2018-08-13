@@ -9,7 +9,7 @@ import android.view.View.OnTouchListener;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 public class ZHKTState
 {
 

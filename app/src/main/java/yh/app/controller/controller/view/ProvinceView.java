@@ -9,7 +9,7 @@ import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
 import com.example.jpushdemo.ExampleApplication;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import android.app.Activity;
 import android.content.Context;

@@ -276,4 +276,8 @@ public class TagUtil {
 
     public static final String newUserSetPasswordTag = "newUserSetPasswordTag";
 
+    public static final String locateResultTag = "locateResultTag";//定位结果tag
+
+
+
 }

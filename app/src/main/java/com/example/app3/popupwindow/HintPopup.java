@@ -16,7 +16,7 @@ import com.example.app3.tool.HintTool;
 
 import org.greenrobot.eventbus.EventBus;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.utils.GetWindowsWH;
 

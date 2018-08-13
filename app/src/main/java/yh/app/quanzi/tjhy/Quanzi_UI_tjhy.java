@@ -8,7 +8,7 @@ import android.text.TextWatcher;
 import android.widget.EditText;
 import android.widget.ListView;
 import yh.app.activitytool.ActivityPortrait;
-import yh.app.contacts.UserDetail;import yh.app.appstart.lg.R;
+import yh.app.contacts.UserDetail;import com.yhkj.cqgyxy.R;
 import yh.app.tool.URLHelper;
 import yh.app.utils.TopBarHelper;
 import yh.app.utils.TopBarHelper.OnClickLisener;

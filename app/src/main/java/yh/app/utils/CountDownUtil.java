@@ -1,6 +1,6 @@
 package yh.app.utils;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import android.content.Context;
 import android.os.CountDownTimer;
 import android.widget.TextView;

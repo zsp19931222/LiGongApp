@@ -4,7 +4,7 @@ package yh.app.controller.controller.utils;
 
 import android.view.Gravity;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 
 /**

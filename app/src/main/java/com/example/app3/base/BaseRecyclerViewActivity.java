@@ -10,7 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.example.app3.base_recyclear_adapter.QuickAdapter;
 import com.example.app4.base.CompatStatusBarActivity;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import butterknife.ButterKnife;
 import yh.app.activitytool.ActivityPortrait;

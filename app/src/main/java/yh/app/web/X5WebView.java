@@ -19,7 +19,7 @@
 //import com.tencent.smtt.sdk.WebChromeClient;
 //import com.tencent.smtt.sdk.WebSettings;
 //import com.tencent.smtt.sdk.WebSettings.LayoutAlgorithm;
-//import yh.app.appstart.lg.R;
+//import com.yhkj.cqgyxy.R;
 //import com.tencent.smtt.sdk.WebView;
 //import com.tencent.smtt.sdk.WebViewClient;
 //

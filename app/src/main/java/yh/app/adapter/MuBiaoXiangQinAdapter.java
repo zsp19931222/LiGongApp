@@ -15,7 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.app3.activity.BrowserActivity;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import java.util.List;
 

@@ -14,7 +14,7 @@ import com.example.app3.adapter.adapter.HeaderHolder;
 import com.example.app3.adapter.adapter.SectionedRecyclerViewAdapter;
 import com.example.app3.utils.GlideLoadUtils;
 import com.example.entity.MoreEntity;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import java.util.List;
 

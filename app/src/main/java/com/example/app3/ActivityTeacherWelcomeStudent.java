@@ -3,7 +3,7 @@ package com.example.app3;
 import android.content.Intent;
 
 import com.example.app3.base.BaseActivity;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import com.zxing.activity.CaptureActivity;
 
 import 云华.智慧校园.工具.IsNull;

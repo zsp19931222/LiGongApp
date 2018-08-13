@@ -3,7 +3,7 @@ package yh.app.quanzi;
 import yh.app.activitytool.ActivityPortrait;
 import org.androidpn.push.Constants;
 
-import yh.app.quanzitool.InitMrfz;import yh.app.appstart.lg.R;
+import yh.app.quanzitool.InitMrfz;import com.yhkj.cqgyxy.R;
 import yh.app.quanzitool.pinyin;
 import yh.app.tool.SqliteHelper;
 import yh.app.utils.DefaultTopBar;

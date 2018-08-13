@@ -7,7 +7,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.android.volley.VolleyError;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import android.app.Activity;
 import android.os.Bundle;

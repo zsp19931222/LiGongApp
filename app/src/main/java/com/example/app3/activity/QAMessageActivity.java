@@ -21,7 +21,7 @@ import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import yh.app.tool.SqliteHelper;
 import 云华.智慧校园.工具.CodeManage;
 

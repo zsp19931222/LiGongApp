@@ -10,7 +10,7 @@ public class HomePageWidgetEntity {
 
 
     /**
-     * content : [{"lx":[{"title":"我的二維碼","sort":"1526267386249","function_key":["oI354ClCsJ14Vhs+awSXfYZNcphk+WAxHTv0iZX6Ie2d2Oz7+795mOagMtMuqkrYVhJAVHVS+/Kw\nSHZbvqaVaU9JU7p6dXYBz45bwRyROZNLUFl+fNC2XVdEpfl9GpDu2IG0as3/lKTVB8TeOsYPUS/K\nT4Vtyc9LN76NUpKM9UE=\n"],"ios_notice":"null","img":"http://192.168.0.108:8090/fs/filedown?id=105ljlu61lmtio8sgn23jfd1b2&fileName=%E6%94%BF%E6%B2%BB%E9%9D%A2%E8%B2%8C.png","funcid":"2018051601","type":2,"class_name":"com.example.app3.activity.QRActivity","url":"yh.app.appstart.lg"}]},{"lx":[{"title":"反饋","sort":"1526117099050","function_key":["oI354ClCsJ14Vhs+awSXfYZNcphk+WAxHTv0iZX6Ie2d2Oz7+795mOagMtMuqkrYVhJAVHVS+/Kw\nSHZbvqaVaU9JU7p6dXYBz45bwRyROZNLUFl+fNC2XVdEpfl9GpDu2IG0as3/lKTVB8TeOsYPUS/K\nT4Vtyc9LN76NUpKM9UE=\n"],"ios_notice":"null","img":"http://192.168.0.108:8090/fs/filedown?id=23fg4s2m0s6uvae43pr7lmarm7&fileName=gl1.png","funcid":"2018051603","type":2,"class_name":"com.example.app3.FeedBackActivity","url":"2"},{"title":"設置","sort":"1526117099050","function_key":["oI354ClCsJ14Vhs+awSXfYZNcphk+WAxHTv0iZX6Ie2d2Oz7+795mOagMtMuqkrYVhJAVHVS+/Kw\nSHZbvqaVaU9JU7p6dXYBz45bwRyROZNLUFl+fNC2XVdEpfl9GpDu2IG0as3/lKTVB8TeOsYPUS/K\nT4Vtyc9LN76NUpKM9UE=\n"],"ios_notice":"null","img":"http://192.168.0.108:8090/fs/filedown?id=nlu6oicl40olk740s3ouoa3pd&fileName=gl2.png","funcid":"2018051602","type":2,"class_name":"com.example.app3.activity.SettinActivity","url":"4"}]}]
+     * content : [{"lx":[{"title":"我的二維碼","sort":"1526267386249","function_key":["oI354ClCsJ14Vhs+awSXfYZNcphk+WAxHTv0iZX6Ie2d2Oz7+795mOagMtMuqkrYVhJAVHVS+/Kw\nSHZbvqaVaU9JU7p6dXYBz45bwRyROZNLUFl+fNC2XVdEpfl9GpDu2IG0as3/lKTVB8TeOsYPUS/K\nT4Vtyc9LN76NUpKM9UE=\n"],"ios_notice":"null","img":"http://192.168.0.108:8090/fs/filedown?id=105ljlu61lmtio8sgn23jfd1b2&fileName=%E6%94%BF%E6%B2%BB%E9%9D%A2%E8%B2%8C.png","funcid":"2018051601","type":2,"class_name":"com.example.app3.activity.QRActivity","url":"com.yhkj.cqgyxy"}]},{"lx":[{"title":"反饋","sort":"1526117099050","function_key":["oI354ClCsJ14Vhs+awSXfYZNcphk+WAxHTv0iZX6Ie2d2Oz7+795mOagMtMuqkrYVhJAVHVS+/Kw\nSHZbvqaVaU9JU7p6dXYBz45bwRyROZNLUFl+fNC2XVdEpfl9GpDu2IG0as3/lKTVB8TeOsYPUS/K\nT4Vtyc9LN76NUpKM9UE=\n"],"ios_notice":"null","img":"http://192.168.0.108:8090/fs/filedown?id=23fg4s2m0s6uvae43pr7lmarm7&fileName=gl1.png","funcid":"2018051603","type":2,"class_name":"com.example.app3.FeedBackActivity","url":"2"},{"title":"設置","sort":"1526117099050","function_key":["oI354ClCsJ14Vhs+awSXfYZNcphk+WAxHTv0iZX6Ie2d2Oz7+795mOagMtMuqkrYVhJAVHVS+/Kw\nSHZbvqaVaU9JU7p6dXYBz45bwRyROZNLUFl+fNC2XVdEpfl9GpDu2IG0as3/lKTVB8TeOsYPUS/K\nT4Vtyc9LN76NUpKM9UE=\n"],"ios_notice":"null","img":"http://192.168.0.108:8090/fs/filedown?id=nlu6oicl40olk740s3ouoa3pd&fileName=gl2.png","funcid":"2018051602","type":2,"class_name":"com.example.app3.activity.SettinActivity","url":"4"}]}]
      * message : 成功
      * code : 40001
      */
@@ -64,7 +64,7 @@ public class HomePageWidgetEntity {
              * funcid : 2018051601
              * type : 2
              * class_name : com.example.app3.activity.QRActivity
-             * url : yh.app.appstart.lg
+             * url : com.yhkj.cqgyxy
              */
 
             private String sort;

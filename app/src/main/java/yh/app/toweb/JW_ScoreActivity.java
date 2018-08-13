@@ -1,7 +1,7 @@
 package yh.app.toweb;
 
 import yh.app.activitytool.ActivityPortrait;
-import android.os.Bundle;import yh.app.appstart.lg.R;
+import android.os.Bundle;import com.yhkj.cqgyxy.R;
 import android.view.Menu;
 
 //成绩查询

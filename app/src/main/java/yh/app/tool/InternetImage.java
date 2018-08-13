@@ -12,7 +12,7 @@ import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Environment;
 import android.widget.ImageView;
-import 云华.智慧校园.工具.CodeManage;import yh.app.appstart.lg.R;
+import 云华.智慧校园.工具.CodeManage;import com.yhkj.cqgyxy.R;
 
 public class InternetImage extends AsyncTask<String, Integer, Bitmap>
 {

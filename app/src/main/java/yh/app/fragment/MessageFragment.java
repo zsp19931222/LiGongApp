@@ -18,7 +18,7 @@ import com.example.jpushdemo.body.BodyAdd;
 import com.example.jpushdemo.body.BodyChat;
 import com.example.jpushdemo.body.BodyPush;
 import com.yunhuakeji.app.utils.MapTools;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

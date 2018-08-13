@@ -13,7 +13,7 @@ import org.json.JSONObject;
 import yh.app.activitytool.ActivityPortrait;
 import org.androidpn.push.Constants;
 
-import android.widget.TextView;import yh.app.appstart.lg.R;
+import android.widget.TextView;import com.yhkj.cqgyxy.R;
 import yh.app.tool.JsonListMap;
 import yh.app.tool.MyRandom;
 import yh.app.tool.SqliteHelper;

@@ -27,7 +27,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.example.jpushdemo.ExampleApplication;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 /**
  * 应用主页推荐应用ListView适配器 用于装推荐应用数据

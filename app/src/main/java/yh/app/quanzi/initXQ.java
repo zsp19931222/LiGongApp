@@ -16,7 +16,7 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import yh.app.tool.ViewClickEffect;import yh.app.appstart.lg.R;
+import yh.app.tool.ViewClickEffect;import com.yhkj.cqgyxy.R;
 
 @SuppressLint("InflateParams")
 public class initXQ

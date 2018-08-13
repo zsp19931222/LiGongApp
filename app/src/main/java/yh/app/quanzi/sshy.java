@@ -21,7 +21,7 @@ import android.widget.Toast;
 import yh.app.activitytool.ActivityPortrait;
 import org.androidpn.push.Constants;
 
-import yh.app.tool.SSHYAT;import yh.app.appstart.lg.R;
+import yh.app.tool.SSHYAT;import com.yhkj.cqgyxy.R;
 
 public class sshy extends ActivityPortrait
 {

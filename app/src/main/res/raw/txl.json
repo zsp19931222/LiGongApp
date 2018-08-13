@@ -7,6 +7,14 @@
       "num": "6",
       "cls": "com.example.app3.activity.QAMessageActivity",
       "type": "no_fill_view"
+    },
+    {
+      "pic": "http://www.fdsfds.com/pic/dsfds.png",
+      "pic_default": "bgdh",
+      "txt": "办公电话",
+      "num": "6",
+      "cls": "com.example.app3.activity.BrowserActivity",
+      "type": "no_fill_view"
     }
   ]
 }

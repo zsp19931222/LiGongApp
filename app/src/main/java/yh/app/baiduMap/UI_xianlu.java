@@ -8,7 +8,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 import com.baidu.mapapi.model.LatLng;
 import com.baidu.mapapi.search.poi.PoiDetailResult;
 import com.baidu.mapapi.search.poi.PoiResult;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import android.content.Intent;
 import android.os.Bundle;

@@ -28,7 +28,7 @@ import java.util.List;
 import java.util.Map;
 
 import yh.app.activitytool.ActivityPortrait;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import yh.app.quanzitool.pinyin;
 import yh.app.tool.DpPx;
 import yh.app.tool.SqliteHelper;

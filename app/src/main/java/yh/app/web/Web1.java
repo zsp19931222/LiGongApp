@@ -1,6 +1,6 @@
 package yh.app.web;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.ClipData;

@@ -43,7 +43,7 @@ import java.util.Map;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import yh.app.tool.SqliteHelper;
 import yh.app.utils.GsonImpl;
 import yh.app.utils.ToastUtils;

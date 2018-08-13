@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 /**
  * 
  * 包 名:yh.app.score 类 名:Stu_Grade_Adapter.java 功 能:对从网络获取的课程信息进行解析

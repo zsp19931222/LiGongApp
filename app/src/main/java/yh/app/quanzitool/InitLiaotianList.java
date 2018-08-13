@@ -13,7 +13,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
-import yh.app.tool.SqliteHelper;import yh.app.appstart.lg.R;
+import yh.app.tool.SqliteHelper;import com.yhkj.cqgyxy.R;
 import yh.app.tool.ViewClickEffect;
 
 public class InitLiaotianList

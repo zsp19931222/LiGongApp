@@ -6,7 +6,7 @@ import android.graphics.drawable.AnimationDrawable;
 import android.view.Gravity;
 import android.widget.ImageView;
 import android.widget.TextView;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 /**
  * 
  * 包 名:yh.app.progressdialog 类 名:CustomProgressDialog.java 功 能:进度条组件

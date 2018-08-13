@@ -23,7 +23,7 @@ import com.example.app3.Login;
 import com.example.app3.activity.UpDateActivity;
 import com.example.app4.activity.MainActivity;
 import com.tbruyelle.rxpermissions.RxPermissions;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.androidpn.push.Constants;
 import org.json.JSONObject;

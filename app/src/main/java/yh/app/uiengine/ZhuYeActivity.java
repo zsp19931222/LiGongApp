@@ -14,7 +14,7 @@ import android.widget.ViewFlipper;
 
 import com.android.volley.VolleyError;
 import com.example.jpushdemo.ExampleApplication;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import java.util.List;
 

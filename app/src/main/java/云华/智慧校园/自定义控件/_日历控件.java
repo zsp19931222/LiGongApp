@@ -27,7 +27,7 @@ import android.widget.TextView;
 
 import yh.app.calendar.CalendarDate;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.calendar.CalendarHelper;
 import yh.app.calendar.Canlendar;

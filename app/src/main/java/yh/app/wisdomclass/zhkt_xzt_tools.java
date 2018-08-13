@@ -17,7 +17,7 @@ import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;
 import android.widget.ListView;
 import android.widget.TextView;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import org.androidpn.push.Constants;
 import yh.app.tool.AllATSSS;
 import 云华.智慧校园.工具.JsonTools;

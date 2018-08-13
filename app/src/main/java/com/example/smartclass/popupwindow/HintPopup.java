@@ -18,7 +18,7 @@ import com.example.app3.tool.HintTool;
 import com.example.app3.utils.GlideLoadUtils;
 import com.example.smartclass.eventbus.MessageEvent;
 import com.example.smartclass.util.TagUtil;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.greenrobot.eventbus.EventBus;
 

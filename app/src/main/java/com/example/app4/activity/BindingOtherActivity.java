@@ -18,6 +18,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.app3.tool.HintTool;
+import com.example.app3.utils.GetChangePassWord;
 import com.example.app3.view.MyTitleView;
 import com.example.app4.entity.UserMessageEntity;
 import com.example.app4.presenter.BindingOtherPresenter;
@@ -25,6 +26,7 @@ import com.example.app4.presenter.LoginUtil;
 import com.example.app4.presenter.StartPresenter;
 import com.example.app4.util.ActivityUtil;
 import com.example.app4.util.DefaultUtil;
+import com.example.smartclass.activity.BrowserActivity;
 import com.example.smartclass.base.BaseRecyclerViewActivity;
 import com.example.smartclass.eventbus.MessageEvent;
 import com.example.smartclass.util.TagUtil;
@@ -36,7 +38,9 @@ import org.json.JSONException;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import yh.app.appstart.lg.R;
+
+import com.yhkj.cqgyxy.R;
+
 import yh.app.utils.GsonImpl;
 
 /**
@@ -126,19 +130,20 @@ public class BindingOtherActivity extends BaseRecyclerViewActivity {
         bindingText.setText(DefaultUtil.getDefaultSchool());
         bindingTipsText.setText("请使用统一身份认证账号登录！");
         bindingNumText.setText("账号");
-
         bindingNumText2.setText("密码");
         bindingShowText.setText("显示");
-
         bindingNumEd.setHint("请输入学号/教职工号");
+        bindingNextBtn.setText("登录");
+        bindingOtherLoginText1.setText("手机号登录");
         bindingNumEd2.setHint("请输入密码");
 
-        bindingNextBtn.setText("登录");
-
-        bindingOtherLoginText1.setText("手机号登录");
-        bindingOtherLoginText2.setText("新用户登录");
-
-        bindingForgetBtn.setText("忘记密码？");
+        if (!DefaultUtil.isIsIntegrate()) {
+            bindingForgetBtn.setText("忘记密码？");
+            bindingOtherLoginText2.setText("新用户登录");
+        } else {
+            bindingForgetBtn.setText("");
+            bindingOtherLoginText2.setText("忘记密码？");
+        }
         bindingForgetBtn.setTextColor(ContextCompat.getColor(context, R.color.color_bbbbbb));
 
         bindingNumEd.addTextChangedListener(new MyTextWatcher(bindingNumEd));
@@ -281,7 +286,13 @@ public class BindingOtherActivity extends BaseRecyclerViewActivity {
                 intent.putExtra("universityName", DefaultUtil.getDefaultSchool());
                 break;
             case R.id.binding_otherLogin_text2:
-                intent = new Intent(this, NewUserLoginActivity.class);
+                if (DefaultUtil.isIsIntegrate()) {
+                    intent = new Intent(this, BrowserActivity.class);
+                    intent.putExtra("url",  GetChangePassWord.getForgetPasswordUrl());
+                    intent.putExtra("title", "");
+                } else {
+                    intent = new Intent(this, NewUserLoginActivity.class);
+                }
                 break;
         }
         if (intent != null) {

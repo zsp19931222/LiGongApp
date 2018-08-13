@@ -15,7 +15,7 @@ import com.example.app3.tool.HintTool;
 import com.example.app3.tool.TimeTool;
 import com.example.app3.tool.Tool;
 import com.example.app3.view.MyTitleView;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

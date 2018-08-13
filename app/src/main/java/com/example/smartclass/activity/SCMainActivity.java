@@ -19,7 +19,7 @@ import com.example.smartclass.fragment.MessageFragment;
 import com.example.smartclass.fragment.TodayFragment;
 import com.example.smartclass.util.AuthenticationUtil;
 import com.example.smartclass.util.TagUtil;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

@@ -3,7 +3,7 @@ package yh.app.adapter;
 import java.util.List;
 
 import com.bumptech.glide.Glide;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import android.content.Context;
 import android.view.LayoutInflater;

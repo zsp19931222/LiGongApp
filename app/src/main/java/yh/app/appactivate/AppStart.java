@@ -23,7 +23,7 @@
 //import android.widget.RelativeLayout;
 //import android.widget.Toast;
 //import yh.app.activitytool.ActivityPortrait;
-//import yh.app.appstart.lg.R;
+//import com.yhkj.cqgyxy.R;
 //import org.androidpn.push.Constants;
 //import yh.app.tool.GetConfig;
 //import yh.app.tool.LoginAT;

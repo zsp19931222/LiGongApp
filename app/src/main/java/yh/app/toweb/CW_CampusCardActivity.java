@@ -8,7 +8,7 @@ import yh.tool.widget.keyValue;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.webkit.WebView;import yh.app.appstart.lg.R;
+import android.webkit.WebView;import com.yhkj.cqgyxy.R;
 
 //一卡通查询
 /**

@@ -19,7 +19,7 @@ import com.example.app3.base.BaseRecyclerViewActivity;
 import com.example.app3.base_recyclear_adapter.QuickAdapter;
 import com.example.app3.search.Group;
 import com.example.app3.search.LocalGroupSearch;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import java.util.ArrayList;
 import java.util.List;

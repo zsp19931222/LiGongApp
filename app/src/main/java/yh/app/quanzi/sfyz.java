@@ -23,7 +23,7 @@ import android.widget.Toast;
 import yh.app.activitytool.ActivityPortrait;
 import org.androidpn.push.Constants;
 
-import yh.app.tool.Ticket;import yh.app.appstart.lg.R;
+import yh.app.tool.Ticket;import com.yhkj.cqgyxy.R;
 import yh.app.utils.VolleyInterface;
 import yh.app.utils.VolleyRequest;
 import yh.tool.widget.LoadDiaog;

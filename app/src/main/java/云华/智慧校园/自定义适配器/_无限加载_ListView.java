@@ -19,7 +19,7 @@ import android.widget.BaseAdapter;
 import android.widget.AbsListView.OnScrollListener;
 import android.widget.ListView;
 import android.widget.TextView;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import org.androidpn.push.Constants;
 import yh.app.tool.AllATSSS;
 import yh.app.tool.Ticket;

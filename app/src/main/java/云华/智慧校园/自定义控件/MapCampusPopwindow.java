@@ -2,7 +2,7 @@ package 云华.智慧校园.自定义控件;
 
 import yh.app.tool.DpPx;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

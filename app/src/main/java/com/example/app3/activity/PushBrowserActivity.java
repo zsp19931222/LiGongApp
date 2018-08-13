@@ -60,7 +60,7 @@ import java.util.Map;
 import rx.Observer;
 import yh.app.activitytool.ActivityPortrait;
 import yh.app.appstart.AppStart;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import yh.app.logTool.Log;
 import yh.app.tool.QRCodeHelper;
 import 云华.智慧校园.工具.CodeManage;

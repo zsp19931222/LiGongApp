@@ -23,7 +23,7 @@ import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import yh.app.tool.JsonListMap;import yh.app.appstart.lg.R;
+import yh.app.tool.JsonListMap;import com.yhkj.cqgyxy.R;
 import yh.tool.widget.LoadDiaog;
 
 @SuppressLint(

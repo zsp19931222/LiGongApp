@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 
 import com.yunhuakeji.app.MainActivityDown;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import org.androidpn.push.Constants;
 import yh.app.tool.SqliteHelper;
 import 云华.智慧校园.工具._功能跳转;

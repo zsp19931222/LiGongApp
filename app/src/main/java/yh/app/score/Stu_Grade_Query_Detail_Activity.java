@@ -1,6 +1,6 @@
 package yh.app.score;
 import yh.app.activitytool.ActivityPortrait;
-import android.os.Bundle;import yh.app.appstart.lg.R;
+import android.os.Bundle;import com.yhkj.cqgyxy.R;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;

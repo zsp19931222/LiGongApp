@@ -15,7 +15,7 @@ import android.widget.TextView.OnEditorActionListener;
 
 import com.example.app3.base.BaseActivity;
 import com.example.app4.activity.MainActivity;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.androidpn.push.Constants;
 

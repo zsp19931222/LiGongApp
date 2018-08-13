@@ -26,7 +26,7 @@ import android.widget.Toast;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 /**
  *

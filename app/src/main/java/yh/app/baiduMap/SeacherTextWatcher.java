@@ -5,7 +5,7 @@ import java.util.TimerTask;
 
 import com.baidu.mapapi.search.poi.PoiDetailResult;
 import com.baidu.mapapi.search.poi.PoiResult;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import android.content.Context;
 import android.os.Handler;

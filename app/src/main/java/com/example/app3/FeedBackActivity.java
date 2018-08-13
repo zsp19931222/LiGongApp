@@ -28,7 +28,7 @@ import org.androidpn.push.Constants;
 import java.util.HashMap;
 import java.util.Map;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.logTool.Log;
 import yh.app.tool.MD5;

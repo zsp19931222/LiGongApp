@@ -2,8 +2,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
 
     <!-- 第三方 key -->
-    <string name="baidumapkey">7OqZDhezUIUCk3p5Cpnv7sI2WQf4ldjO</string>
-    <string name="jpushkey">72e8fa4fa06e6e3a3ae3448f</string>
+    <string name="baidumapkey">tGbCIbS9bK2X1GBoyoEe6lZw0gpZzHDz</string>
+    <string name="jpushkey">194c5dbad019627f4688998d</string>
     <string name="pull_to_refresh">下拉刷新</string>
     <string name="release_to_refresh">释放立即刷新</string>
     <string name="refreshing">正在刷新...</string>
@@ -29,7 +29,7 @@
     <string name="logining">程序在后台执行, 请查看日志！</string>
     <string name="setting_su">设置成功</string>
     <string name="image_s">功能:图片</string>
-    <string name="xxmc">知行理工</string>
+    <string name="xxmc">青春重工</string>
     <string name="kbcolor">%1$s</string>
     <string name="action_settings">设置</string>
     <string name="hello_world">Hello world!</string>

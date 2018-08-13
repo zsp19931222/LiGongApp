@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="yh.app.appstart.lg">
+    package="com.yhkj.cqgyxy">
     <!-- 计歩需要权限 -->
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
@@ -21,14 +21,14 @@
 
     <!-- 极光 -->
     <permission
-        android:name="yh.app.appstart.lg.permission.JPUSH_MESSAGE"
+        android:name="com.yhkj.cqgyxy.permission.JPUSH_MESSAGE"
         android:protectionLevel="signature" />
 
     <uses-feature android:name="android.hardware.camera" />
     <!-- 使用照相机权限 -->
     <uses-feature android:name="android.hardware.camera.autofocus" />
     <!-- 自动聚焦权限 -->
-    <uses-permission android:name="yh.app.appstart.lg.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="com.yhkj.cqgyxy.permission.JPUSH_MESSAGE" />
     <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -66,7 +66,8 @@
         android:persistent="true"
         android:screenOrientation="portrait"
         android:theme="@style/KaleTheme"
-        tools:replace="android:icon,android:label,android:theme">
+        tools:replace="android:name,android:icon,android:label,android:theme"
+        >
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="@string/baidumapkey" />
@@ -86,7 +87,7 @@
 
                 <!-- 协议部分，随便设置 -->
                 <data
-                    android:host="yh.app.appstart.lg"
+                    android:host="com.yhkj.cqgyxy"
                     android:scheme="url" />
 
                 <action android:name="android.intent.action.VIEW" />
@@ -288,7 +289,7 @@
             android:name="yh.app.appstart.YDY"
             android:label="引导页">
             <intent-filter>
-                <action android:name="yh.app.appstart.lg.YDY" />
+                <action android:name="com.yhkj.cqgyxy.YDY" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -1291,7 +1292,7 @@
                 <action android:name="cn.jpush.android.ui.PushActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="yh.app.appstart.lg" />
+                <category android:name="com.yhkj.cqgyxy" />
             </intent-filter>
         </activity>
 
@@ -1311,7 +1312,7 @@
         <!-- since 3.0.9 Required SDK 核心功能-->
         <provider
             android:name="cn.jpush.android.service.DataProvider"
-            android:authorities="yh.app.appstart.lg.DataProvider"
+            android:authorities="com.yhkj.cqgyxy.DataProvider"
             android:exported="false" />
 
         <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
@@ -1322,14 +1323,14 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="cn.jpush.android.intent.DaemonService" />
-                <category android:name="yh.app.appstart.lg" />
+                <category android:name="com.yhkj.cqgyxy" />
             </intent-filter>
 
         </service>
         <!-- since 3.1.0 Required SDK 核心功能-->
         <provider
             android:name="cn.jpush.android.service.DownloadProvider"
-            android:authorities="yh.app.appstart.lg.DownloadProvider"
+            android:authorities="com.yhkj.cqgyxy.DownloadProvider"
             android:exported="true" />
         <!-- Required SDK核心功能-->
         <receiver
@@ -1338,7 +1339,7 @@
             android:exported="false">
             <intent-filter android:priority="1000">
                 <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
-                <category android:name="yh.app.appstart.lg" />
+                <category android:name="com.yhkj.cqgyxy" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.USER_PRESENT" />
@@ -1369,14 +1370,14 @@
                 <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
                 <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
                 <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
-                <category android:name="yh.app.appstart.lg" />
+                <category android:name="com.yhkj.cqgyxy" />
             </intent-filter>
         </receiver>
         <!-- User defined.  For test only  用户自定义接收消息器,3.0.7开始支持,目前新tag/alias接口设置结果会在该广播接收器对应的方法中回调-->
         <receiver android:name="com.example.jpushdemo.MyJPushMessageReceiver">
             <intent-filter>
                 <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
-                <category android:name="yh.app.appstart.lg"></category>
+                <category android:name="com.yhkj.cqgyxy"></category>
             </intent-filter>
         </receiver>
         <!-- </>值来自开发者平台取得的AppKey -->

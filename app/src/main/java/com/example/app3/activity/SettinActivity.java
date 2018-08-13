@@ -18,8 +18,10 @@ import com.example.app3.tool.AddView;
 import com.example.app3.tool.GlideCacheUtil;
 import com.example.app3.tool.HintTool;
 import com.example.app3.tool.Tool;
+import com.example.app3.utils.GetChangePassWord;
 import com.example.app3.view.MyTitleView;
-import yh.app.appstart.lg.R;
+import com.example.app4.util.DefaultUtil;
+import com.yhkj.cqgyxy.R;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -81,7 +83,7 @@ public class SettinActivity extends BaseRecyclerViewActivity {
      */
 
     private Intent intent;
-    private List<LayoutEntity.AllTagsListBean> allTagsListBeans=new ArrayList<>();
+    private List<LayoutEntity.AllTagsListBean> allTagsListBeans = new ArrayList<>();
 
     @Override
     protected void loadRecyclerViewData(final Context context) {
@@ -106,7 +108,7 @@ public class SettinActivity extends BaseRecyclerViewActivity {
                     holder.setTextView(R.id.item_archives_text_name, data.getTxt());
                     if (data.getTxt().equals("空间清理")) {
                         holder.setTextView(R.id.item_archives_text_num, new GlideCacheUtil().getCacheSize(context));
-                    }else {
+                    } else {
                         holder.setTextView(R.id.item_archives_text_num, "");
                     }
                 }
@@ -118,11 +120,19 @@ public class SettinActivity extends BaseRecyclerViewActivity {
                                 if (data.getTxt().equals("空间清理")) {
                                     HintPopup hintPopup = new HintPopup(context, settingLinParent, HintTool.CLEARCACHE);
                                     hintPopup.showPopupWindow(settingLinParent);
+                                } else if (data.getTxt().equals("修改密码")) {
+                                    if (DefaultUtil.isIsIntegrate()) {
+                                        intent = new Intent(context, com.example.smartclass.activity.BrowserActivity.class);
+                                        intent.putExtra("url", GetChangePassWord.getChangePasswordUrl());
+                                        intent.putExtra("title", "");
+                                    } else {
+                                        intent = new Intent(data.getCls());
+                                    }
                                 } else {
                                     intent = new Intent(data.getCls());
-                                    startActivity(intent);
                                 }
-                            } catch (Exception e) {
+                                startActivity(intent);
+                            } catch (Exception ignored) {
 
                             }
                         }
@@ -168,8 +178,8 @@ public class SettinActivity extends BaseRecyclerViewActivity {
             allTagsListBeans.clear();
             LayoutEntity entity = GsonImpl.get().toObject(FileUtils.readJsonFile(this, "setting"), LayoutEntity.class);
             allTagsListBeans.addAll(entity.getAllTagsList());
-             adapter.notifyDataSetChanged();
-        }else if(event.getMsg().equals(HintTool.LOGINOUT)){
+            adapter.notifyDataSetChanged();
+        } else if (event.getMsg().equals(HintTool.LOGINOUT)) {
             new LoginOut().doLoginOut(this);
         }
     }

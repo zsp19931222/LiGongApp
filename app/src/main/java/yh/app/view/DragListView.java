@@ -18,7 +18,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import yh.app.tool.DpPx;import yh.app.appstart.lg.R;
+import yh.app.tool.DpPx;import com.yhkj.cqgyxy.R;
 
 /***
  * 自定义拖拉ListView

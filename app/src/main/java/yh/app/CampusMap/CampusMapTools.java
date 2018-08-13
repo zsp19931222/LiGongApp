@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.baidu.mapapi.model.LatLng;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import android.content.Context;
 import android.view.LayoutInflater;

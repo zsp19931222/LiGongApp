@@ -53,7 +53,7 @@ import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 import com.tbruyelle.rxpermissions.RxPermissions;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import com.zxing.activity.CaptureActivity;
 
 import org.androidpn.push.Constants;

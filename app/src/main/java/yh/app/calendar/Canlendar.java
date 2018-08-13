@@ -5,7 +5,7 @@ import java.util.Date;
 import org.json.JSONArray;
 
 import com.example.jpushdemo.ExampleApplication;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.activitytool.ActivityPortrait;
 

@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import com.android.volley.VolleyError;
 import com.yunhuakeji.app.utils.JsonTools;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.androidpn.push.Constants;
 import org.json.JSONArray;

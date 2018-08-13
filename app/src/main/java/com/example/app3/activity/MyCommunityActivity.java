@@ -14,7 +14,7 @@ import com.example.app3.base.BaseRecyclerViewActivity;
 import com.example.app3.entity.MyCommunityEntity;
 import com.example.app3.tool.HintTool;
 import com.example.app3.view.MyTitleView;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import com.yunhuakeji.app.utils.MapTools;
 
 import org.androidpn.push.Constants;

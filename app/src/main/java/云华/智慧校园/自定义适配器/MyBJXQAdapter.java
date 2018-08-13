@@ -19,7 +19,7 @@ import android.widget.TextView;
 import yh.app.contacts.WDBJXQJM;
 
 import com.example.app3.utils.GlideLoadUtils;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.tool.ImageAtNotSave;
 import 云华.智慧校园.工具.ViewTools;

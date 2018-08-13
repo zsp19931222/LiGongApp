@@ -2,7 +2,7 @@ package yh.app.contacts;
 
 import android.os.Bundle;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.activitytool.ActivityPortrait;
 

@@ -11,7 +11,7 @@ import org.json.JSONObject;
 import com.android.volley.VolleyError;
 import com.example.app3.tool.JSONTool;
 import com.example.jpushdemo.ExampleApplication;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import android.os.Bundle;
 import android.view.View;

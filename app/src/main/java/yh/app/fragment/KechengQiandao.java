@@ -12,7 +12,7 @@ import com.android.volley.VolleyError;
 import com.example.jpushdemo.ExampleApplication;
 import com.yunhuakeji.app.utils.Home1ItemAdapter;
 import com.yunhuakeji.app.utils.JsonReaderHelper;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import android.app.Activity;
 import android.app.Fragment;

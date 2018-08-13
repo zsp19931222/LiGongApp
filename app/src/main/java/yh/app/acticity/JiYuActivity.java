@@ -12,7 +12,7 @@ import android.webkit.WebViewClient;
 import android.widget.TextView;
 
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.tool.widget.LoadDiaog;
 import yh.tool.widget.WhiteActivity;

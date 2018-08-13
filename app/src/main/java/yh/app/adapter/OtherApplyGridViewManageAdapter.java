@@ -23,7 +23,7 @@ import yh.app.tool.SqliteHelper;
 import com.bumptech.glide.Glide;
 import com.example.app3.utils.GlideLoadUtils;
 import com.example.jpushdemo.ExampleApplication;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import java.util.List;
 import java.util.Map;

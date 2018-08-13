@@ -1,4 +1,4 @@
-package yh.app.appstart.lg;
+package com.yhkj.cqgyxy;
 
 import android.app.Activity;
 

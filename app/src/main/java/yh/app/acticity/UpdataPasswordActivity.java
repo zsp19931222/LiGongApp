@@ -4,7 +4,7 @@ package yh.app.acticity;
 import android.os.Bundle;
 import android.view.View;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.tool.widget.IntegrationActivity;
 /**

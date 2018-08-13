@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import android.view.View;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 /**
  * 
  * 包	名:yh.app.time

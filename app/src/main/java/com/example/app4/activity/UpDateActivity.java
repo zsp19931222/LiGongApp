@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.example.smartclass.base.BaseRecyclerViewActivity;
 import com.example.smartclass.eventbus.MessageEvent;
 import com.tbruyelle.rxpermissions.RxPermissions;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.greenrobot.eventbus.Subscribe;
 

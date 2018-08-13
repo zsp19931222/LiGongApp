@@ -16,7 +16,7 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.tool.DpPx;
 import 云华.智慧校园.工具.JsonTools;

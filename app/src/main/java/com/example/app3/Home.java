@@ -5,7 +5,7 @@ import android.os.Message;
 
 import com.example.app3.PullToRefreshLayout.OnRefreshListener;
 import com.example.app3.base.BaseActivity;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.json.JSONArray;
 

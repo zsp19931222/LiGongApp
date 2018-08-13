@@ -22,7 +22,7 @@ import com.bumptech.glide.request.target.Target;
 import com.example.app3.tool.SwipeMenuLayout;
 import com.example.app3.utils.GlideLoadUtils;
 import com.example.app4.entity.HomePageWidgetEntity;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import java.io.File;
 import java.util.List;

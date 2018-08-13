@@ -54,7 +54,7 @@ public class MainActivityPresenter {
 
     public MainActivityPresenter(Context context) {
         this.context = context;
-        new Term().doit();
+//        new Term().doit();
         initContants();
         FunctionAT.getPushFunctionList(null);
         new FunctionAT(new Handler()).getFunctionList();

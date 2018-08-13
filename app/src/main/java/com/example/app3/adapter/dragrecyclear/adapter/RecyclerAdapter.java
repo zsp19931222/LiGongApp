@@ -13,7 +13,7 @@ import com.bumptech.glide.Glide;
 import com.example.app3.adapter.dragrecyclear.bean.DragBean;
 import com.example.app3.adapter.dragrecyclear.helper.MyItemTouchCallback;
 import com.example.app3.utils.GlideLoadUtils;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import java.util.Collections;
 import java.util.List;

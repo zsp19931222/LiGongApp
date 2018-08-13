@@ -262,10 +262,12 @@ public class FunctionIntentUtil<T> {
 
     //web地址
     private void intentWeb2(String url) {
-        Intent intent = new Intent(context, BrowserActivity.class);
-        intent.putExtra("url", url);
-        intent.putExtra("title", "");
-        context.startActivity(intent);
+        if (IsNullUtil.isNotNull(url)) {
+            Intent intent = new Intent(context, BrowserActivity.class);
+            intent.putExtra("url", url);
+            intent.putExtra("title", "");
+            context.startActivity(intent);
+        }
     }
 
     //跳转第三方

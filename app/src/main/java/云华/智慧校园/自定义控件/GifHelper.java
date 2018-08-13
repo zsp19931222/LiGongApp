@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 public class GifHelper
 {
 	public View addGif(ViewGroup parent, Context context)

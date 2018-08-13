@@ -23,7 +23,7 @@ import com.android.volley.VolleyError;
 
 import yh.app.activitytool.ActivityPortrait;
 import org.androidpn.push.Constants;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import yh.app.progressdialog.CustomProgressDialog;
 import yh.app.tool.SqliteDBCLose;
 import yh.app.tool.SqliteHelper;

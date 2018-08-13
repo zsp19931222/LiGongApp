@@ -3,7 +3,7 @@ package 云华.智慧校园.自定义控件;
 import org.json.JSONArray;
 
 import com.yunhuakeji.app.utils.JsonTools;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import android.content.Context;
 import android.content.Intent;

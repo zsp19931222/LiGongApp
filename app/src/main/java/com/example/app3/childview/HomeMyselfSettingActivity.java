@@ -10,7 +10,7 @@ import android.widget.ListView;
 import com.example.app3.adapter.BaseListAdapter;
 import com.example.app3.base.BaseActivity;
 import com.yunhuakeji.app.utils.JsonReaderHelper;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

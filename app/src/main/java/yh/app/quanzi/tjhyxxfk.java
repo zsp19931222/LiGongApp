@@ -1,7 +1,7 @@
 package yh.app.quanzi;
 
 import yh.app.activitytool.ActivityPortrait;
-import yh.app.utils.DefaultTopBar;import yh.app.appstart.lg.R;
+import yh.app.utils.DefaultTopBar;import com.yhkj.cqgyxy.R;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;

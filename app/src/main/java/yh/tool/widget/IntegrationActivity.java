@@ -3,7 +3,7 @@ package yh.tool.widget;
 
 import android.support.v4.app.FragmentActivity;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.utils.StatusBarUtil;
 

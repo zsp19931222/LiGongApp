@@ -41,7 +41,7 @@ import com.example.smartclass.eventbus.MessageEvent;
 import com.example.smartclass.util.TagUtil;
 import com.tbruyelle.rxpermissions.RxPermissions;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.androidpn.push.Constants;
 import org.greenrobot.eventbus.EventBus;

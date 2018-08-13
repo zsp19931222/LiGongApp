@@ -25,7 +25,7 @@ import com.bumptech.glide.request.target.Target;
 import com.example.app3.utils.FileUtils;
 import com.example.app3.utils.GlideLoadUtils;
 import com.tbruyelle.rxpermissions.RxPermissions;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import rx.Observer;
 

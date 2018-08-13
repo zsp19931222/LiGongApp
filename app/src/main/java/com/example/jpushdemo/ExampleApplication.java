@@ -64,7 +64,7 @@ public class ExampleApplication extends Application {
         本地("local"),
         理工("lg"), 农大("nd"), 重二师("c2s"), 三峡("sx"), 三峡医高专("sxygz"), 商职("sz"), 广安("ga"),
 
-        房地产("fdc"), 云华科技("yhkj"), 重庆工商大学("cqgs"), 建工("jg"), 重庆邮电大学移通学院("cqytxy"), 电大("cqdd"), 南宁("nnzyjsxy"), 工程学院("gcxy");
+        房地产("fdc"), 云华科技("yhkj"), 重庆工商大学("cqgs"), 建工("jg"), 重庆邮电大学移通学院("cqytxy"), 电大("cqdd"), 南宁("nnzyjsxy"), 工程学院("gcxy"), 工业学院("cqgyxy");
         private String s;
 
         private 学校(String s) {
@@ -106,6 +106,8 @@ public class ExampleApplication extends Application {
                 return "南宁职业技术学院";
             } else if ("gcxy".equals(s)) {
                 return "重庆工程职业技术学院";
+            } else if ("cqgyxy".equals(s)) {
+                return "重庆工业职业技术学院";
             } else if ("local".equals(s)) {
                 return "本地";
             }
@@ -157,7 +159,7 @@ public class ExampleApplication extends Application {
         Constants.SqliteVersion = 221;
         CrashHandler.getInstance().init(this);
         // 选择当前学校服务器
-        this.initXX(学校.理工);
+        this.initXX(学校.工业学院);
 
         @SuppressLint("WrongConstant") SharedPreferences sharedPreferences = getSharedPreferences("voice_vibrate", Context.MODE_APPEND);
 

@@ -15,7 +15,7 @@ import com.example.smartclass.eventbus.MessageEvent;
 
 import org.greenrobot.eventbus.EventBus;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

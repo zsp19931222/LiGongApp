@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import yh.app.fragment.KeChengQianDaoBaoGaoFragment;
 import yh.app.fragment.KechengQiandao;

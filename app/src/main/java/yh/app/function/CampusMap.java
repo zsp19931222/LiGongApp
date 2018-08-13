@@ -43,7 +43,7 @@ import com.baidu.mapapi.search.poi.PoiDetailResult;
 import com.baidu.mapapi.search.poi.PoiResult;
 import com.example.app3.tool.JSONTool;
 import com.tbruyelle.rxpermissions.RxPermissions;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;

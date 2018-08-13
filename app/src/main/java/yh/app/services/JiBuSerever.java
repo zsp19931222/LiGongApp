@@ -35,7 +35,7 @@ import android.widget.Toast;
 import yh.app.acticity.HealthActivity2;
 import org.androidpn.push.Constants;
 
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 /**
  * 计步器服务
  * 

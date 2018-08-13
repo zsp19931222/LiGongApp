@@ -23,7 +23,7 @@ import android.widget.Toast;
 import yh.app.activitytool.ActivityPortrait;
 import org.androidpn.push.Constants;
 
-import yh.app.tool.AT_old;import yh.app.appstart.lg.R;
+import yh.app.tool.AT_old;import com.yhkj.cqgyxy.R;
 import yh.app.tool.SqliteDBCLose;
 import yh.app.tool.SqliteHelper;
 import 云华.智慧校园.工具.RSAApi;

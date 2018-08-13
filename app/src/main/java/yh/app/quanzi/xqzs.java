@@ -2,7 +2,7 @@ package yh.app.quanzi;
 
 import android.app.Activity;
 import android.os.Bundle;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 public class xqzs extends Activity
 {
 	@Override

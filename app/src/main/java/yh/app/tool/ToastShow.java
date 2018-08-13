@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 public class ToastShow
 {
 	public static Toast toast;

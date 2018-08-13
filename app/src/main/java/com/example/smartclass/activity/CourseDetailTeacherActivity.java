@@ -27,7 +27,7 @@ import com.example.smartclass.network.BaseVolleyRequest;
 import com.example.smartclass.network.UrlUtil;
 import com.example.smartclass.util.BeanState;
 import com.example.smartclass.util.TagUtil;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.androidpn.push.Constants;
 import org.greenrobot.eventbus.Subscribe;

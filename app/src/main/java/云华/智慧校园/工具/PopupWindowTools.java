@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnTouchListener;
 import android.widget.PopupWindow;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 @SuppressLint("ClickableViewAccessibility")
 public class PopupWindowTools
 {

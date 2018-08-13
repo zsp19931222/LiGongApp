@@ -25,7 +25,7 @@ import com.example.app3.tool.Utils;
 import com.example.app3.view.LetterView;
 import com.example.app4.base.BaseFragment;
 import com.example.smartclass.eventbus.MessageEvent;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 
 import org.greenrobot.eventbus.Subscribe;
 

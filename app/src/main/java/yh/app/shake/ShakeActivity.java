@@ -1,5 +1,5 @@
 package yh.app.shake;
-import yh.app.appstart.lg.R;
+import com.yhkj.cqgyxy.R;
 import yh.app.shake.ShakeListener.OnShakeListener;
 import android.annotation.SuppressLint;
 import android.app.Activity;

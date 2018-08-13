@@ -6,7 +6,7 @@ import java.util.List;
 import yh.app.activitytool.ActivityPortrait;
 import org.androidpn.push.Constants;
 
-import yh.app.function.UI._圈子_消息;import yh.app.appstart.lg.R;
+import yh.app.function.UI._圈子_消息;import com.yhkj.cqgyxy.R;
 import yh.app.quanzi.mrfz;
 import yh.app.utils.TopBarHelper;
 import 云华.智慧校园.工具.ActivityHelper;
